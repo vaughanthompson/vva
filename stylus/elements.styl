@@ -1,0 +1,1477 @@
+// icons
+.icon
+    //background-color: brand1
+    color: brand1
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 45px
+    height: 45px
+    padding:0.2em
+    font-size: 1.1em
+    border-radius: 50%
+
+.icon.alt
+    background-color: brand2
+.ic-basic
+    font-size: 2.2em
+    line-height: 1.8em
+    color: brand1
+.ic-basic::before
+    color: brand1
+.ic-basic.rev
+    color: white
+.ic-basic.rev::before
+    color: white
+ul.iconRow,
+ul.iconRow li
+    list-style-type: none
+ul.iconRow li
+    margin: marXXS marStd 0 0
+    padding: padXXS padStd padXXS 0 
+    display: inline-block
+    border-right:1px solid brand1
+ul.iconRow li:last-child
+    border-right:none
+ul.iconRow li i 
+    font-size: 2em
+div.socialLinks
+    display: flex
+    justify-content: center
+div.socialLinks a
+    font-size: 2.5em
+    padding: padStd
+    flex-basis: 20%
+
+main div.socialLinks
+    justify-content:flex-start
+main div.socialLinks a
+    font-size: 2em
+    padding: padStd
+    padding-left:0
+    padding-top:0
+    flex-basis: auto
+@media phoneRule 
+    main div.socialLinks a
+        margin-right: marStd*2
+
+
+       
+
+#navMobile .icon,
+#navHeader .icon
+    background: none
+body > footer .icon
+    display: inline-flex
+    // background-color: blackAlp10
+    font-size: 1.4em
+    width:40px
+    height: 40px
+    margin-right: 1px
+    margin-bottom: 10px
+    justify-content: flex-start
+    background: none
+    padding: 0
+// ctas
+a.majorCTA,
+a.ctaButton
+    color: white
+    background-color: brand3
+    padding: padXXS padXS padXXS padXS
+    margin-bottom: marXXS*0.6
+    display: inline-block
+    white-space: nowrap
+    border-radius: 2em
+    font-size: 0.8em
+    font-weight: 500
+div#masthead a.majorCTA
+    color: white !important
+a.ctaButton,
+span.ctaButton
+    border-radius: 10px
+    background: brand4
+    color: white !important
+    font-size: 0.95em
+    font-weight:500
+    border: 1px solid brand4
+    padding:padXXS padStd padXXS padStd
+    //margin-right:marXXS
+    display: inline-flex
+    justify-content: space-between
+    transition: 0.2s
+    white-space: normal
+    @media phoneRule
+        padding: padM padL
+        font-weight: 300
+a.ctaButton.ctaShop
+    background: good    
+    border-color: good    
+    color: white !important
+div.containSlider div.content div > a
+    border-radius: 10px
+    color: brand1 !important
+    background-color: brand5
+    font-size: 0.95em
+    font-weight:500
+    border: 1px solid brand5
+    padding:padXXS padStd padXXS padStd
+    text-decoration: none
+    display: inline-flex
+    justify-content: space-between
+    transition: 0.2s
+    white-space: normal
+    margin-top: 1.5em;
+    @media phoneRule
+        padding padM padL
+        font-weight: 300
+
+nav a.ctaButton
+    background:none
+    border-color: brand1
+    color:brand1 !important
+    margin-left: 0
+    margin-right: marXS
+    margin-bottom: 0
+    padding:padXXS*.75 padXS
+    white-space: nowrap
+
+a.ctaButton i
+    margin-left:15px 
+    margin-right:10px;
+    transition: 0.2s 
+a.ctaButton i:before
+    color: white
+a.ctaButton:hover,
+a.ctaButton:hover > i:before,
+span.ctaButton:hover,
+span.ctaButton:hover > i:before
+    background: none !important
+    color: brand2 !important
+    border-color: brand2 !important
+    border-bottom-color: brand2 !important
+    transition: 0.2s
+div.containSlider div.content div > a:hover
+    background: none !important
+    color: white !important
+    border-color: white !important
+    border-bottom-color: white !important
+    transition: 0.2s     
+a.ctaButton:hover i
+    margin-left:25px
+    margin-right:0px
+    transition: 0.5s 
+#priNav a.majorCTA
+    text-shadow: 0px 1px 2px halfDark    
+    box-shadow: 0px 2px 2px black
+div.cta > div
+    text-align: center
+div.cta > div > h6
+    margin-bottom: 0
+
+@media phoneRule
+    a.majorCTA
+        font-size:1.1em
+        font-weight: 800
+        padding: padM padXL padM padXL  
+    a.ctaButton
+        padding-top: padM
+        padding-bottom: padM
+
+
+.imgText
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    padding: 1vw
+    padding-right: 1.5vw
+    padding-left:0
+    border-radius: 8px
+body > footer .imgText
+    padding:0;
+header.sticky .imgText
+    display: flex
+    align-items: center
+.siteLogo
+    font-size: 16px
+    line-height: 18px
+.txtC .txtC_Pr
+    font-size: 0.9em
+    font-weight: 700
+    line-height: 1.2em
+    margin: .1em 0
+    margin-right: 5px
+    @media phoneRule
+        font-size: .85em
+.txtC .txtC_Sc
+    font-size: .65em
+    font-weight: 500
+    line-height: 1.2em
+    text-transform: uppercase
+    @media phoneRule
+        font-size: .5em
+        //display: none
+@media phoneRule
+    .txtC_Sc
+        margin-right:5px
+
+a.imgText
+    border: 1px solid rgba(0,0,0,0)
+a.imgText:hover
+    border:1px solid blackAlp10
+a.imgText.siteLogo
+    border:none
+
+
+  
+.imgText span.txtC
+    display: flex
+    flex-direction: column
+    justify-content: center 
+    padding: 1px 0  
+    @media phoneRule
+        width: 100%
+        flex-direction: row 
+        justify-content: flex-start 
+        
+header.sticky .imgText span.txtC
+    flex-direction: row
+    align-items: baseline
+
+.imgText span.txtC > span
+    white-space: nowrap   
+.imgText picture
+    display: flex
+    width: 100%  
+    height: 100% 
+    margin-right: 10px
+.imgText picture img
+    height: auto
+    width: 100%
+
+.imgText.tall span.txtC
+    justify-content: flex-end   
+
+.imgText.stacked
+    flex-direction: column
+.imgText.stacked span.txtC
+    padding: 0
+    padding-left: 5px 
+.imgText.stacked picture 
+    margin-right: 0
+    margin-bottom: 10px
+
+picture.logoAsset
+    max-width:65px
+.long picture.logoAsset
+    max-width:190px
+.tall picture.logoAsset
+    max-width:60px   
+
+.inpageLogo
+    width:150px
+    margin-bottom: 1em
+
+header.sticky picture.logoAsset
+    max-width:35px
+    max-height:35px
+
+header.sticky .long picture.logoAsset
+    max-width:100px
+header.sticky .tall picture.logoAsset
+    max-width:25px   
+header.sticky .imgText.stacked
+    flex-direction: row
+header.sticky .imgText.stacked picture
+    margin-bottom: 0
+
+// logos
+.mLogo picture
+    margin-right: 10px
+    max-width:100% !important
+.mLogo img
+    max-height:8vh !important
+    width:auto !important
+.mLogo.long 
+    flex-direction: column
+.mLogo.long picture 
+    max-width:150px !important
+    @media phoneRule
+        max-width:175px !important
+        margin-bottom: 7px
+        margin-top: 7px
+.mLogo.long img
+    max-height:100% !important
+    max-width:150px !important
+    @media phoneRule
+        max-width:175px !important
+        
+
+
+.inpage-logo
+    display: block
+    width: 50vw
+    height: auto 
+.inpage-logo-stacked
+    display: block
+    width: 50vw
+    height: auto      
+@media ttrigger    
+    body > footer img.logo
+        width: 5vw
+    .inpage-logo
+        width: 30vw
+    .inpage-logo-stacked
+        width: 30vw    
+@media dtrigger    
+    .inpage-logo
+        width: 25vw
+    .inpage-logo-stacked
+        width: 10vw
+
+
+.grid-clients
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr))
+  grid-gap: 5px
+
+.grid-clients > div
+  padding: 1vw
+  display: grid
+  place-items: center
+  border:1px solid blackAlp10
+
+.grid-clients > div::before
+  content: ""
+  display: block
+  padding-bottom: 100%
+  grid-area: 1 / 1 / 2 / 2
+
+.grid-clients > div img
+  width: 100%
+  grid-area: 1 / 1 / 2 / 2
+
+
+
+// misc
+i.block
+    display: inline-block
+    font-size:1em
+    line-height: 100%
+    font-weight: 900
+.faded
+    opacity:0.4   
+    transition: 0.3s 
+.rotateIC
+    transition: 0.2s
+    transform: rotate(180deg) 
+.brand1
+    color: brand1
+.brand2
+    color: brand2
+
+
+// video
+.pbVideo
+    position: relative
+    padding-bottom: 56.25%
+    padding-top: 0
+    height: 0
+.pbVideo iframe 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+div.video
+    position: relative
+div.video > div
+    width: 100%
+    height: 100%  
+.hidden-xs
+    display: none
+div.vidHolder
+    position: absolute
+    top: 0
+    left: 0px
+    width: 100%
+    height: 100%
+    overflow: hidden
+video.hidden-xs
+    width: 100%
+    height: 100%
+    object-fit: cover
+@media dtrigger
+    video.hidden-xs
+        width: 100%
+        height: 100%
+@media dtrigger
+    .hidden-xs
+        display: block
+       
+
+
+// images
+img 
+    //width: 100%
+    //height: auto
+    display: block
+img.med
+    width: 75%
+    margin: 0px auto
+
+
+
+// caption and quote styling
+p.figureCap
+    width: auto
+    border-left: 2px solid brand1
+    padding: padXS padL padM padM
+    margin-left: marL*2 
+    position relative   
+    margin-bottom: marL
+p.quote::before
+    position: absolute
+    content: '\201C'
+    left: - + marXS*2.2
+    font-weight: 1000
+    font-size: 70px
+    display: flex
+    align-items: flex-end
+    height: 40px
+    line-height: 15px
+@media phoneRule
+    p.figureCap
+        font-size: 0.8em
+    p.quote::before
+        left: -40px
+        font-size: 60px
+        height: 35px
+@media tabletRule
+    p.figureCap
+        width: auto
+    p.quote::before
+        left: -50px
+@media dtrigger
+    p.figureCap
+        width: 40vw
+        padding: padXXS padXS
+        margin-left: marXS*2 
+        margin-bottom: marL
+    p.quote::before
+        left: -50px
+
+
+
+// slider
+div.slider
+    //border: 1px solid red
+    //overflow: hidden
+    background-color: brand1
+
+
+
+// inpage nav for desktop
+.inpgNv
+    text-align: right 
+@media phoneRule
+    .inpgNv .inpgNvTop
+        display: none
+
+
+
+// infographics
+.gridBoxes 
+    display: grid
+    justify-content: center
+    align-content: center
+    grid-template-columns: repeat(2, 27vmin)
+    grid-template-rows: repeat(3, 20vmin)
+    grid-gap: 1px
+.gridBoxes > *
+    background-blend-mode: multiply
+    background: linear-gradient(to bottom left, rgba(180,0,0,0.8),rgba(180,0,0,1), rgba(190,0,0,0.8), rgba(200,0,0,0.8))        
+    padding: 1.2em
+.gridBoxes > * > *
+    margin: 0.1em
+
+@media phoneRule 
+    article.bythenumbers *.picturefill-background
+        height: auto
+    article.bythenumbers div.content
+        flex-direction: column    
+    .gridBoxes
+        display: block
+    .gridBoxes br
+        display: none
+
+div.infographic
+    position: relative
+div.ig-whatisomni
+    margin-top: 0
+div.ig-whatisomni.end
+    margin-bottom: marL    
+
+div.ig-whatisomni div.igHeader,
+div.ig-whatisomni div.igContent
+    display: flex
+    flex:1 1 auto
+    justify-content: flex-start
+    align-items: stretch
+    flex-wrap: nowrap
+    @media phoneRule
+        flex-direction: column
+
+div.ig-whatisomni div.igContent
+    background-color: #fefefe
+ 
+div.ig-whatisomni div.igItem
+    padding: padXS padStd
+    border-left:1px solid #dedede
+    border-bottom:1px solid #dedede
+    display: flex
+    flex:1 1 auto
+    justify-content: flex-start
+    align-items: flex-start
+    flex-wrap: wrap
+    flex-basis: 20%
+    @media phoneRule 
+        padding: padL padXL
+        border-left: none
+div.ig-whatisomni div.igItem:last-child 
+    border-right:1px solid #cccccc
+    @media phoneRule 
+        border-right: none
+@media phoneRule 
+   div.ig-whatisomni div.igItem hr
+        display: none
+
+div.ig-whatisomni div.igHeader div.igItem
+    padding-bottom: padXXS
+    
+
+div.ig-whatisomni div.igItem > div
+    padding: padXXS
+div.ig-whatisomni div.igItem > div > *
+    margin: 0
+    line-height: 1.3em
+    margin-bottom: marXXS
+div.ig-whatisomni div.igItem h5
+    padding-bottom: 0
+    margin-bottom: 0
+div.ig-whatisomni div.igItem.orange h5
+    color: #d8481b
+div.ig-whatisomni div.igItem.yellow h5
+    color: #eb9626   
+
+@media phoneRule 
+    div.ig-whatisomni div.igItem h5 > br
+        display: none
+    div.ig-whatisomni div.igItem p
+        margin: marXXS 0
+
+
+@media dtrigger
+    div.ig-whatisomni div.igItem
+        flex-direction: column
+    div.ig-whatisomni div.igItem > div
+        padding-left: 0
+        padding-bottom: 0
+    div.ig-whatisomni div.igItem > div > *:not(p)
+       margin-right: 10px;
+
+
+
+/* inView effects */
+@media dtrigger
+    .greyToColor.onOff .stateInactive
+        background-color: blackAlp50 !important
+        filter:grayscale(100%)
+        transition: 1s
+    .greyToColor.onOff .stateActive
+        background-color: blackAlp10 !important
+        filter:grayscale(0%)
+        transition: 2.5s    
+
+
+
+/* app store links */
+span.storeLinks 
+    display: block
+span.storeLinks a, 
+span.storeLinks a img
+    display: block
+    max-width:150px
+    max-height:40px
+span.storeLinks a
+    display: inline-block
+
+
+/* simple list */
+ul.featureList
+    padding:0
+ul.featureList li
+    list-style-type: none
+    line-height:1.5em
+    margin-bottom: 0.75em
+    margin-left:15px
+ul.featureList li strong
+    display: inline-block
+    min-width:12%
+ul.featureList li:before
+    font-family: 'icomoon'
+    content: "\e906"
+    font-size: 0.9em
+    margin-right:3px
+    margin-left:-15px
+
+
+/* footer list */
+body > footer ul 
+    margin: 0
+    padding: 0
+    margin-bottom: marXXS
+    padding-bottom: padXXS
+    // border-bottom: 2px solid blackAlp10
+
+body > footer ul > strong
+    display: inline-block
+    font-size:1em
+    line-height: 1.6em
+    margin-bottom: 1em
+
+body > footer ul > li
+    font-size:0.9em
+    list-style-type: none
+    line-height: 1.4em
+    padding: 0.7em 0
+    border-top: 1px solid white
+    
+
+/* form */
+.enquirySubject 
+    background-color: brand2
+    padding: padXS padL padXS padStd
+    color:white
+    margin-bottom: marStd
+
+#contact label 
+    display: block
+    line-height: 2em
+    margin-bottom: 0.3em
+#contact input,
+#contact textarea 
+    width: 90%
+    padding:2%;
+    margin-bottom: 1em
+#contact input[type=submit]
+    width: auto
+    padding-left: padStd
+    padding-right: padStd
+
+/* Contact form defaults */
+#contact #inputContainer #loadingText,
+#contact #inputContainer #errorText,
+#contact #inputContainer #doneText
+    display: none
+
+
+/* Contact form loading */
+#contact #inputContainer.loading #loadingText
+    display: block
+
+#contact #inputContainer.loading #submit,
+#contact #inputContainer.loading #errorText,
+#contact #inputContainer.loading #doneText
+    display: none
+
+/* Contact form error */
+#contact #inputContainer.error #errorText 
+    display: block
+
+#contact #inputContainer.error #submit,
+#contact #inputContainer.error #loadingText,
+#contact #inputContainer.error #doneText 
+    display: none
+
+
+/* Contact form done */
+#contact #inputContainer.done #doneText
+    display: block
+
+#contact #inputContainer.done #submit,
+#contact #inputContainer.done #loadingText,
+#contact #inputContainer.done #errorText 
+    display: none
+
+
+
+
+div.thirdparty-logo
+    border:1px solid brand1
+    background-color: blackAlp5
+    padding: padXXS !important
+
+
+div.containSlider
+    position: relative
+    margin-bottom: marM
+body.brand div.containSlider
+    margin-top: marM
+
+body.lightSlider div.slickSlider
+    background-color: white
+body.darkSlider div.slickSlider
+    background-color: black
+
+div.slideTextOverlay
+    position: absolute
+    z-index: 1
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    font-size: 3.5em
+    letter-spacing: -0.05em
+    font-weight: 600
+    padding:0
+body.lightSlider div.slideTextOverlay
+    color: brand2
+body.darkSlider div.slideTextOverlay
+    color: brand1
+
+
+
+
+
+
+/* brand carousel in masthead */
+
+div.brandCarousel
+    padding:0 padM padXS padM
+
+div.brandCarousel div.slickItem
+    height:60px
+    margin-left: 7px
+    margin-right: 7px
+
+div.brandCarousel div.slickItem > a
+    height:60px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom:10px
+    border-bottom:3px solid brand1
+    outline: none;
+    transition: 0.5s
+@media (pointer: fine)    
+    div.brandCarousel div.slickItem > a:hover
+        margin-top:6px;
+div.brandCarousel div.slickItem > a > div:last-child 
+    flex-basis:20px
+    margin-left:20px
+    margin-right:5px
+div.brandCarousel div.slickItem > a > div:first-child
+    flex-basis:40%
+    margin-left:10px
+div.brandCarousel div.slickItem > a img
+    max-width:100% 
+    max-height:35px 
+div.brandCarousel .slick-prev:before
+div.brandCarousel .slick-next:before
+    font-family: 'icomoon'
+    font-size: 22px
+    opacity: .3
+    color:#000;
+div.brandCarousel .slick-prev:before
+    content: '\e905'   
+div.brandCarousel .slick-next:before
+    content: '\e906'    
+div.brandCarousel .slick-prev
+    left:-2vw
+div.brandCarousel .slick-next
+    right:-2vw
+div.slickBrands,
+div.slickBrandsHome // use to hide and then js to show to mitigate FOUC
+    display: none
+
+
+@media phoneRule
+    div.brandCarousel
+        display: none;
+
+
+/* dropdown containers and inpage navs */
+a.ddownClose 
+    padding: 0
+    display: inline-block
+    position: absolute
+    top: marXS
+    right: marStd
+a.ddownClose i
+    font-size:2.1em;
+    transition:0.2s
+
+div.ddownOuter
+    border-top: 2px solid lightGrey
+    background-color: white
+    position: absolute
+    z-index 10000
+    width: 100%
+    display: flex
+    min-height: 50vh
+    border-bottom: 1px solid black
+div.ddownOuter i.icon
+    color: white
+div.ddownInner
+    padding:padM
+    margin-right: marM
+    display: flex
+    justify-content: space-between
+    min-height: 50vh
+div.ddownInner section
+    flex:1 1 75%
+
+div.ddownInner section:first-child
+    flex-basis: 25%
+    margin-right: marStd
+    padding-right: padStd
+    border-right:4px solid brand1
+div.ddownInner section.desc
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+div.ddownInner picture.brand
+    display: inline-block
+    width:150px
+    margin-top: marXS
+    margin-bottom: marStd
+div.ddownInner picture.brand img
+    width:100% 
+    height: auto
+div.ddownInner nav a,
+div.catItem nav a
+    display: inline-flex
+    align-items: center
+    flex-shrink: 0
+div.ddownInner nav a span,
+div.catItem nav a span
+    display: inline-flex
+    align-items: center
+    font-weight: 350 !important
+    font-size: 1.2em !important
+    line-height: 1.2em    
+div.ddownInner nav a i,
+div.catItem nav a i
+    margin-right: marXXS
+    font-size:40px
+    width: 60px
+    height: 60px
+    flex:0 0 auto
+    transition:0.2s
+div.catItem .icon
+    font-size:36px
+    width: 35px
+    height: 35px
+    @media phoneRule
+        font-size: 25px
+
+div.ddownOuter
+    display: none;
+@media phoneRule2
+    div.ddownOuter
+        display: none;
+
+/* brandable elements in dropdown */
+a.ddownClose i
+    color: brand1
+div.ddownInner section:first-child
+    border-right-color: brand1
+div.ddownInner nav i
+    background-color: brand1
+@media (pointer: fine)
+    a.ddownClose:hover i
+        color: brand1 !important
+        transition:0.4s
+    div.ddownInner nav a:hover,
+    div.catItem nav a:hover
+        color: brand1 !important
+    div.ddownInner nav a:hover i
+        color: white !important
+        background-color: brand2 !important
+        transition:0.4s
+
+
+
+
+
+/* .smallGrid */
+.smallGrid
+    display: grid
+    grid-gap: 0.5vw 1.5vw
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr))
+.smallGrid > *
+    padding: padXXS*0.5
+    border-radius: 4px
+   
+
+// breadcrumb
+#breadcrumb
+    margin-bottom: marStd*1.2
+    @media phoneRule
+        margin-bottom: marXL
+        padding-bottom: padXS
+        border-bottom: 1px solid blackAlp10
+#breadcrumb nav
+    display: inline-flex
+    align-items: center
+    line-height: 1.3em
+    flex-wrap: wrap
+#breadcrumb nav a
+    padding-right: 0
+    text-decoration: underline
+#breadcrumb nav a,
+#breadcrumb nav a.activeLink
+    font-weight: 500 !important
+    @media phoneRule
+        margin-right:5px
+#breadcrumb nav i
+    padding: 0 5px  
+    @media phoneRule
+        padding: 0 5px 0 0
+
+
+
+// brand sub head mods
+article.subhead section:last-child
+    align-self: stretch
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: flex-end
+body.brand.model article.subhead
+    padding-bottom: padXXS
+body.brand.model article.subhead section:first-child
+    flex-basis: 35%
+    padding-right: padM
+body.brand.model article.subhead section:last-child
+    justify-content: flex-start
+    flex-basis: 65%
+body.brand article.subhead picture.brand
+    display: inline-block
+    width:130px
+    margin: marStd marL marStd 0
+    @media phoneRule
+        width:100px
+        margin-bottom: marXL
+body.brand article.subhead img
+    width:100% 
+    height: auto    
+@media phoneRule
+    article.subhead section:last-child
+        display: block
+        padding-top:0 !important
+    article.subhead a.smallTeaser
+        display: none
+
+
+
+// cat
+i.toggleIcon:before
+    font-family: 'icomoon'
+    content: '\e904'
+    font-size: 1em
+i.toggleIcon.upDown:before
+    font-family: 'icomoon'
+    content: '\e907'
+@media phoneRule
+    .toggleIcon
+    a.slideToggleTrigger
+        display: none
+    div.catGroup a.catItem,
+    div.catGroup div.catItem
+        display: block
+        margin: marXL 0 marXL*1.5 0 
+    .catItem h6
+        font-weight: 700
+    div.imageThumb
+        height: 60vw !important
+        margin-bottom: 5vh !important
+    div.landing div.imageThumb
+        max-width: 100vw  !important
+        height:60vw !important
+
+.catItem a h6
+    font-weight: 500
+    text-decoration: underline
+    max-width:90%
+.catItem:hover a h6
+    text-decoration: none
+.catItem a h3
+    text-decoration: underline
+.catItem:hover a h3
+    text-decoration: none
+
+div.keyStats
+    margin-top: 1em
+div.keyStats p
+    font-weight: 400
+    margin: 0
+    margin-bottom: 0.6em
+    max-width:80%
+div.keyStats span
+    text-transform: uppercase
+    font-size: 0.75em
+    letter-spacing: 0
+    font-weight:500
+    display: block
+
+div.imageThumb
+    height: 11vw
+    background-color: blackAlp5
+    background-size: cover
+    background-position: center
+    margin-bottom: marXS
+div.landing div.imageThumb
+    max-width: 9vw
+    height:6vw
+@media dtrigger
+    div.keyStats.careers
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin-top: marXS
+    main > div.catList
+        margin: marStd auto marStd auto
+        padding: padXXS 0 padXXS 0
+    div.catList a.basic
+        display: inline-block
+        margin-right: marL
+        font-size: 0.9em
+        margin-bottom: marXXS
+    div.catList div.catGroup
+        display: flex
+        justify-content: flex-start
+        flex-wrap: wrap
+        margin-top: marXXS
+        margin-bottom: 0
+    div.catList .catItem
+        flex-basis: 19%
+        margin-right: marM*1.8
+        margin-bottom: marL   
+    div.catList.landing .catItem
+        flex-basis: 14%
+        margin-right: marM*1.1
+        margin-bottom: marM
+    div.catList.navs div.catGroup
+        display: grid
+        grid-column-gap: 5vw;
+        grid-row-gap: 2.5vw;
+        //grid-template-columns: repeat(3, \[col\] 20vw )
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr) )
+        grid-auto-flow: row dense
+        grid-auto-rows: min-content 
+        margin-bottom: marM
+    div.catList.navs .catItem
+        margin:0
+        margin-bottom: marXXS
+        padding-bottom: padStd
+        border-bottom: 3px solid brand2 
+        align-self: start
+    div.catList.navs .catItem.jcb
+        grid-row: 1 / span 3
+        //{test}
+/*    div.catList.navs .gridContent > a
+        padding:padXS
+        display: block
+@media (pointer: fine)    
+    div.catList.navs .catItem a:hover
+        box-shadow: 0 0 20px 10px blackAlp10
+        transition: 0.25s
+@media (pointer: coarse)
+    div.catList.navs .gridContent > a
+        box-shadow: 0 0 20px 10px blackAlp10
+*/
+
+// model
+
+body.model div.keyStats
+    margin-top: marM
+    margin-bottom: marXXS
+    @media phoneRule
+        margin-bottom: marM
+body.model div.keyStats p
+    font-weight: 600
+    margin: 0
+    padding-bottom: padXXS
+    margin-bottom: marXXS
+    max-width:100%
+    border-bottom: 1px solid brand1
+    @media phoneRule
+        margin-bottom: marM
+
+
+body.model div.keyStats p a
+    font-weight:300
+body.model div.keyStats p:last-child
+    border-bottom: none
+body.model div.keyStats span
+    text-transform: none
+    font-size: 1em
+    letter-spacing: 0
+    font-weight:600
+    display: inline-block
+    min-width:50%
+    margin-right: marXXS
+
+body.model div.imageThumb
+    height: 11vw
+body.model .catItem h6
+    text-decoration: none
+    font-weight: 600
+@media dtrigger
+    body.model div.catList div.catGroup
+        display: flex
+        justify-content: flex-start
+        flex-wrap: wrap
+        margin-top: marXXS
+        margin-bottom: 0
+    body.model div.catList .catItem
+        flex-basis: 25%
+        margin-right: marM*1.8
+        margin-bottom: marL
+
+
+
+// model gallery
+div.gallery 
+    margin-bottom: marXS
+    width: 100%
+    @media phoneRule
+        margin-top: marXL
+
+div.gallery div.galleryItem
+    min-height: 37vw
+    background-color: #cccccc
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    @media phoneRule
+        min-height: 40vh
+        margin-bottom: 1em
+
+/* gallery height */
+
+div.gallery div.galleryItem div.pbVideo iframe
+    height: 37vw;
+
+.thumbImg {
+    margin: marXXS*.5 0
+    display: inline-flex
+    flex-wrap: wrap
+}
+div.gallery div.thumbImg a {
+    padding:1px
+    margin-right: marXXS*.25
+    border:2px solid rgba(255,255,255,0.0)
+
+}
+div.gallery div.thumbImg span {
+    width:72px
+    height: 48px
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    text-align: center
+    display: block
+}
+div.gallery div.thumbImg a.activeLink {
+    border:2px solid brand1
+}
+div.gallery div.thumbImg a.activeLink span {
+    opacity:0.5;
+}
+div.gallery div.thumbImg a.isVideo span:before {
+    position: absolute;
+    width:40px;
+    height:30px;
+    line-height:30px;
+    border-radius:8px;
+    top:50%;
+    left:50%;
+    margin-left: -20px;
+    margin-top: -15px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    content:"\e906";
+    font-size:26px;
+    font-family: "icomoon";
+}
+
+
+// avail models - responsive table
+table.rowResponsive
+    margin: marStd 0 marStd 0
+    border-collapse: collapse
+table.rowResponsive tbody tr
+    border-bottom: 1px solid brand2
+table.rowResponsive td
+    padding: padXS*.9 padStd padXS*.8 padStd   
+    text-align: center 
+table.rowResponsive tr td:first-child
+    text-align: left
+    font-weight: 600
+
+@media phoneRule
+    table.rowResponsive thead 
+        display: none;
+    table.rowResponsive tbody tr
+        display:flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: marM
+        margin-bottom: marL
+        padding-bottom: padStd
+    table.rowResponsive tbody td
+        //display: block
+        font-size:85%
+        flex-basis: 100%
+        text-align: left
+        display: flex
+        justify-content: space-between
+        padding: padM padStd padM padStd
+        border-bottom: 1px solid blackAlp10
+    table.rowResponsive tbody td:last-child
+        border-bottom: none
+    table.rowResponsive tbody td:first-child
+        flex-basis: 100%
+        font-size: 1.2em
+@media ttrigger    
+    table.rowResponsive
+        border-color: red
+        max-width: 90vw
+    table.rowResponsive thead 
+        background-color: brand2
+        color: white
+    table.rowResponsive tbody tr:last-child
+        border-bottom: none
+
+
+
+// print image styles
+
+img.print
+    display: none
+img.print.logo
+    max-width: 30%
+    margin-top: marM
+    margin-bottom: marStd
+@media print
+    body 
+        font-size:14px
+    div.navHeight,   
+    .ctaButton,
+    body > header,
+    body > footer
+        display: none !important
+    img.print
+        display: block
+        max-width: 60%
+    div.catItem img.print
+        display: block
+        width: 20%
+        height: auto
+        margin-bottom: marM
+    div.gallery div.galleryItem
+        min-height: auto
+    div.gallery div.thumbImg
+        display: inline-flex
+    div.gallery div.thumbImg a
+        width: auto
+        height: auto
+        flex-basis: 15%
+    div.gallery div.thumbImg span
+        width: auto
+        display: block
+    div.gallery div.thumbImg span img
+        width: 100%
+        height: auto
+    div.thumbImg a.activeLink,
+    div.thumbImg a.isVideo
+        display: none
+    table.rowResponsive tbody tr
+        border-bottom: none
+    body.model main > article:nth-of-type(1),
+    body.model main > article:nth-of-type(2)
+        page-break-after: always
+    body.model main > hr
+        display none
+    body.model main > article
+        padding-top: marL
+
+    
+
+
+
+
+// smallTeasers
+a.smallTeaser
+    display:inline-flex
+    align-items: center
+    background-color: white
+    padding: padXXS*.75
+    padding-right: padXS
+    margin-bottom: marXXS
+    border-radius: 6px
+    min-width: 23vw
+    max-width: 23vw
+    transition: 0.15s
+    @media phoneRule
+        min-width:auto
+        max-width:100%
+
+a.smallTeaser span
+    display: block
+    flex-grow: 0
+    flex-shrink: 0
+    background-color: brand1
+    width: 70px
+    height: 70px
+    border-radius: 4px
+    margin-right: 1em
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    overflow: hidden
+a.smallTeaser span i
+    color: white
+    font-size: 40px
+    width: 70px
+    height: 70px
+    border-radius: 0
+a.smallTeaser p
+    margin: 0
+    font-size:80%
+    line-height: 130%
+a.smallTeaser p strong
+    display: block
+    font-size:120%
+    line-height: 120%
+    margin-bottom: marXXS*0.1
+a.smallTeaser p u
+    font-weight: 600
+@media (pointer: fine)    
+    a.smallTeaser:hover
+        box-shadow: 0 0 10px 5px blackAlp10
+        transition: 0.25s
+@media (pointer: coarse)
+    a.smallTeaser
+        box-shadow: 0 0 10px 5px blackAlp10
+
+
+div.smallTeasers > a
+        min-width:90vw
+        max-width:90vw
+        margin:marXS 0
+
+@media phoneRule
+   div.smallTeasers
+        padding: 5vw
+@media ttrigger
+
+    div.smallTeasers
+        display:flex
+        flex-wrap: wrap
+        justify-content: space-around
+        padding: 0 padXS padXXS
+        column-gap: marXS
+        row-gap: marXXS
+    div.smallTeasers > a
+        min-width:43vw
+        max-width:43vw
+        margin:marXXS 0
+@media dtrigger
+    div.smallTeasers
+        margin-left:marM
+        margin-right:marM
+    div.smallTeasers > a
+        min-width:auto
+        max-width:auto
+        flex: 1 1 20%
+        margin:0
+
+   
+
+
+
+
+// map
+/* map */
+.map 
+    border:1px solid #000000
+
+.map.large
+    width:100%
+    height:60vh
+
+.map.med
+    width:100%
+    height:42.5vh
+    @media phoneRule
+        margin: marL 0
+
+
+@media mtrigger
+    .map.med
+        height: 60vh
+    
+    .map.large
+        width:100%
+        height:60vh
+    
+
+
+
+
+// home feature cat items
+body.home div.catList h6
+    font-weight:700
+    font-size:1.3em
+span.ctaButton 
+    margin-top:marXS
+    margin-bottom: 0
+    margin-top:auto
+    @media phoneRule
+        padding:padM padL
+        font-size: 1em
+        font-weight: 300
+body.home div.catList
+    margin: marM auto marM auto
+    padding: padXXS 0 padXXS 0
+@media dtrigger
+    body.home div.catList
+        margin-left: marL
+        margin-right: marL
+    body.home div.catList div.catGroup
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: marStd
+        margin-bottom: marXS
+    body.home div.catList a.catItem
+        display:flex
+        flex-direction:column
+        justify-content:flex-start
+        flex-basis: 30%
+        margin: 0
+        padding:padXS
+        padding-bottom:padStd
+        border-radius: 10px
+        box-shadow: 0 0 10px 5px blackAlp10
+    body.home div.catList a.catItem div.imageThumb
+        height: 13vw
+    body.home div.catList a.catItem div.keyStats
+        margin-bottom: marXS
+        margin-top: 0
+

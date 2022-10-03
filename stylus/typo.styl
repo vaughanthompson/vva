@@ -1,0 +1,253 @@
+// typo defaults
+a:link, a:visited
+    color: brand1
+    text-decoration: none
+p a:link,
+p a:visited,
+li a:link,
+li a:visited
+h2 a:link,
+h2 a:visited,
+h3 a:link,
+h3 a:visited
+    text-decoration: underline
+@media (pointer: fine)
+    h2 a:hover,
+    h3 a:hover
+        text-decoration: none !important
+.activeLink
+    font-weight: 600 !important
+
+// custom typo
+ul
+    margin-bottom: 2em
+    padding-left: 1em
+
+ul li
+    line-height: 1.4em
+    margin-bottom: 0.4em
+    list-style-type: disc
+
+// picturefill-bg and image teaser
+*.picturefill-background,
+*.picturefill-background a
+    color: white 
+@media ttrigger
+    *.picturefill-background.lighten1,
+    *.picturefill-background.lighten1 a,
+    *.picturefill-background.lighten2,
+    *.picturefill-background.lighten2 a
+    *.picturefill-background .darktext,
+    *.picturefill-background .darktext a
+        color: blackAlp50
+    *.picturefill-background .lighttext,
+    *.picturefill-background .lighttext a
+        color: white      
+*.picturefill-background a
+    text-decoration: underline
+
+
+
+.activeLink, 
+nav a:hover,
+p a:hover,
+li a:hover,
+*.picturefill-background a:hover
+    color: brand2 !important
+    transition: 500ms
+    text-decoration: none !important
+@media (pointer: fine)
+    nav a:hover
+        color: red !important
+.activeLink,
+.activeLink:hover
+    color: brand2 !important
+
+// nav typo
+nav a
+    font-weight:500 !important
+    font-size:0.75em !important
+    padding: 0 padXS*0.9 0 0
+
+/* dark slider nav */    
+body.darkSlider > header.fixed .siteLogo span,
+body.darkSlider > header.fixed nav a.activeLink
+    color: brand2 !important
+body.darkSlider > header.fixed nav a,
+body.darkSlider > header.fixed nav a.ctaButton
+    color: brand4 !important
+    border-color: brand4 !important
+body.darkSlider > header.fixed nav a:hover
+    color: brand2 !important
+    border-color: brand2 !important
+/* light slider nav */    
+body.lightSlider > header.fixed .siteLogo span,
+body.lightSlider > header.fixed nav a.activeLink
+    color: brand2 !important
+body.lightSlider > header.fixed nav a,
+body.lightSlider > header.fixed nav a.ctaButton
+    color: brand1 !important
+    border-color: brand1 !important
+body.lightSlider > header.fixed nav a:hover
+    color: brand2 !important
+    border-color: brand1 !important
+    
+/* dark theme navs */ 
+body.darkTheme > header.sticky .siteLogo span,
+body.darkTheme > header.sticky nav a.activeLink
+    color: brand5 !important
+body.darkTheme > header.sticky nav a,
+body.darkTheme > header.sticky nav a.ctaButton
+    color: brand0 !important
+    border-color: brand0 !important    
+body.darkTheme > header.sticky nav a:hover
+    color: brand5 !important
+    border-color: brand5 !important
+
+
+/* light theme navs */
+body.lightTheme > header.sticky .siteLogo span,
+body.lightTheme > header.sticky nav a.activeLink
+    color: brand1 !important
+body.lightTheme > header.sticky nav a,
+body.lightTheme > header.sticky nav a.ctaButton
+    color: brand2 !important
+    border-color: brand2 !important    
+body.lightTheme > header.sticky nav a:hover
+    color: brand1 !important
+    border-color: brand1 !important
+
+
+h1, h2, h3, h4 ,h5, h6
+    margin: 0
+    margin-bottom: marXXS
+
+// defaults   
+h1
+    font-weight: 1000
+    font-size: 2.8em
+    line-height: 105%
+    letter-spacing: -0.05em
+h1 span
+    font-weight: 300
+    letter-spacing: -0.02em    
+h2
+    font-weight: 1000
+    font-size: 2.2em
+    line-height: 105%
+    letter-spacing: -0.045em
+h2 span
+    font-weight: 300
+    letter-spacing: -0.015em    
+h3, body.model h2
+    font-weight: 700
+    font-size: 1.7em
+    line-height: 115%
+    letter-spacing: -0.035em
+h3 span
+    font-weight: 300
+    letter-spacing: -0.01em    
+h4
+    font-weight: 600
+    font-size: 1.7em
+    line-height: 120%
+    letter-spacing: -0.01em
+h4 span
+    font-weight: 400    
+h5
+    font-weight: 700
+    font-size: 1.2em
+    line-height: 125%
+    letter-spacing: -0.02em
+h5 span
+    font-weight: 400
+    letter-spacing: -0.01em      
+h6
+    font-weight: 400
+    font-size:1em
+    line-height: 130%
+    letter-spacing: -0.015em
+p
+    font-weight: 350
+    font-size: 0.95em
+    line-height: 1.4em
+    letter-spacing: -0.025em
+    margin-top: marXXS
+    margin-bottom: marXS
+li
+    font-weight: 350
+    font-size: 0.95em
+    line-height: 1.35em
+    letter-spacing: -0.025em 
+td
+    font-weight: 350
+    font-size: 0.95em
+    line-height: 1.35em
+    letter-spacing: -0.025em    
+strong 
+    font-weight: 700
+    letter-spacing: -0.015em
+
+// modify typo
+.small
+    font-size: 0.7em    
+.price
+    color: brand6
+
+
+// footer
+body > footer p a
+    font-size:1em
+    line-height: 160%    
+body > footer h6
+    font-weight: 700
+    font-size:1em
+    line-height: 120%
+    color: brand2
+
+
+@media mtrigger
+    h1
+        font-size: 2.2em   
+        line-height: 110%
+    *.picturefill-background h1
+        font-size: 2.2em   
+        line-height: 110%    
+    h2
+        font-size: 1.8em
+        line-height: 110%
+    h3
+        font-size: 1.4em
+        line-height: 110%
+    h4
+        font-size: 1.6em
+        line-height: 110%
+    h5
+        font-size: 1.2em
+        line-height: 110%
+    h6
+        font-size: 1.1em
+        line-height: 110%
+
+    p
+        font-size: 0.9em
+    h1, h2, h3, h4, h5, h6, p
+        margin-bottom: 0.5em;
+
+
+
+
+
+
+
+
+@media ttrigger 
+    .secTitle
+        font-size: 7em
+        font-weight: 650
+        letter-spacing: -0.045em
+        text-indent: -0.08em
+        color:brand4
+
+
+

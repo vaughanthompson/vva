@@ -1,0 +1,93 @@
+/*!
+* generated using stylus - don't alter
+*/
+
+// libs and default 3rd party
+@import 'nib'
+// setup
+@require 'defaults.styl'
+// block, nav etc
+@require 'layout.styl'
+// custom elements, icons
+@require 'elements.styl'
+// typography, links
+@require 'typo.styl'
+// brand mods
+@require 'brands.styl'
+
+
+
+
+
+
+/* effects */
+.multiply
+    background-blend-mode: multiply
+    /*background-color: blackAlp25*/
+.bgoverlay0
+    background-color: blackAlp10 !important
+.bgoverlay1
+    background-color: blackAlp25 !important
+.bgoverlay2
+    background-color: blackAlp50 !important
+.bgoverlay3
+    background-color: blackAlp75 !important
+
+.multiplyBlack
+    background-color: brand1
+.multiplyRed
+    background-color: brand2
+.multiplyGreen
+    background-color: brand3
+
+.lighten1
+    background-color: rgba(255,255,255,0.70)
+    background-blend-mode: overlay
+    filter:grayscale(80%)
+.lighten2
+    background-color: rgba(255,255,255,0.50)
+    background-blend-mode: overlay
+    filter:grayscale(80%)
+.greyscale
+    background-color: rgba(0,0,0,0.30)
+    filter:grayscale(100%)
+    transition: 1s
+.greyscaleLt
+    filter:grayscale(0%)
+    transition: 2.5s
+
+
+.burnColor
+    background-blend-mode: color-burn
+    opacity: 1.0
+.gradient0
+    background-blend-mode: multiply
+    background: linear-gradient(to right, blackAlp75,blackAlp5, blackAlp5) 
+.gradient1
+    background-blend-mode: multiply
+    background: linear-gradient(to right, brand2, blackAlp50)
+.gradient2
+    background-blend-mode: multiply
+    background: linear-gradient(to right, black ,blackAlp50, blackAlp10)    
+.gradient3
+    background-blend-mode: multiply
+    background: linear-gradient(to right, whiteAlp75, whiteAlp75, whiteAlp50, whiteAlp10)
+.gradientShdw
+    background-image: linear-gradient(to bottom, blackAlp5, transparent 10vh)
+@media mtrigger
+    .gradient3
+        background-blend-mode: multiply
+        background: linear-gradient(to bottom right, white, whiteAlp90, whiteAlp90, whiteAlp10)
+.blur
+    filter:blur(10px)
+
+
+
+// last in the cascade - highest prio
+.m
+    @media screen and (min-width: mBreakPoint)
+        display: $hideItAll
+.d
+    @media screen and (max-width: mBreakPoint)
+        display: $hideItAll
+
