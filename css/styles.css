@@ -3995,25 +3995,32 @@ body.yeomans-plow main hr {
   -webkit-filter: none;
           filter: none;
 }
+/* CHANGE BELOW TO THIS % FORMAT
+	.spookyTown {
+			background-image: linear-gradient(to right, 
+			var(--base-dk_100), 
+			var(--base-dk_100) 5%, 
+			var(--base-dk_0) 35%, 
+			var(--base-dk_0) 65%, 
+			var(--base-dk_100) 95%, 
+			var(--base-dk_100)
+			);
+		}	
+*/
 .gradient0 {
-  background-blend-mode: multiply;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.75)), color-stop(rgba(0,0,0,0.05)), to(rgba(0,0,0,0.05)));
-  background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.05), rgba(0,0,0,0.05));
+  background-blend-mode: normal;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0.75)), color-stop(rgba(0,0,0,0.05)), to(rgba(0,0,0,0.05)));
+  background: linear-gradient(to right bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.05), rgba(0,0,0,0.05));
 }
 .gradient1 {
-  background-blend-mode: multiply;
-  background: -webkit-gradient(linear, left top, right top, from(#000), to(rgba(0,0,0,0.5)));
-  background: linear-gradient(to right, #000, rgba(0,0,0,0.5));
+  background-blend-mode: normal;
+  background: -webkit-gradient(linear, left top, right bottom, from(#000), to(rgba(0,0,0,0.5)));
+  background: linear-gradient(to right bottom, #000, rgba(0,0,0,0.5));
 }
 .gradient2 {
-  background-blend-mode: multiply;
-  background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.1)));
-  background: linear-gradient(to right, #000, rgba(0,0,0,0.5), rgba(0,0,0,0.1));
-}
-.gradient3 {
-  background-blend-mode: multiply;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0.75)), color-stop(rgba(255,255,255,0.75)), color-stop(rgba(255,255,255,0.5)), to(rgba(255,255,255,0.1)));
-  background: linear-gradient(to right, rgba(255,255,255,0.75), rgba(255,255,255,0.75), rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+  background-blend-mode: normal;
+  background: -webkit-gradient(linear, left top, right bottom, from(#000), color-stop(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.1)));
+  background: linear-gradient(to right bottom, #000, rgba(0,0,0,0.5), rgba(0,0,0,0.1));
 }
 .gradientShdw {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.05)), color-stop(10vh, transparent));
@@ -4021,9 +4028,9 @@ body.yeomans-plow main hr {
 }
 @media screen and (max-width: 1100px) {
   .gradient3 {
-    background-blend-mode: multiply;
+    background-blend-mode: normal;
     background: -webkit-gradient(linear, left top, right bottom, from(#fff), color-stop(rgba(255,255,255,0.9)), color-stop(rgba(255,255,255,0.9)), to(rgba(255,255,255,0.1)));
-    background: linear-gradient(to bottom right, #fff, rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgba(255,255,255,0.1));
+    background: linear-gradient(to right bottom, #fff, rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgba(255,255,255,0.1));
   }
 }
 .blur {

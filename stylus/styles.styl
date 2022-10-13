@@ -62,24 +62,35 @@
 .burnColor
     background-blend-mode: color-burn
     opacity: 1.0
+
+/* CHANGE BELOW TO THIS % FORMAT
+	.spookyTown {
+			background-image: linear-gradient(to right, 
+			var(--base-dk_100), 
+			var(--base-dk_100) 5%, 
+			var(--base-dk_0) 35%, 
+			var(--base-dk_0) 65%, 
+			var(--base-dk_100) 95%, 
+			var(--base-dk_100)
+			);
+		}	
+*/
+
 .gradient0
-    background-blend-mode: multiply
-    background: linear-gradient(to right, blackAlp75,blackAlp5, blackAlp5) 
+    background-blend-mode: normal
+    background: linear-gradient(to right bottom, blackAlp75,blackAlp5, blackAlp5) 
 .gradient1
-    background-blend-mode: multiply
-    background: linear-gradient(to right, brand2, blackAlp50)
+    background-blend-mode: normal
+    background: linear-gradient(to right bottom, brand2, blackAlp50)
 .gradient2
-    background-blend-mode: multiply
-    background: linear-gradient(to right, black ,blackAlp50, blackAlp10)    
-.gradient3
-    background-blend-mode: multiply
-    background: linear-gradient(to right, whiteAlp75, whiteAlp75, whiteAlp50, whiteAlp10)
+    background-blend-mode: normal
+    background: linear-gradient(to right bottom, black ,blackAlp50, blackAlp10)    
 .gradientShdw
     background-image: linear-gradient(to bottom, blackAlp5, transparent 10vh)
 @media mtrigger
     .gradient3
-        background-blend-mode: multiply
-        background: linear-gradient(to bottom right, white, whiteAlp90, whiteAlp90, whiteAlp10)
+        background-blend-mode: normal
+        background: linear-gradient(to right bottom, white, whiteAlp90, whiteAlp90, whiteAlp10)
 .blur
     filter:blur(10px)
 
