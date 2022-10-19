@@ -14,8 +14,6 @@
 @require 'elements.styl'
 // typography, links
 @require 'typo.styl'
-// brand mods
-@require 'brands.styl'
 
 
 
@@ -76,15 +74,24 @@
 		}	
 */
 
-.gradient0
+.gradient25
     background-blend-mode: normal
-    background: linear-gradient(to right bottom, blackAlp75,blackAlp5, blackAlp5) 
-.gradient1
+    background: linear-gradient(135deg, 
+    brand1,
+    brand0 25%,
+    brand2 75%) 
+.gradient50
     background-blend-mode: normal
-    background: linear-gradient(to right bottom, brand2, blackAlp50)
-.gradient2
+    background: linear-gradient(135deg, 
+    brand1,
+    brand0 50%,
+    brand2)
+.gradient75
     background-blend-mode: normal
-    background: linear-gradient(to right bottom, black ,blackAlp50, blackAlp10)    
+    background: linear-gradient(135deg, 
+    brand1 25%,
+    brand0 55%,
+    brand2 95%)    
 .gradientShdw
     background-image: linear-gradient(to bottom, blackAlp5, transparent 10vh)
 @media mtrigger

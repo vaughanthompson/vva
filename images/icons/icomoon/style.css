@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?vkfyhw');
+  src:  url('fonts/icomoon.eot?vkfyhw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vkfyhw') format('truetype'),
+    url('fonts/icomoon.woff?vkfyhw') format('woff'),
+    url('fonts/icomoon.svg?vkfyhw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-compressor:before {
+  content: "\e926";
+}
+.icon-oils:before {
+  content: "\e927";
+}
+.icon-backhoe-loader:before {
+  content: "\e90b";
+}
+.icon-baler:before {
+  content: "\e90c";
+}
+.icon-balers:before {
+  content: "\e90d";
+}
+.icon-compact-track-loader:before {
+  content: "\e90e";
+}
+.icon-compact-tractor:before {
+  content: "\e90f";
+}
+.icon-compaction:before {
+  content: "\e910";
+}
+.icon-crawler-dozer:before {
+  content: "\e911";
+}
+.icon-cultivators:before {
+  content: "\e912";
+}
+.icon-excavator:before {
+  content: "\e913";
+}
+.icon-fastrac-tractor:before {
+  content: "\e914";
+}
+.icon-fuse-technology:before {
+  content: "\e915";
+}
+.icon-generator:before {
+  content: "\e916";
+}
+.icon-hay-forage:before {
+  content: "\e917";
+}
+.icon-industrial-forklift:before {
+  content: "\e918";
+}
+.icon-mini-excavator:before {
+  content: "\e919";
+}
+.icon-mulchers:before {
+  content: "\e91a";
+}
+.icon-parts:before {
+  content: "\e91b";
+}
+.icon-plow:before {
+  content: "\e91c";
+}
+.icon-plows:before {
+  content: "\e91d";
+}
+.icon-rough-terrain-forklift:before {
+  content: "\e91e";
+}
+.icon-servicing:before {
+  content: "\e91f";
+}
+.icon-skid-steer:before {
+  content: "\e920";
+}
+.icon-spreaders:before {
+  content: "\e921";
+}
+.icon-telehandler:before {
+  content: "\e922";
+}
+.icon-tractor:before {
+  content: "\e923";
+}
+.icon-wheel-loader:before {
+  content: "\e924";
+}
+.icon-wheeled-excavator:before {
+  content: "\e925";
+}
+.icon-home:before {
+  content: "\e929";
+}
+.icon-droplet:before {
+  content: "\e928";
+}
+.icon-price-tag:before {
+  content: "\e935";
+}
+.icon-price-tags:before {
+  content: "\e936";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-pushpin:before {
+  content: "\e946";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.icon-compass:before {
+  content: "\e949";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-minus:before {
+  content: "\ea0b";
+}
+.icon-cross1:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-checkmark2:before {
+  content: "\ea11";
+}
+.icon-mail:before {
+  content: "\ea83";
+}
+.icon-mail2:before {
+  content: "\ea84";
+}
+.icon-mail3:before {
+  content: "\ea85";
+}
+.icon-mail4:before {
+  content: "\ea86";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-clear:before {
+  content: "\e90a";
+}
+.icon-chevron-down:before {
+  content: "\e900";
+}
+.icon-chevron-left:before {
+  content: "\e901";
+}
+.icon-chevron-right:before {
+  content: "\e902";
+}
+.icon-chevron-up:before {
+  content: "\e903";
+}
+.icon-triangle-down:before {
+  content: "\e904";
+}
+.icon-triangle-left:before {
+  content: "\e905";
+}
+.icon-triangle-right:before {
+  content: "\e906";
+}
+.icon-triangle-up:before {
+  content: "\e907";
+}
+.icon-cross:before {
+  content: "\e908";
+}
+.icon-shopping-cart:before {
+  content: "\e909";
+}

@@ -76,25 +76,25 @@ body > footer .icon
 a.majorCTA,
 a.ctaButton
     color: white
-    background-color: brand3
-    padding: padXXS padXS padXXS padXS
+    background-color: brand1
+    padding: padXXS padXS padXXS*0.75 padXS
     margin-bottom: marXXS*0.6
     display: inline-block
     white-space: nowrap
     border-radius: 2em
-    font-size: 0.8em
-    font-weight: 500
+    font-size: 1.2em
+    font-weight: 700
 div#masthead a.majorCTA
     color: white !important
 a.ctaButton,
 span.ctaButton
-    border-radius: 10px
-    background: brand4
+    border-radius: 50px
+    background: brand1
     color: white !important
-    font-size: 0.95em
-    font-weight:500
+    font-size: 1.2em
+    font-weight:700
     border: 1px solid brand4
-    padding:padXXS padStd padXXS padStd
+    padding:padXXS padStd padXXS*0.75 padStd
     //margin-right:marXXS
     display: inline-flex
     justify-content: space-between
@@ -104,17 +104,17 @@ span.ctaButton
         padding: padM padL
         font-weight: 300
 a.ctaButton.ctaShop
-    background: good    
-    border-color: good    
+    background: brand1    
+    border-color: brand1    
     color: white !important
 div.containSlider div.content div > a
-    border-radius: 10px
+    border-radius: 50px
     color: brand1 !important
     background-color: brand5
-    font-size: 0.95em
-    font-weight:500
+    font-size: 1.2em
+    font-weight:700
     border: 1px solid brand5
-    padding:padXXS padStd padXXS padStd
+    padding:padXXS padStd padXXS*0.75 padStd
     text-decoration: none
     display: inline-flex
     justify-content: space-between
@@ -132,7 +132,7 @@ nav a.ctaButton
     margin-left: 0
     margin-right: marXS
     margin-bottom: 0
-    padding:padXXS*.75 padXS
+    padding:padXXS padXS padXXS*0.75 padXS
     white-space: nowrap
 
 a.ctaButton i
@@ -179,12 +179,9 @@ div.cta > div > h6
 
 
 .imgText
-    display: flex
+    display: block
     align-items: center
     flex-wrap: wrap
-    padding: 1vw
-    padding-right: 1.5vw
-    padding-left:0
     border-radius: 8px
 body > footer .imgText
     padding:0;
@@ -195,13 +192,13 @@ header.sticky .imgText
     font-size: 16px
     line-height: 18px
 .txtC .txtC_Pr
-    font-size: 0.9em
-    font-weight: 700
-    line-height: 1.2em
-    margin: .1em 0
+    font-size: 1.7em
+    font-weight: 900
+    line-height: 1em
+    margin: .5em 0 0
     margin-right: 5px
     @media phoneRule
-        font-size: .85em
+        font-size: 1em
 .txtC .txtC_Sc
     font-size: .65em
     font-weight: 500
@@ -238,12 +235,12 @@ header.sticky .imgText span.txtC
     align-items: baseline
 
 .imgText span.txtC > span
-    white-space: nowrap   
+    white-space: nowrap
+    padding-left:10px   
 .imgText picture
     display: flex
     width: 100%  
     height: 100% 
-    margin-right: 10px
 .imgText picture img
     height: auto
     width: 100%
@@ -263,7 +260,7 @@ header.sticky .imgText span.txtC
 picture.logoAsset
     max-width:65px
 .long picture.logoAsset
-    max-width:190px
+    max-width:300px
 .tall picture.logoAsset
     max-width:60px   
 
@@ -774,7 +771,7 @@ div.brandCarousel div.slickItem > a > div:first-child
     flex-basis:40%
     margin-left:10px
 div.brandCarousel div.slickItem > a img
-    max-width:100% 
+    width:auto 
     max-height:35px 
 div.brandCarousel .slick-prev:before
 div.brandCarousel .slick-next:before
@@ -991,7 +988,6 @@ i.toggleIcon.upDown:before
     div.catGroup a.catItem,
     div.catGroup div.catItem
         display: block
-        margin: marXL 0 marXL*1.5 0 
     .catItem h6
         font-weight: 700
     div.imageThumb
@@ -1050,15 +1046,16 @@ div.landing div.imageThumb
         font-size: 0.9em
         margin-bottom: marXXS
     div.catList div.catGroup
-        display: flex
-        justify-content: flex-start
-        flex-wrap: wrap
-        margin-top: marXXS
-        margin-bottom: 0
+        display: grid
+        grid-column-gap: 5vw;
+        grid-row-gap: 2.5vw;
+        //grid-template-columns: repeat(3, \[col\] 20vw )
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr) )
+        grid-auto-flow: row dense
+        grid-auto-rows: min-content 
+        margin-bottom: marM
     div.catList .catItem
-        flex-basis: 19%
-        margin-right: marM*1.8
-        margin-bottom: marL   
+        flex-basis: 20%
     div.catList.landing .catItem
         flex-basis: 14%
         margin-right: marM*1.1
@@ -1446,24 +1443,28 @@ span.ctaButton
         padding:padM padL
         font-size: 1em
         font-weight: 300
-body.home div.catList
+body.home div.catList,
+body.home div.brandCarousel
     margin: marM auto marM auto
     padding: padXXS 0 padXXS 0
 @media dtrigger
-    body.home div.catList
+    body.home div.catList,
+    body.home div.brandCarousel
         margin-left: marL
         margin-right: marL
+        {test}
     body.home div.catList div.catGroup
         display: flex
         justify-content: space-between
-        flex-wrap: wrap
+        flex-wrap: nowrap
         margin-top: marStd
         margin-bottom: marXS
+        column-gap: 2vw
     body.home div.catList a.catItem
         display:flex
         flex-direction:column
         justify-content:flex-start
-        flex-basis: 30%
+        flex: 1 1 auto
         margin: 0
         padding:padXS
         padding-bottom:padStd
@@ -1474,4 +1475,158 @@ body.home div.catList
     body.home div.catList a.catItem div.keyStats
         margin-bottom: marXS
         margin-top: 0
+
+
+
+
+
+
+div.search
+    display: flex
+    align-items: center
+    flex: 1 1 auto
+
+div.search .button
+    margin-left: marXXS
+
+div.search div.floating
+    flex-basis: 100%
+div.siteName
+    border-left: 1px solid brand2
+    padding: padXXS padXS 
+    //align-self: stretch
+div.siteName > *
+    margin: 0
+@media ttrigger
+    div.search div.floating
+        flex-basis: 60%
+@media dtrigger
+    div.search div.floating
+        flex-basis: 45%
+
+
+
+
+
+/* tabbed vehicle search */
+div.autoSearch
+    margin-top: marXXS
+    margin-bottom: 3em
+div.autoSearch a 
+    color: white
+div.formCols input
+    margin-bottom: 0
+div.formCols input:disabled,
+div.formCols select:disabled
+    background-color: white
+    color: black
+    opacity:0.6
+div.autoSearch div.tabAutoSBtns a
+    color:#ffffff
+    background-color:rgba(159,159,159,1.0)
+    padding:1.2em 2em 0.8em 2em
+    font-weight: 400
+    font-size: 1.1em
+    margin: 0
+    display: inline-block
+div.autoSearch div.tabAutoSBtns a:first-child 
+    border-radius: 6px 0 0 0
+div.autoSearch div.tabAutoSBtns a:last-child 
+    border-radius: 0 6px 0 0
+div.autoSearch div.tabAutoSBtns a.activeTab
+    background-color: brand2
+div.autoSearch div.tabContainer
+    margin-bottom:0
+    background-color: brand2
+div.autoSearch div.tabContainer hr
+    border-bottom:1px solid rgba(159,159,159,1.0)
+div.autoSearch div.tabAutoSContent
+    margin-bottom: 0
+    color:#ffffff
+@media screen and (max-width: 750px) {
+    div.formCols > div > * {
+        margin:1em auto;
+        text-align: center;
+        display: block;
+        width:90%;
+        padding-left: 0;
+        padding-right:0;
+    }
+}
+
+@media ttrigger
+    div.formCols
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        flex:1 1 auto
+        flex-wrap: wrap
+    div.formCols > div 
+        margin: 0.25em 0
+        flex-basis: 50%
+    div.autoSearch div.tabContainer > div:first-child article section
+        width:70%
+    div.autoSearch div.tabAutoSBtns
+        position: relative
+        margin-bottom: -1px
+
+@media phoneRule
+    div.autoSearch div.tabContainer {
+        border-radius: 10px;
+        padding: 5%;
+        padding-top: 2em;
+    }
+    div.autoSearch div.tabAutoSContent {
+        //background-color: rgba(14,14,14,1.0);
+    }  
+    div.autoSearch div.tabAutoSContent > article,
+    div.autoSearch div.tabAutoSContent > div {
+        display: block;
+    }
+    div.autoSearch div.tabAutoSContent article {
+        padding-bottom:0em;
+    }
+    div.autoSearch div.tabAutoSContent:first-child article {
+        margin-bottom:1em;
+    }
+
+@media ttrigger
+    div.autoSearch div.tabContainer
+        border-radius: 0 6px 6px 6px
+    div.autoSearch div.tabAutoSContent
+        display: none  
+    div.autoSearch div.tabAutoSContent:first-child
+        display: block
+    div.autoSearch div.tabAutoSContent article
+        padding:padM*0.9 padM padM*1.2 padM
+    div.autoSearch div.tabContainer 
+        background-image: url(/images/misc/oilsearchBG.jpg)
+        background-size: auto 100%
+        background-position: right top
+        background-repeat: no-repeat
+    div.results div.formCols > div:first-child > * 
+        padding-right:2em
+    
+
+
+
+/* autosearch tweaks */
+div.autoSearch div.tabAutoSBtns a 
+    color:#ffffff
+    background-color:brand0
+    padding:1.0em 2em 0.9em 2em
+    font-weight: 700
+    font-size: 1.2em
+    margin: 0
+div.autoSearch .ctaButton,
+div.autoSearch a.ctaButton 
+    margin-top: 0
+    margin-bottom:0
+
+/* tab content */
+
+@media phoneRule
+    .tabAutoSBtns.static
+        display: none !important
+
 

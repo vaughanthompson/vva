@@ -16,7 +16,7 @@ h3 a:visited
     h3 a:hover
         text-decoration: none !important
 .activeLink
-    font-weight: 600 !important
+    font-weight: 800 !important
 
 // custom typo
 ul
@@ -40,7 +40,7 @@ ul li
     *.picturefill-background .darktext,
     *.picturefill-background .darktext a
         color: blackAlp50
-    *.picturefill-background .lighttext,
+    *.picturefill-background .lighttext *,
     *.picturefill-background .lighttext a
         color: white      
 *.picturefill-background a
@@ -58,7 +58,7 @@ li a:hover,
     text-decoration: none !important
 @media (pointer: fine)
     nav a:hover
-        color: red !important
+        //color: red !important
 .activeLink,
 .activeLink:hover
     color: brand2 !important
@@ -66,8 +66,9 @@ li a:hover,
 // nav typo
 nav a
     font-weight:500 !important
-    font-size:0.75em !important
+    font-size:1em !important
     padding: 0 padXS*0.9 0 0
+    color: brand1
 
 /* dark slider nav */    
 body.darkSlider > header.fixed .siteLogo span,
@@ -120,14 +121,15 @@ body.lightTheme > header.sticky nav a:hover
 
 h1, h2, h3, h4 ,h5, h6
     margin: 0
-    margin-bottom: marXXS
+    margin-bottom: 5px
+    color: brand0
 
 // defaults   
 h1
     font-weight: 1000
-    font-size: 2.8em
+    font-size: 3em
     line-height: 105%
-    letter-spacing: -0.05em
+    letter-spacing: -0.03em
 h1 span
     font-weight: 300
     letter-spacing: -0.02em    
@@ -168,17 +170,17 @@ h6
     line-height: 130%
     letter-spacing: -0.015em
 p
-    font-weight: 350
-    font-size: 0.95em
+    font-weight: 400
+    font-size: 1em
     line-height: 1.4em
-    letter-spacing: -0.025em
+    letter-spacing: -0.02em
     margin-top: marXXS
     margin-bottom: marXS
 li
-    font-weight: 350
-    font-size: 0.95em
-    line-height: 1.35em
-    letter-spacing: -0.025em 
+    font-weight: 400
+    font-size: 1em
+    line-height: 1.4em
+    letter-spacing: -0.02em 
 td
     font-weight: 350
     font-size: 0.95em
@@ -230,9 +232,8 @@ body > footer h6
         line-height: 110%
 
     p
-        font-size: 0.9em
-    h1, h2, h3, h4, h5, h6, p
-        margin-bottom: 0.5em;
+        font-size: 1em
+
 
 
 

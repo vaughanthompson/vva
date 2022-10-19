@@ -155,47 +155,6 @@
         return false;
     });
 
-    $('div.brandCarousel a.jcb').click(function(){
-        $('div.ddownOuter.jcb').fadeTo(250,1);
-        return false;
-    });
-    $('div.brandCarousel a.massey-ferguson').click(function(){
-        $('div.ddownOuter.massey-ferguson').fadeTo(250,1);
-        return false;
-    });
-    $('div.brandCarousel a.fendt').click(function(){
-        $('div.ddownOuter.fendt').fadeTo(250,1);
-        return false;
-    });
-    $('div.brandCarousel a.dressta').click(function(){
-        $('div.ddownOuter.dressta').fadeTo(250,1);
-        return false;
-    });
-    $('div.brandCarousel a.iseki').click(function(){
-        $('div.ddownOuter.iseki').fadeTo(250,1);
-        return false;
-    });
-    $('div.brandCarousel a.claas').click(function(){
-        $('div.ddownOuter.claas').fadeTo(250,1);
-        return false;
-    });
-    $('div.brandCarousel a.amazone').click(function(){
-        $('div.ddownOuter.amazone').fadeTo(250,1);
-        return false;
-    });
-    $('div.brandCarousel a.asv').click(function(){
-        $('div.ddownOuter.asv').fadeTo(250,1);
-        return false;
-    });
-    $('div.brandCarousel a.mahindra').click(function(){
-        $('div.ddownOuter.mahindra').fadeTo(250,1);
-        return false;
-    });
-    $('div.brandCarousel a.yeomans-plow').click(function(){
-        $('div.ddownOuter.yeomans-plow').fadeTo(250,1);
-        return false;
-    });
-
 
 
     // slideToggle content

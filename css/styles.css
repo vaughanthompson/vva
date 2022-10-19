@@ -78,23 +78,24 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'avenir', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #092745;
 }
 body {
   font-size: 16px;
 }
 body.lightTheme {
   background-color: #fff;
-  color: #000;
+  color: #01b9e5;
 }
 body.lightTheme > header.sticky {
   background-color: #fff;
 }
 body.darkTheme {
-  background-color: #1a1a1a;
+  background-color: #092745;
   color: #646464;
 }
 body.darkTheme > header.sticky {
-  background-color: #1a1a1a;
+  background-color: #092745;
 }
 main {
   border-bottom: 1px solid rgba(0,0,0,0.05);
@@ -105,7 +106,7 @@ body > footer {
 }
 hr {
   border: none;
-  border-bottom: 3px solid #1a1a1a;
+  border-bottom: 3px solid #092745;
   margin: 2vw 0;
 }
 @media screen and (max-width: 750px) {
@@ -126,6 +127,9 @@ img {
 .noPad {
   padding: 0 !important;
 }
+.offer {
+  color: #f00;
+}
 @media screen and (min-width: 750px) {
   main,
   div#priNav-v2,
@@ -145,9 +149,6 @@ img {
   body > footer {
     padding-top: 4.5vw;
   }
-  main.home {
-    padding: 2vw;
-  }
   div#priNav,
   div#priNav-v2 {
     height: 15vh;
@@ -164,21 +165,23 @@ img {
     display: -ms-flexbox;
     display: box;
     display: flex;
-    -webkit-box-pack: justify;
-    -o-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-align: center;
     -o-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -o-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-box-lines: multiple;
     -moz-box-lines: multiple;
     -o-box-lines: multiple;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 1vw 1.5vw;
-    width: 100%;
+    -webkit-column-gap: 1vw;
+    -moz-column-gap: 1vw;
+    column-gap: 1vw;
+    padding: 1.5vw 3vw 1vw 3vw;
   }
   body > header.fixed {
     min-height: 11vh;
@@ -192,9 +195,13 @@ img {
     padding: 0;
     display: none;
   }
-  body > header > * {
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+  body > header.user {
+    padding-bottom: 1.5vw;
+    padding-top: 0;
+  }
+  body > header.masthead > div:last-child {
+    margin-left: auto;
+    border: 1px solid #0ff;
   }
   div.content {
     display: -webkit-box;
@@ -940,7 +947,7 @@ div#priNav-v2 > nav a:first-child {
   position: fixed;
   z-index: 7000;
   background-color: #fff;
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid #092745;
   width: 100vw;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -1078,8 +1085,29 @@ div.containMNav h6 {
     margin-bottom: 10vw;
   }
 }
+div.spaceBetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+img.logo_brand-sub {
+  height: 40px;
+  max-width: 130px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 1vw;
+}
 .icon {
-  color: #1a1a1a;
+  color: #092745;
   display: -webkit-box;
   display: -ms-flexbox;
   display: box;
@@ -1099,15 +1127,15 @@ div.containMNav h6 {
   border-radius: 50%;
 }
 .icon.alt {
-  background-color: #000;
+  background-color: #01b9e5;
 }
 .ic-basic {
   font-size: 2.2em;
   line-height: 1.8em;
-  color: #1a1a1a;
+  color: #092745;
 }
 .ic-basic::before {
-  color: #1a1a1a;
+  color: #092745;
 }
 .ic-basic.rev {
   color: #fff;
@@ -1123,7 +1151,7 @@ ul.iconRow li {
   margin: 1vw 2vw 0 0;
   padding: 1vw 2vw 1vw 0;
   display: inline-block;
-  border-right: 1px solid #1a1a1a;
+  border-right: 1px solid #092745;
 }
 ul.iconRow li:last-child {
   border-right: none;
@@ -1190,27 +1218,27 @@ body > footer .icon {
 a.majorCTA,
 a.ctaButton {
   color: #fff;
-  background-color: #646464;
-  padding: 1vw 1.5vw 1vw 1.5vw;
+  background-color: #092745;
+  padding: 1vw 1.5vw 0.75vw 1.5vw;
   margin-bottom: 0.6vw;
   display: inline-block;
   white-space: nowrap;
   border-radius: 2em;
-  font-size: 0.8em;
-  font-weight: 500;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 div#masthead a.majorCTA {
   color: #fff !important;
 }
 a.ctaButton,
 span.ctaButton {
-  border-radius: 10px;
-  background: #b4b4b4;
+  border-radius: 50px;
+  background: #092745;
   color: #fff !important;
-  font-size: 0.95em;
-  font-weight: 500;
+  font-size: 1.2em;
+  font-weight: 700;
   border: 1px solid #b4b4b4;
-  padding: 1vw 2vw 1vw 2vw;
+  padding: 1vw 2vw 0.75vw 2vw;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-box;
@@ -1231,18 +1259,18 @@ span.ctaButton {
   }
 }
 a.ctaButton.ctaShop {
-  background: #00dc6e;
-  border-color: #00dc6e;
+  background: #092745;
+  border-color: #092745;
   color: #fff !important;
 }
 div.containSlider div.content div > a {
-  border-radius: 10px;
-  color: #1a1a1a !important;
+  border-radius: 50px;
+  color: #092745 !important;
   background-color: #fff;
-  font-size: 0.95em;
-  font-weight: 500;
+  font-size: 1.2em;
+  font-weight: 700;
   border: 1px solid #fff;
-  padding: 1vw 2vw 1vw 2vw;
+  padding: 1vw 2vw 0.75vw 2vw;
   text-decoration: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1265,12 +1293,12 @@ div.containSlider div.content div > a {
 }
 nav a.ctaButton {
   background: none;
-  border-color: #1a1a1a;
-  color: #1a1a1a !important;
+  border-color: #092745;
+  color: #092745 !important;
   margin-left: 0;
   margin-right: 1.5vw;
   margin-bottom: 0;
-  padding: 0.75vw 1.5vw;
+  padding: 1vw 1.5vw 0.75vw 1.5vw;
   white-space: nowrap;
 }
 a.ctaButton i {
@@ -1287,9 +1315,9 @@ a.ctaButton:hover > i:before,
 span.ctaButton:hover,
 span.ctaButton:hover > i:before {
   background: none !important;
-  color: #000 !important;
-  border-color: #000 !important;
-  border-bottom-color: #000 !important;
+  color: #01b9e5 !important;
+  border-color: #01b9e5 !important;
+  border-bottom-color: #01b9e5 !important;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -1330,10 +1358,7 @@ div.cta > div > h6 {
   }
 }
 .imgText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
   -o-box-align: center;
   -ms-flex-align: center;
@@ -1343,9 +1368,6 @@ div.cta > div > h6 {
   -o-box-lines: multiple;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 1vw;
-  padding-right: 1.5vw;
-  padding-left: 0;
   border-radius: 8px;
 }
 body > footer .imgText {
@@ -1366,15 +1388,15 @@ header.sticky .imgText {
   line-height: 18px;
 }
 .txtC .txtC_Pr {
-  font-size: 0.9em;
-  font-weight: 700;
-  line-height: 1.2em;
-  margin: 0.1em 0;
+  font-size: 1.7em;
+  font-weight: 900;
+  line-height: 1em;
+  margin: 0.5em 0 0;
   margin-right: 5px;
 }
 @media screen and (max-width: 750px) {
   .txtC .txtC_Pr {
-    font-size: 0.85em;
+    font-size: 1em;
   }
 }
 .txtC .txtC_Sc {
@@ -1442,6 +1464,7 @@ header.sticky .imgText span.txtC {
 }
 .imgText span.txtC > span {
   white-space: nowrap;
+  padding-left: 10px;
 }
 .imgText picture {
   display: -webkit-box;
@@ -1450,7 +1473,6 @@ header.sticky .imgText span.txtC {
   display: flex;
   width: 100%;
   height: 100%;
-  margin-right: 10px;
 }
 .imgText picture img {
   height: auto;
@@ -1480,7 +1502,7 @@ picture.logoAsset {
   max-width: 65px;
 }
 .long picture.logoAsset {
-  max-width: 190px;
+  max-width: 300px;
 }
 .tall picture.logoAsset {
   max-width: 60px;
@@ -1621,10 +1643,10 @@ i.block {
   transform: rotate(180deg);
 }
 .brand1 {
-  color: #1a1a1a;
+  color: #092745;
 }
 .brand2 {
-  color: #000;
+  color: #01b9e5;
 }
 .pbVideo {
   position: relative;
@@ -1683,7 +1705,7 @@ img.med {
 }
 p.figureCap {
   width: auto;
-  border-left: 2px solid #1a1a1a;
+  border-left: 2px solid #092745;
   padding: 1.5vw 5vw 3vw 3vw;
   margin-left: 10vw;
   position: relative;
@@ -1736,7 +1758,7 @@ p.quote::before {
   }
 }
 div.slider {
-  background-color: #1a1a1a;
+  background-color: #092745;
 }
 .inpgNv {
   text-align: right;
@@ -2017,7 +2039,7 @@ body > footer ul > li {
   border-top: 1px solid #fff;
 }
 .enquirySubject {
-  background-color: #000;
+  background-color: #01b9e5;
   padding: 1.5vw 5vw 1.5vw 2vw;
   color: #fff;
   margin-bottom: 2vw;
@@ -2068,7 +2090,7 @@ body > footer ul > li {
   display: none;
 }
 div.thirdparty-logo {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #092745;
   background-color: rgba(0,0,0,0.05);
   padding: 1vw !important;
 }
@@ -2107,10 +2129,10 @@ div.slideTextOverlay {
   padding: 0;
 }
 body.lightSlider div.slideTextOverlay {
-  color: #000;
+  color: #01b9e5;
 }
 body.darkSlider div.slideTextOverlay {
-  color: #1a1a1a;
+  color: #092745;
 }
 div.brandCarousel {
   padding: 0 3vw 1.5vw 3vw;
@@ -2135,7 +2157,7 @@ div.brandCarousel div.slickItem > a {
   -ms-flex-align: center;
   align-items: center;
   padding-bottom: 10px;
-  border-bottom: 3px solid #1a1a1a;
+  border-bottom: 3px solid #092745;
   outline: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -2157,7 +2179,7 @@ div.brandCarousel div.slickItem > a > div:first-child {
   margin-left: 10px;
 }
 div.brandCarousel div.slickItem > a img {
-  max-width: 100%;
+  width: auto;
   max-height: 35px;
 }
 div.brandCarousel .slick-prev:before,
@@ -2243,7 +2265,7 @@ div.ddownInner section:first-child {
       flex-basis: 25%;
   margin-right: 2vw;
   padding-right: 2vw;
-  border-right: 4px solid #1a1a1a;
+  border-right: 4px solid #092745;
 }
 div.ddownInner section.desc {
   display: -webkit-box;
@@ -2329,27 +2351,27 @@ div.ddownOuter {
   }
 }
 a.ddownClose i {
-  color: #1a1a1a;
+  color: #092745;
 }
 div.ddownInner section:first-child {
-  border-right-color: #1a1a1a;
+  border-right-color: #092745;
 }
 div.ddownInner nav i {
-  background-color: #1a1a1a;
+  background-color: #092745;
 }
 @media (pointer: fine) {
   a.ddownClose:hover i {
-    color: #1a1a1a !important;
+    color: #092745 !important;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
   div.ddownInner nav a:hover,
   div.catItem nav a:hover {
-    color: #1a1a1a !important;
+    color: #092745 !important;
   }
   div.ddownInner nav a:hover i {
     color: #fff !important;
-    background-color: #000 !important;
+    background-color: #01b9e5 !important;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -2491,7 +2513,6 @@ i.toggleIcon.upDown:before {
   div.catGroup a.catItem,
   div.catGroup div.catItem {
     display: block;
-    margin: 10vw 0 15vw 0;
   }
   .catItem h6 {
     font-weight: 700;
@@ -2573,27 +2594,19 @@ div.landing div.imageThumb {
     margin-bottom: 1vw;
   }
   div.catList div.catGroup {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
-    -webkit-box-pack: start;
-    -o-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    -o-box-lines: multiple;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-top: 1vw;
-    margin-bottom: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 5vw;
+    grid-row-gap: 2.5vw;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-auto-flow: row dense;
+    grid-auto-rows: -webkit-min-content;
+    grid-auto-rows: min-content;
+    margin-bottom: 3vw;
   }
   div.catList .catItem {
-    -ms-flex-preferred-size: 19%;
-        flex-basis: 19%;
-    margin-right: 5.4vw;
-    margin-bottom: 5vw;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
   }
   div.catList.landing .catItem {
     -ms-flex-preferred-size: 14%;
@@ -2616,7 +2629,7 @@ div.landing div.imageThumb {
     margin: 0;
     margin-bottom: 1vw;
     padding-bottom: 2vw;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #01b9e5;
     -webkit-align-self: start;
     -ms-grid-row-align: start;
         align-self: start;
@@ -2643,7 +2656,7 @@ body.model div.keyStats p {
   padding-bottom: 1vw;
   margin-bottom: 1vw;
   max-width: 100%;
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid #092745;
 }
 @media screen and (max-width: 750px) {
   body.model div.keyStats p {
@@ -2750,7 +2763,7 @@ div.gallery div.thumbImg span {
   display: block;
 }
 div.gallery div.thumbImg a.activeLink {
-  border: 2px solid #1a1a1a;
+  border: 2px solid #092745;
 }
 div.gallery div.thumbImg a.activeLink span {
   opacity: 0.5;
@@ -2778,7 +2791,7 @@ table.rowResponsive {
   border-collapse: collapse;
 }
 table.rowResponsive tbody tr {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #01b9e5;
 }
 table.rowResponsive td {
   padding: 1.35vw 2vw 1.2vw 2vw;
@@ -2841,7 +2854,7 @@ table.rowResponsive tr td:first-child {
     max-width: 90vw;
   }
   table.rowResponsive thead {
-    background-color: #000;
+    background-color: #01b9e5;
     color: #fff;
   }
   table.rowResponsive tbody tr:last-child {
@@ -2952,7 +2965,7 @@ a.smallTeaser span {
       flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  background-color: #1a1a1a;
+  background-color: #092745;
   width: 70px;
   height: 70px;
   border-radius: 4px;
@@ -3091,14 +3104,17 @@ span.ctaButton {
     font-weight: 300;
   }
 }
-body.home div.catList {
+body.home div.catList,
+body.home div.brandCarousel {
   margin: 3vw auto 3vw auto;
   padding: 1vw 0 1vw 0;
 }
 @media screen and (min-width: 1100px) {
-  body.home div.catList {
+  body.home div.catList,
+  body.home div.brandCarousel {
     margin-left: 5vw;
     margin-right: 5vw;
+    border: 1px solid #0ff;
   }
   body.home div.catList div.catGroup {
     display: -webkit-box;
@@ -3109,13 +3125,16 @@ body.home div.catList {
     -o-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    -o-box-lines: multiple;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    -webkit-box-lines: single;
+    -moz-box-lines: single;
+    -o-box-lines: single;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     margin-top: 2vw;
     margin-bottom: 1.5vw;
+    -webkit-column-gap: 2vw;
+    -moz-column-gap: 2vw;
+    column-gap: 2vw;
   }
   body.home div.catList a.catItem {
     display: -webkit-box;
@@ -3130,8 +3149,11 @@ body.home div.catList {
     -o-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -webkit-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin: 0;
     padding: 1.5vw;
     padding-bottom: 2vw;
@@ -3147,9 +3169,203 @@ body.home div.catList {
     margin-top: 0;
   }
 }
+div.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+div.search .button {
+  margin-left: 1vw;
+}
+div.search div.floating {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+div.siteName {
+  border-left: 1px solid #01b9e5;
+  padding: 1vw 1.5vw;
+}
+div.siteName > * {
+  margin: 0;
+}
+@media screen and (min-width: 750px) {
+  div.search div.floating {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  div.search div.floating {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+div.autoSearch {
+  margin-top: 1vw;
+  margin-bottom: 3em;
+}
+div.autoSearch a {
+  color: #fff;
+}
+div.formCols input {
+  margin-bottom: 0;
+}
+div.formCols input:disabled,
+div.formCols select:disabled {
+  background-color: #fff;
+  color: #000;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+}
+div.autoSearch div.tabAutoSBtns a {
+  color: #fff;
+  background-color: #9f9f9f;
+  padding: 1.2em 2em 0.8em 2em;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin: 0;
+  display: inline-block;
+}
+div.autoSearch div.tabAutoSBtns a:first-child {
+  border-radius: 6px 0 0 0;
+}
+div.autoSearch div.tabAutoSBtns a:last-child {
+  border-radius: 0 6px 0 0;
+}
+div.autoSearch div.tabAutoSBtns a.activeTab {
+  background-color: #01b9e5;
+}
+div.autoSearch div.tabContainer {
+  margin-bottom: 0;
+  background-color: #01b9e5;
+}
+div.autoSearch div.tabContainer hr {
+  border-bottom: 1px solid #9f9f9f;
+}
+div.autoSearch div.tabAutoSContent {
+  margin-bottom: 0;
+  color: #fff;
+}
+@media screen and (max-width: 750px) {
+  div.formCols > div > * {
+    margin: 1em auto;
+    text-align: center;
+    display: block;
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 750px) {
+  div.formCols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: start;
+    -o-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  div.formCols > div {
+    margin: 0.25em 0;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  div.autoSearch div.tabContainer > div:first-child article section {
+    width: 70%;
+  }
+  div.autoSearch div.tabAutoSBtns {
+    position: relative;
+    margin-bottom: -1px;
+  }
+}
+@media screen and (max-width: 750px) {
+  div.autoSearch div.tabContainer {
+    border-radius: 10px;
+    padding: 5%;
+    padding-top: 2em;
+  }
+  div.autoSearch div.tabAutoSContent > article,
+  div.autoSearch div.tabAutoSContent > div {
+    display: block;
+  }
+  div.autoSearch div.tabAutoSContent article {
+    padding-bottom: 0em;
+  }
+  div.autoSearch div.tabAutoSContent:first-child article {
+    margin-bottom: 1em;
+  }
+}
+@media screen and (min-width: 750px) {
+  div.autoSearch div.tabContainer {
+    border-radius: 0 6px 6px 6px;
+  }
+  div.autoSearch div.tabAutoSContent {
+    display: none;
+  }
+  div.autoSearch div.tabAutoSContent:first-child {
+    display: block;
+  }
+  div.autoSearch div.tabAutoSContent article {
+    padding: 2.7vw 3vw 3.6vw 3vw;
+  }
+  div.autoSearch div.tabContainer {
+    background-image: url("/images/misc/oilsearchBG.jpg");
+    background-size: auto 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  div.results div.formCols > div:first-child > * {
+    padding-right: 2em;
+  }
+}
+div.autoSearch div.tabAutoSBtns a {
+  color: #fff;
+  background-color: #006694;
+  padding: 1em 2em 0.9em 2em;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0;
+}
+div.autoSearch .ctaButton,
+div.autoSearch a.ctaButton {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 750px) {
+  .tabAutoSBtns.static {
+    display: none !important;
+  }
+}
 a:link,
 a:visited {
-  color: #1a1a1a;
+  color: #092745;
   text-decoration: none;
 }
 p a:link,
@@ -3169,7 +3385,7 @@ h3 a:visited {
   }
 }
 .activeLink {
-  font-weight: 600 !important;
+  font-weight: 800 !important;
 }
 ul {
   margin-bottom: 2em;
@@ -3193,7 +3409,7 @@ ul li {
   *.picturefill-background .darktext a {
     color: rgba(0,0,0,0.5);
   }
-  *.picturefill-background .lighttext,
+  *.picturefill-background .lighttext *,
   *.picturefill-background .lighttext a {
     color: #fff;
   }
@@ -3206,28 +3422,24 @@ nav a:hover,
 p a:hover,
 li a:hover,
 *.picturefill-background a:hover {
-  color: #000 !important;
+  color: #01b9e5 !important;
   -webkit-transition: 500ms;
   transition: 500ms;
   text-decoration: none !important;
 }
-@media (pointer: fine) {
-  nav a:hover {
-    color: #f00 !important;
-  }
-}
 .activeLink,
 .activeLink:hover {
-  color: #000 !important;
+  color: #01b9e5 !important;
 }
 nav a {
   font-weight: 500 !important;
-  font-size: 0.75em !important;
+  font-size: 1em !important;
   padding: 0 1.35vw 0 0;
+  color: #092745;
 }
 body.darkSlider > header.fixed .siteLogo span,
 body.darkSlider > header.fixed nav a.activeLink {
-  color: #000 !important;
+  color: #01b9e5 !important;
 }
 body.darkSlider > header.fixed nav a,
 body.darkSlider > header.fixed nav a.ctaButton {
@@ -3235,21 +3447,21 @@ body.darkSlider > header.fixed nav a.ctaButton {
   border-color: #b4b4b4 !important;
 }
 body.darkSlider > header.fixed nav a:hover {
-  color: #000 !important;
-  border-color: #000 !important;
+  color: #01b9e5 !important;
+  border-color: #01b9e5 !important;
 }
 body.lightSlider > header.fixed .siteLogo span,
 body.lightSlider > header.fixed nav a.activeLink {
-  color: #000 !important;
+  color: #01b9e5 !important;
 }
 body.lightSlider > header.fixed nav a,
 body.lightSlider > header.fixed nav a.ctaButton {
-  color: #1a1a1a !important;
-  border-color: #1a1a1a !important;
+  color: #092745 !important;
+  border-color: #092745 !important;
 }
 body.lightSlider > header.fixed nav a:hover {
-  color: #000 !important;
-  border-color: #1a1a1a !important;
+  color: #01b9e5 !important;
+  border-color: #092745 !important;
 }
 body.darkTheme > header.sticky .siteLogo span,
 body.darkTheme > header.sticky nav a.activeLink {
@@ -3257,8 +3469,8 @@ body.darkTheme > header.sticky nav a.activeLink {
 }
 body.darkTheme > header.sticky nav a,
 body.darkTheme > header.sticky nav a.ctaButton {
-  color: #1a1a1a !important;
-  border-color: #1a1a1a !important;
+  color: #006694 !important;
+  border-color: #006694 !important;
 }
 body.darkTheme > header.sticky nav a:hover {
   color: #fff !important;
@@ -3266,16 +3478,16 @@ body.darkTheme > header.sticky nav a:hover {
 }
 body.lightTheme > header.sticky .siteLogo span,
 body.lightTheme > header.sticky nav a.activeLink {
-  color: #1a1a1a !important;
+  color: #092745 !important;
 }
 body.lightTheme > header.sticky nav a,
 body.lightTheme > header.sticky nav a.ctaButton {
-  color: #000 !important;
-  border-color: #000 !important;
+  color: #01b9e5 !important;
+  border-color: #01b9e5 !important;
 }
 body.lightTheme > header.sticky nav a:hover {
-  color: #1a1a1a !important;
-  border-color: #1a1a1a !important;
+  color: #092745 !important;
+  border-color: #092745 !important;
 }
 h1,
 h2,
@@ -3284,13 +3496,14 @@ h4,
 h5,
 h6 {
   margin: 0;
-  margin-bottom: 1vw;
+  margin-bottom: 5px;
+  color: #006694;
 }
 h1 {
   font-weight: 1000;
-  font-size: 2.8em;
+  font-size: 3em;
   line-height: 105%;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
 }
 h1 span {
   font-weight: 300;
@@ -3343,18 +3556,18 @@ h6 {
   letter-spacing: -0.015em;
 }
 p {
-  font-weight: 350;
-  font-size: 0.95em;
+  font-weight: 400;
+  font-size: 1em;
   line-height: 1.4em;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   margin-top: 1vw;
   margin-bottom: 1.5vw;
 }
 li {
-  font-weight: 350;
-  font-size: 0.95em;
-  line-height: 1.35em;
-  letter-spacing: -0.025em;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4em;
+  letter-spacing: -0.02em;
 }
 td {
   font-weight: 350;
@@ -3370,7 +3583,7 @@ strong {
   font-size: 0.7em;
 }
 .price {
-  color: #f00;
+  color: brand6;
 }
 body > footer p a {
   font-size: 1em;
@@ -3380,7 +3593,7 @@ body > footer h6 {
   font-weight: 700;
   font-size: 1em;
   line-height: 120%;
-  color: #000;
+  color: #01b9e5;
 }
 @media screen and (max-width: 1100px) {
   h1 {
@@ -3412,16 +3625,7 @@ body > footer h6 {
     line-height: 110%;
   }
   p {
-    font-size: 0.9em;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin-bottom: 0.5em;
+    font-size: 1em;
   }
 }
 @media screen and (min-width: 750px) {
@@ -3432,510 +3636,6 @@ body > footer h6 {
     text-indent: -0.08em;
     color: #b4b4b4;
   }
-}
-/*
-*
-*
-*
-*
-* start brands stylesheets
-*
-*
-*
-*
-*
-*/
-div.brandCarousel a.jcb i {
-  color: #fcb026;
-}
-div.brandCarousel a.jcb {
-  border-color: #fcb026 !important;
-}
-div.brandCarousel a.massey-ferguson {
-  border-color: #c41230 !important;
-}
-div.brandCarousel a.massey-ferguson i {
-  color: #c41230;
-}
-div.brandCarousel a.fendt {
-  border-color: #2dba03 !important;
-}
-div.brandCarousel a.fendt i {
-  color: #2dba03;
-}
-div.brandCarousel a.dressta {
-  border-color: #047eb1 !important;
-}
-div.brandCarousel a.dressta i {
-  color: #047eb1;
-}
-div.brandCarousel a.iseki {
-  border-color: #0068b7 !important;
-}
-div.brandCarousel a.iseki i {
-  color: #0068b7;
-}
-div.brandCarousel a.claas {
-  border-color: #d30a00 !important;
-}
-div.brandCarousel a.claas i {
-  color: #d30a00;
-}
-div.brandCarousel a.amazone {
-  border-color: #e97714 !important;
-}
-div.brandCarousel a.amazone i {
-  color: #e97714;
-}
-div.brandCarousel a.asv {
-  border-color: #a1c02f !important;
-}
-div.brandCarousel a.asv i {
-  color: #a1c02f;
-}
-div.brandCarousel a.mahindra {
-  border-color: #e41937 !important;
-}
-div.brandCarousel a.mahindra i {
-  color: #e41937;
-}
-div.brandCarousel a.yeomans-plow {
-  border-color: #ff0f00 !important;
-}
-div.brandCarousel a.yeomans-plow i {
-  color: #ff0f00;
-}
-.ctaButton.jcb {
-  background-color: #fcb026 !important;
-  border-color: #fcb026 !important;
-}
-.ctaButton.massey-ferguson {
-  background-color: #c41230 !important;
-  border-color: #c41230 !important;
-}
-.ctaButton.fendt {
-  background-color: #2dba03 !important;
-  border-color: #2dba03 !important;
-}
-.ctaButton.dressta {
-  background-color: #047eb1 !important;
-  border-color: #047eb1 !important;
-}
-.ctaButton.iseki {
-  background-color: #0068b7 !important;
-  border-color: #0068b7 !important;
-}
-.ctaButton.claas {
-  background-color: #d30a00 !important;
-  border-color: #d30a00 !important;
-}
-.ctaButton.amazone {
-  background-color: #e97714 !important;
-  border-color: #e97714 !important;
-}
-.ctaButton.asv {
-  background-color: #a1c02f !important;
-  border-color: #a1c02f !important;
-}
-.ctaButton.mahindra {
-  background-color: #e41937 !important;
-  border-color: #e41937 !important;
-}
-.ctaButton.yeomans-plow {
-  background-color: #ff0f00 !important;
-  border-color: #ff0f00 !important;
-}
-a.jcb img {
-  max-height: 30px !important;
-  width: auto !important;
-}
-a.massey-ferguson img {
-  max-height: 42px !important;
-  width: auto !important;
-}
-a.fendt img {
-  max-height: 15px !important;
-  width: auto !important;
-}
-a.dressta img {
-  max-width: 120px !important;
-  width: auto !important;
-}
-a.amazone img {
-  max-width: 140px !important;
-  height: auto !important;
-}
-a.asv img {
-  max-height: 25px !important;
-  width: auto !important;
-}
-a.mahindra img {
-  max-width: 120px !important;
-  width: auto !important;
-}
-a.yeomans-plow img {
-  max-height: 42px !important;
-  width: auto !important;
-}
-div.ddownOuter.jcb a.ddownClose i,
-div.catItem.jcb a i {
-  color: #fcb026;
-}
-div.ddownOuter.jcb div.ddownInner section:first-child {
-  border-right-color: #fcb026;
-}
-div.ddownOuter.jcb div.ddownInner nav i {
-  background-color: #fcb026;
-}
-div.catItem.jcb {
-  border-bottom-color: #fcb026 !important;
-}
-div.ddownOuter.massey-ferguson a.ddownClose i,
-div.catItem.massey-ferguson a i {
-  color: #c41230;
-}
-div.ddownOuter.massey-ferguson div.ddownInner section:first-child {
-  border-right-color: #c41230;
-}
-div.ddownOuter.massey-ferguson div.ddownInner nav i {
-  background-color: #c41230;
-}
-div.catItem.massey-ferguson {
-  border-bottom-color: #c41230 !important;
-}
-div.ddownOuter.fendt a.ddownClose i,
-div.catItem.fendt a i {
-  color: #2dba03;
-}
-div.ddownOuter.fendt div.ddownInner section:first-child {
-  border-right-color: #2dba03;
-}
-div.ddownOuter.fendt div.ddownInner nav i {
-  background-color: #2dba03;
-}
-div.catItem.fendt {
-  border-bottom-color: #2dba03 !important;
-}
-div.ddownOuter.dressta a.ddownClose i,
-div.catItem.dressta a i {
-  color: #047eb1;
-}
-div.ddownOuter.dressta div.ddownInner section:first-child {
-  border-right-color: #047eb1;
-}
-div.ddownOuter.dressta div.ddownInner nav i {
-  background-color: #047eb1;
-}
-div.catItem.dressta {
-  border-bottom-color: #047eb1 !important;
-}
-div.ddownOuter.iseki a.ddownClose i,
-div.catItem.iseki a i {
-  color: #0068b7;
-}
-div.ddownOuter.iseki div.ddownInner section:first-child {
-  border-right-color: #0068b7;
-}
-div.ddownOuter.iseki div.ddownInner nav i {
-  background-color: #0068b7;
-}
-div.catItem.iseki {
-  border-bottom-color: #0068b7 !important;
-}
-div.ddownOuter.claas a.ddownClose i,
-div.catItem.claas a i {
-  color: #d30a00;
-}
-div.ddownOuter.claas div.ddownInner section:first-child {
-  border-right-color: #d30a00;
-}
-div.ddownOuter.claas div.ddownInner nav i {
-  background-color: #d30a00;
-}
-div.catItem.claas {
-  border-bottom-color: #d30a00 !important;
-}
-div.ddownOuter.amazone a.ddownClose i,
-div.catItem.amazone a i {
-  color: #e97714;
-}
-div.ddownOuter.amazone div.ddownInner section:first-child {
-  border-right-color: #e97714;
-}
-div.ddownOuter.amazone div.ddownInner nav i {
-  background-color: #e97714;
-}
-div.catItem.amazone {
-  border-bottom-color: #e97714 !important;
-}
-div.ddownOuter.asv a.ddownClose i,
-div.catItem.asv a i {
-  color: #a1c02f;
-}
-div.ddownOuter.asv div.ddownInner section:first-child {
-  border-right-color: #a1c02f;
-}
-div.ddownOuter.asv div.ddownInner nav i {
-  background-color: #a1c02f;
-}
-div.catItem.asv {
-  border-bottom-color: #a1c02f !important;
-}
-div.ddownOuter.mahindra a.ddownClose i,
-div.catItem.mahindra a i {
-  color: #e41937;
-}
-div.ddownOuter.mahindra div.ddownInner section:first-child {
-  border-right-color: #e41937;
-}
-div.ddownOuter.mahindra div.ddownInner nav i {
-  background-color: #e41937;
-}
-div.catItem.mahindra {
-  border-bottom-color: #e41937 !important;
-}
-div.ddownOuter.yeomans-plow a.ddownClose i,
-div.catItem.yeomans-plow a i {
-  color: #ff0f00;
-}
-div.ddownOuter.yeomans-plow div.ddownInner section:first-child {
-  border-right-color: #ff0f00;
-}
-div.ddownOuter.yeomans-plow div.ddownInner nav i {
-  background-color: #ff0f00;
-}
-div.catItem.yeomans-plow {
-  border-bottom-color: #ff0f00 !important;
-}
-body.jcb #breadcrumb nav i:before,
-body.jcb div.keyStats span,
-body.jcb div.catList i:before,
-body.jcb .brand,
-body.jcb h1,
-body.jcb h2,
-body.jcb main a.ctaButton:hover {
-  color: #fcb026 !important;
-}
-body.jcb main hr,
-body.jcb .thumbImg a.activeLink,
-body.jcb div.keyStats p,
-body.jcb main a.ctaButton,
-body.jcb table.rowResponsive tbody tr {
-  border-color: #fcb026 !important;
-}
-body.jcb main a.ctaButton,
-body.jcb table.rowResponsive thead {
-  background-color: #fcb026;
-}
-body.jcb main hr {
-  border-bottom-width: 3px;
-}
-body.massey-ferguson #breadcrumb nav i:before,
-body.massey-ferguson div.keyStats span,
-body.massey-ferguson div.catList i:before,
-body.massey-ferguson .brand,
-body.massey-ferguson h1,
-body.massey-ferguson h2,
-body.massey-ferguson main a.ctaButton:hover {
-  color: #c41230 !important;
-}
-body.massey-ferguson main hr,
-body.massey-ferguson .thumbImg a.activeLink,
-body.massey-ferguson div.keyStats p,
-body.massey-ferguson main a.ctaButton,
-body.massey-ferguson table.rowResponsive tbody tr {
-  border-color: #c41230 !important;
-}
-body.massey-ferguson main a.ctaButton,
-body.massey-ferguson table.rowResponsive thead {
-  background-color: #c41230;
-}
-body.massey-ferguson main hr {
-  border-bottom-width: 3px;
-}
-body.fendt #breadcrumb nav i:before,
-body.fendt div.keyStats span,
-body.fendt div.catList i:before,
-body.fendt .brand,
-body.fendt h1,
-body.fendt h2,
-body.fendt main a.ctaButton:hover {
-  color: #2dba03 !important;
-}
-body.fendt main hr,
-body.fendt .thumbImg a.activeLink,
-body.fendt div.keyStats p,
-body.fendt main a.ctaButton,
-body.fendt table.rowResponsive tbody tr {
-  border-color: #2dba03 !important;
-}
-body.fendt main a.ctaButton,
-body.fendt table.rowResponsive thead {
-  background-color: #2dba03;
-}
-body.fendt main hr {
-  border-bottom-width: 3px;
-}
-body.dressta #breadcrumb nav i:before,
-body.dressta div.keyStats span,
-body.dressta div.catList i:before,
-body.dressta .brand,
-body.dressta h1,
-body.dressta h2,
-body.dressta main a.ctaButton:hover {
-  color: #047eb1 !important;
-}
-body.dressta main hr,
-body.dressta .thumbImg a.activeLink,
-body.dressta div.keyStats p,
-body.dressta main a.ctaButton,
-body.dressta table.rowResponsive tbody tr {
-  border-color: #047eb1 !important;
-}
-body.dressta main a.ctaButton,
-body.dressta table.rowResponsive thead {
-  background-color: #047eb1;
-}
-body.dressta main hr {
-  border-bottom-width: 3px;
-}
-body.iseki #breadcrumb nav i:before,
-body.iseki div.keyStats span,
-body.iseki div.catList i:before,
-body.iseki .brand,
-body.iseki h1,
-body.iseki h2,
-body.iseki main a.ctaButton:hover {
-  color: #0068b7 !important;
-}
-body.iseki main hr,
-body.iseki .thumbImg a.activeLink,
-body.iseki div.keyStats p,
-body.iseki main a.ctaButton,
-body.iseki table.rowResponsive tbody tr {
-  border-color: #0068b7 !important;
-}
-body.iseki main a.ctaButton,
-body.iseki table.rowResponsive thead {
-  background-color: #0068b7;
-}
-body.iseki main hr {
-  border-bottom-width: 3px;
-}
-body.claas #breadcrumb nav i:before,
-body.claas div.keyStats span,
-body.claas div.catList i:before,
-body.claas .brand,
-body.claas h1,
-body.claas h2,
-body.claas main a.ctaButton:hover {
-  color: #d30a00 !important;
-}
-body.claas main hr,
-body.claas .thumbImg a.activeLink,
-body.claas div.keyStats p,
-body.claas main a.ctaButton,
-body.claas table.rowResponsive tbody tr {
-  border-color: #d30a00 !important;
-}
-body.claas main a.ctaButton,
-body.claas table.rowResponsive thead {
-  background-color: #d30a00;
-}
-body.claas main hr {
-  border-bottom-width: 3px;
-}
-body.amazone #breadcrumb nav i:before,
-body.amazone div.keyStats span,
-body.amazone div.catList i:before,
-body.amazone .brand,
-body.amazone h1,
-body.amazone h2,
-body.amazone main a.ctaButton:hover {
-  color: #e97714 !important;
-}
-body.amazone main hr,
-body.amazone .thumbImg a.activeLink,
-body.amazone div.keyStats p,
-body.amazone main a.ctaButton,
-body.amazone table.rowResponsive tbody tr {
-  border-color: #e97714 !important;
-}
-body.amazone main a.ctaButton,
-body.amazone table.rowResponsive thead {
-  background-color: #e97714;
-}
-body.amazone main hr {
-  border-bottom-width: 3px;
-}
-body.asv #breadcrumb nav i:before,
-body.asv div.keyStats span,
-body.asv div.catList i:before,
-body.asv .brand,
-body.asv h1,
-body.asv h2,
-body.asv main a.ctaButton:hover {
-  color: #a1c02f !important;
-}
-body.asv main hr,
-body.asv .thumbImg a.activeLink,
-body.asv div.keyStats p,
-body.asv main a.ctaButton,
-body.asv table.rowResponsive tbody tr {
-  border-color: #a1c02f !important;
-}
-body.asv main a.ctaButton,
-body.asv table.rowResponsive thead {
-  background-color: #a1c02f;
-}
-body.asv main hr {
-  border-bottom-width: 3px;
-}
-body.mahindra #breadcrumb nav i:before,
-body.mahindra div.keyStats span,
-body.mahindra div.catList i:before,
-body.mahindra .brand,
-body.mahindra h1,
-body.mahindra h2,
-body.mahindra main a.ctaButton:hover {
-  color: #e41937 !important;
-}
-body.mahindra main hr,
-body.mahindra .thumbImg a.activeLink,
-body.mahindra div.keyStats p,
-body.mahindra main a.ctaButton,
-body.mahindra table.rowResponsive tbody tr {
-  border-color: #e41937 !important;
-}
-body.mahindra main a.ctaButton,
-body.mahindra table.rowResponsive thead {
-  background-color: #e41937;
-}
-body.mahindra main hr {
-  border-bottom-width: 3px;
-}
-body.yeomans-plow #breadcrumb nav i:before,
-body.yeomans-plow div.keyStats span,
-body.yeomans-plow div.catList i:before,
-body.yeomans-plow .brand,
-body.yeomans-plow h1,
-body.yeomans-plow h2,
-body.yeomans-plow main a.ctaButton:hover {
-  color: #ff0f00 !important;
-}
-body.yeomans-plow main hr,
-body.yeomans-plow .thumbImg a.activeLink,
-body.yeomans-plow div.keyStats p,
-body.yeomans-plow main a.ctaButton,
-body.yeomans-plow table.rowResponsive tbody tr {
-  border-color: #ff0f00 !important;
-}
-body.yeomans-plow main a.ctaButton,
-body.yeomans-plow table.rowResponsive thead {
-  background-color: #ff0f00;
-}
-body.yeomans-plow main hr {
-  border-bottom-width: 3px;
 }
 /* effects */
 .multiply {
@@ -3955,10 +3655,10 @@ body.yeomans-plow main hr {
   background-color: rgba(0,0,0,0.75) !important;
 }
 .multiplyBlack {
-  background-color: #1a1a1a;
+  background-color: #092745;
 }
 .multiplyRed {
-  background-color: #000;
+  background-color: #01b9e5;
 }
 .multiplyGreen {
   background-color: #646464;
@@ -4007,20 +3707,17 @@ body.yeomans-plow main hr {
 			);
 		}	
 */
-.gradient0 {
+.gradient25 {
   background-blend-mode: normal;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0.75)), color-stop(rgba(0,0,0,0.05)), to(rgba(0,0,0,0.05)));
-  background: linear-gradient(to right bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.05), rgba(0,0,0,0.05));
+  background: linear-gradient(135deg, #092745, #006694 25%, #01b9e5 75%);
 }
-.gradient1 {
+.gradient50 {
   background-blend-mode: normal;
-  background: -webkit-gradient(linear, left top, right bottom, from(#000), to(rgba(0,0,0,0.5)));
-  background: linear-gradient(to right bottom, #000, rgba(0,0,0,0.5));
+  background: linear-gradient(135deg, #092745, #006694 50%, #01b9e5);
 }
-.gradient2 {
+.gradient75 {
   background-blend-mode: normal;
-  background: -webkit-gradient(linear, left top, right bottom, from(#000), color-stop(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.1)));
-  background: linear-gradient(to right bottom, #000, rgba(0,0,0,0.5), rgba(0,0,0,0.1));
+  background: linear-gradient(135deg, #092745 25%, #006694 55%, #01b9e5 95%);
 }
 .gradientShdw {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.05)), color-stop(10vh, transparent));

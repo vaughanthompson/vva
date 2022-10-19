@@ -13,8 +13,7 @@
         padding-bottom: padXL
     body > footer
         padding-top: padM*1.5
-    main.home        
-        padding: padStd 
+
 
 
     div#priNav,
@@ -28,11 +27,11 @@
     
     body > header
         display: flex
-        justify-content: space-between
         align-items: center
+        justify-content: flex-start
         flex-wrap: wrap
-        padding: padXXS padXS
-        width:100%
+        column-gap: marXXS
+        padding: padXS padM padXXS padM
     body > header.fixed
         min-height: 11vh
         position: absolute
@@ -43,9 +42,14 @@
         z-index: 20000
         padding: 0
         display: none
-    body > header > *
-        margin-left: marXS
-        margin-right: marXS
+
+    body > header.user
+        padding-bottom: padXS
+        padding-top: 0
+    body > header.masthead > div:last-child
+        margin-left: auto
+        {test}
+
 
     div.content
         display: flex
@@ -563,3 +567,18 @@ div.containMNav h6
         padding-bottom: 15vw
     main > article
         margin-bottom: 10vw
+
+
+
+
+// from old css auto search
+div.spaceBetween
+    display: flex
+    justify-content: space-between
+    align-items: center
+img.logo_brand-sub 
+    height:40px
+    max-width:130px
+    text-align: center
+    margin-bottom: 10px
+    margin-right: marXXS
