@@ -1106,6 +1106,29 @@ img.logo_brand-sub {
   margin-bottom: 10px;
   margin-right: 1vw;
 }
+div.catWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-column-gap: 4vw;
+  -moz-column-gap: 4vw;
+  column-gap: 4vw;
+}
+div.catWrapper div.catSidebar {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  border: 1px solid #0ff;
+}
+div.catWrapper > div.catContain {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  border: 1px solid #0ff;
+}
 .icon {
   color: #092745;
   display: -webkit-box;
