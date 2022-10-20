@@ -41,13 +41,13 @@
     background-color: brand3
 
 .lighten1
-    background-color: rgba(255,255,255,0.70)
+    background-color: rgba(255,255,255,0.8)
     background-blend-mode: overlay
-    filter:grayscale(80%)
+    //filter:grayscale(80%)
 .lighten2
     background-color: rgba(255,255,255,0.50)
     background-blend-mode: overlay
-    filter:grayscale(80%)
+    //filter:grayscale(80%)
 .greyscale
     background-color: rgba(0,0,0,0.30)
     filter:grayscale(100%)
@@ -91,7 +91,14 @@
     background: linear-gradient(135deg, 
     brand1 25%,
     brand0 55%,
-    brand2 95%)    
+    brand2 95%)
+.gradientFade1
+    background-blend-mode: normal
+    background: linear-gradient(135deg, 
+    blackAlp90 10%,
+    blackAlp75 30%,
+    blackAlp50 60%,
+    blackAlp5 90%)    
 .gradientShdw
     background-image: linear-gradient(to bottom, blackAlp5, transparent 10vh)
 @media mtrigger

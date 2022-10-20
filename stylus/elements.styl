@@ -93,7 +93,7 @@ span.ctaButton
     color: white !important
     font-size: 1.2em
     font-weight:700
-    border: 1px solid brand4
+    border: 1px solid white
     padding:padXXS padStd padXXS*0.75 padStd
     //margin-right:marXXS
     display: inline-flex
@@ -107,11 +107,11 @@ a.ctaButton.ctaShop
     background: brand1    
     border-color: brand1    
     color: white !important
-div.containSlider div.content div > a
+/*div.containSlider div.content div > a
     border-radius: 50px
     color: brand1 !important
     background-color: brand5
-    font-size: 1.2em
+    font-size: 1.1em
     font-weight:700
     border: 1px solid brand5
     padding:padXXS padStd padXXS*0.75 padStd
@@ -123,7 +123,7 @@ div.containSlider div.content div > a
     margin-top: 1.5em;
     @media phoneRule
         padding padM padL
-        font-weight: 300
+        font-weight: 300*/
 
 nav a.ctaButton
     background:none
@@ -145,17 +145,17 @@ a.ctaButton:hover,
 a.ctaButton:hover > i:before,
 span.ctaButton:hover,
 span.ctaButton:hover > i:before
-    background: none !important
-    color: brand2 !important
-    border-color: brand2 !important
-    border-bottom-color: brand2 !important
+    background: brand0 !important
+    color: white !important
+    border-color: white !important
+    border-bottom-color: white !important
     transition: 0.2s
-div.containSlider div.content div > a:hover
+/*div.containSlider div.content div > a:hover
     background: none !important
     color: white !important
     border-color: white !important
     border-bottom-color: white !important
-    transition: 0.2s     
+    transition: 0.2s*/     
 a.ctaButton:hover i
     margin-left:25px
     margin-right:0px
@@ -711,9 +711,9 @@ div.thirdparty-logo
 
 div.containSlider
     position: relative
-    margin-bottom: marM
+    margin-bottom: marXS
 body.brand div.containSlider
-    margin-top: marM
+    margin-top: marXS
 
 body.lightSlider div.slickSlider
     background-color: white
@@ -1571,30 +1571,25 @@ div.autoSearch div.tabAutoSContent
         margin-bottom: -1px
 
 @media phoneRule
-    div.autoSearch div.tabContainer {
-        border-radius: 10px;
-        padding: 5%;
-        padding-top: 2em;
-    }
-    div.autoSearch div.tabAutoSContent {
-        //background-color: rgba(14,14,14,1.0);
-    }  
+    div.autoSearch div.tabContainer
+        border-radius: 10px
+        padding: 5%
+        padding-top: 2em
+    div.autoSearch div.tabAutoSContent
+        //background-color: rgba(14,14,14,1.0); 
     div.autoSearch div.tabAutoSContent > article,
-    div.autoSearch div.tabAutoSContent > div {
-        display: block;
-    }
-    div.autoSearch div.tabAutoSContent article {
-        padding-bottom:0em;
-    }
-    div.autoSearch div.tabAutoSContent:first-child article {
-        margin-bottom:1em;
-    }
+    div.autoSearch div.tabAutoSContent > div
+        display: block
+    div.autoSearch div.tabAutoSContent article
+        padding-bottom:0em    
+    div.autoSearch div.tabAutoSContent:first-child article
+        margin-bottom:2em
 
 @media ttrigger
     div.autoSearch div.tabContainer
         border-radius: 0 6px 6px 6px
-    div.autoSearch div.tabAutoSContent
-        display: none  
+    //div.autoSearch div.tabAutoSContent
+        //display: none  
     div.autoSearch div.tabAutoSContent:first-child
         display: block
     div.autoSearch div.tabAutoSContent article

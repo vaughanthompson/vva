@@ -32,27 +32,25 @@ ul li
 *.picturefill-background,
 *.picturefill-background a
     color: white 
-@media ttrigger
-    *.picturefill-background.lighten1,
-    *.picturefill-background.lighten1 a,
-    *.picturefill-background.lighten2,
-    *.picturefill-background.lighten2 a
-    *.picturefill-background .darktext,
-    *.picturefill-background .darktext a
-        color: blackAlp50
-    *.picturefill-background .lighttext *,
-    *.picturefill-background .lighttext a
-        color: white      
+*.picturefill-background .lighttext *,
+*.picturefill-background .lighttext a
+    color: white  
+*.picturefill-background.lighten1,
+*.picturefill-background.lighten1 a,
+*.picturefill-background.lighten2,
+*.picturefill-background.lighten2 a
+*.picturefill-background .darktext *,
+*.picturefill-background .darktext a
+    color: brand1    
 *.picturefill-background a
-    text-decoration: underline
+    //text-decoration: underline
 
 
 
 .activeLink, 
 nav a:hover,
 p a:hover,
-li a:hover,
-*.picturefill-background a:hover
+li a:hover
     color: brand2 !important
     transition: 500ms
     text-decoration: none !important
@@ -174,8 +172,8 @@ p
     font-size: 1em
     line-height: 1.4em
     letter-spacing: -0.02em
-    margin-top: marXXS
-    margin-bottom: marXS
+    margin-top: 0.5em
+    margin-bottom: 0.5em
 li
     font-weight: 400
     font-size: 1em
@@ -187,7 +185,7 @@ td
     line-height: 1.35em
     letter-spacing: -0.025em    
 strong 
-    font-weight: 700
+    font-weight: 900
     letter-spacing: -0.015em
 
 // modify typo
@@ -252,3 +250,12 @@ body > footer h6
 
 
 
+
+
+/* art direction typo for banners */
+@media ttrigger
+    .slideItem p:not(.small)
+        font-size:140%
+    .xl
+        font-size:400%
+        line-height: 95%

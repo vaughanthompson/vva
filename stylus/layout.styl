@@ -590,10 +590,51 @@ img.logo_brand-sub
 
 
 
+/* more slide item support */
+article.slideItem
+    margin:0
+    padding:0
+article.slideItem > div.picturefill-background
+    width:100%
+article.slideItem .ctaButton
+    margin-top: 1em
 
+@media phoneRule
+    article.slideItem div.content
+        flex-direction: column
+        justify-content: center
+    article.slideItem section
+        margin: 0
+        padding: 0
+        flex-basis: 60%
+    article.slideItem section.image
+        flex-basis: 30%
+    article.slideItem section.image img
+        max-height: 50vw
+        width:auto
+        margin: 0 auto
+    article.slideItem div.picturefill-background div.content section.image > div
+        padding-top: 0 !important
+        padding-bottom: 0 !important
 
-
-
+@media ttrigger
+    article.slideItem div.content
+        padding-left:padL
+        padding-right: padL
+    article.slideItem section
+        margin: 0
+        padding: 0
+        flex-basis: 45%
+    article.slideItem section.image
+        margin: 0
+        padding: 0
+        flex-basis: 40%
+        align-self: flex-end
+    article.slideItem section > div
+        margin: 0
+        padding: 0 !important
+    article.slideItem img
+        //{test}
 
 
 
@@ -609,13 +650,31 @@ img.logo_brand-sub
 
 
 /* side by side body layout */
+
+
 div.catWrapper
-    display: flex
-    justify-content: flex-start
-    column-gap: 4vw
+    display: grid
+    grid-gap: 4vw
+    grid-template-areas: 
+        "catSidebar"
+        "catContain"
 div.catWrapper div.catSidebar
-    flex-basis: 30%
-    {test}
+    grid-area: "catSidebar"
 div.catWrapper > div.catContain
-    flex-basis: 70%
-    {test}
+    grid-area: "catContain"
+
+@media dtrigger
+    div.catWrapper
+        grid-template-columns: 300px auto
+        padding: padM
+
+@supports not (display:grid)
+    @media dtrigger
+        div.catWrapper
+            display: flex
+            justify-content: flex-start
+            column-gap: 4vw
+        div.catWrapper div.catSidebar
+            flex-basis: 30%
+        div.catWrapper > div.catContain
+            flex-basis: 70%

@@ -128,7 +128,7 @@ img {
   padding: 0 !important;
 }
 .offer {
-  color: #f00;
+  color: #de1e21 !important;
 }
 @media screen and (min-width: 750px) {
   main,
@@ -1106,28 +1106,114 @@ img.logo_brand-sub {
   margin-bottom: 10px;
   margin-right: 1vw;
 }
+article.slideItem {
+  margin: 0;
+  padding: 0;
+}
+article.slideItem > div.picturefill-background {
+  width: 100%;
+}
+article.slideItem .ctaButton {
+  margin-top: 1em;
+}
+@media screen and (max-width: 750px) {
+  article.slideItem div.content {
+    -webkit-box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  article.slideItem section {
+    margin: 0;
+    padding: 0;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  article.slideItem section.image {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  article.slideItem section.image img {
+    max-height: 50vw;
+    width: auto;
+    margin: 0 auto;
+  }
+  article.slideItem div.picturefill-background div.content section.image > div {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  article.slideItem div.content {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  article.slideItem section {
+    margin: 0;
+    padding: 0;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  article.slideItem section.image {
+    margin: 0;
+    padding: 0;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+    -ms-flex-item-align: end;
+  }
+  article.slideItem section > div {
+    margin: 0;
+    padding: 0 !important;
+  }
+}
 div.catWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-pack: start;
-  -o-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-column-gap: 4vw;
-  -moz-column-gap: 4vw;
-  column-gap: 4vw;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 4vw;
 }
 div.catWrapper div.catSidebar {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  border: 1px solid #0ff;
+  grid-area: "catSidebar";
 }
 div.catWrapper > div.catContain {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-  border: 1px solid #0ff;
+  grid-area: "catContain";
+}
+@media screen and (min-width: 1100px) {
+  div.catWrapper {
+    -ms-grid-columns: 300px 4vw auto;
+    grid-template-columns: 300px auto;
+    padding: 3vw;
+  }
+}
+@supports not (display: grid) {
+@media screen and (min-width: 1100px) {
+    div.catWrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: box;
+      display: flex;
+      -webkit-box-pack: start;
+      -o-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-column-gap: 4vw;
+      -moz-column-gap: 4vw;
+      column-gap: 4vw;
+    }
+    div.catWrapper div.catSidebar {
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
+    }
+    div.catWrapper > div.catContain {
+      -ms-flex-preferred-size: 70%;
+          flex-basis: 70%;
+    }
+}
 }
 .icon {
   color: #092745;
@@ -1260,7 +1346,7 @@ span.ctaButton {
   color: #fff !important;
   font-size: 1.2em;
   font-weight: 700;
-  border: 1px solid #b4b4b4;
+  border: 1px solid #fff;
   padding: 1vw 2vw 0.75vw 2vw;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1286,34 +1372,6 @@ a.ctaButton.ctaShop {
   border-color: #092745;
   color: #fff !important;
 }
-div.containSlider div.content div > a {
-  border-radius: 50px;
-  color: #092745 !important;
-  background-color: #fff;
-  font-size: 1.2em;
-  font-weight: 700;
-  border: 1px solid #fff;
-  padding: 1vw 2vw 0.75vw 2vw;
-  text-decoration: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-box;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  white-space: normal;
-  margin-top: 1.5em;
-}
-@media screen and (max-width: 750px) {
-  div.containSlider div.content div > a {
-    padding: 3vw 5vw;
-    font-weight: 300;
-  }
-}
 nav a.ctaButton {
   background: none;
   border-color: #092745;
@@ -1337,15 +1395,7 @@ a.ctaButton:hover,
 a.ctaButton:hover > i:before,
 span.ctaButton:hover,
 span.ctaButton:hover > i:before {
-  background: none !important;
-  color: #01b9e5 !important;
-  border-color: #01b9e5 !important;
-  border-bottom-color: #01b9e5 !important;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-div.containSlider div.content div > a:hover {
-  background: none !important;
+  background: #006694 !important;
   color: #fff !important;
   border-color: #fff !important;
   border-bottom-color: #fff !important;
@@ -2119,10 +2169,10 @@ div.thirdparty-logo {
 }
 div.containSlider {
   position: relative;
-  margin-bottom: 3vw;
+  margin-bottom: 1.5vw;
 }
 body.brand div.containSlider {
-  margin-top: 3vw;
+  margin-top: 1.5vw;
 }
 body.lightSlider div.slickSlider {
   background-color: #fff;
@@ -3342,15 +3392,12 @@ div.autoSearch div.tabAutoSContent {
     padding-bottom: 0em;
   }
   div.autoSearch div.tabAutoSContent:first-child article {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 }
 @media screen and (min-width: 750px) {
   div.autoSearch div.tabContainer {
     border-radius: 0 6px 6px 6px;
-  }
-  div.autoSearch div.tabAutoSContent {
-    display: none;
   }
   div.autoSearch div.tabAutoSContent:first-child {
     display: block;
@@ -3423,28 +3470,22 @@ ul li {
 *.picturefill-background a {
   color: #fff;
 }
-@media screen and (min-width: 750px) {
-  *.picturefill-background.lighten1,
-  *.picturefill-background.lighten1 a,
-  *.picturefill-background.lighten2,
-  *.picturefill-background.lighten2 a,
-  *.picturefill-background .darktext,
-  *.picturefill-background .darktext a {
-    color: rgba(0,0,0,0.5);
-  }
-  *.picturefill-background .lighttext *,
-  *.picturefill-background .lighttext a {
-    color: #fff;
-  }
+*.picturefill-background .lighttext *,
+*.picturefill-background .lighttext a {
+  color: #fff;
 }
-*.picturefill-background a {
-  text-decoration: underline;
+*.picturefill-background.lighten1,
+*.picturefill-background.lighten1 a,
+*.picturefill-background.lighten2,
+*.picturefill-background.lighten2 a,
+*.picturefill-background .darktext *,
+*.picturefill-background .darktext a {
+  color: #092745;
 }
 .activeLink,
 nav a:hover,
 p a:hover,
-li a:hover,
-*.picturefill-background a:hover {
+li a:hover {
   color: #01b9e5 !important;
   -webkit-transition: 500ms;
   transition: 500ms;
@@ -3583,8 +3624,8 @@ p {
   font-size: 1em;
   line-height: 1.4em;
   letter-spacing: -0.02em;
-  margin-top: 1vw;
-  margin-bottom: 1.5vw;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 li {
   font-weight: 400;
@@ -3599,7 +3640,7 @@ td {
   letter-spacing: -0.025em;
 }
 strong {
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: -0.015em;
 }
 .small {
@@ -3660,6 +3701,15 @@ body > footer h6 {
     color: #b4b4b4;
   }
 }
+@media screen and (min-width: 750px) {
+  .slideItem p:not(.small) {
+    font-size: 140%;
+  }
+  .xl {
+    font-size: 400%;
+    line-height: 95%;
+  }
+}
 /* effects */
 .multiply {
   background-blend-mode: multiply;
@@ -3687,16 +3737,12 @@ body > footer h6 {
   background-color: #646464;
 }
 .lighten1 {
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.8);
   background-blend-mode: overlay;
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
 }
 .lighten2 {
   background-color: rgba(255,255,255,0.5);
   background-blend-mode: overlay;
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
 }
 .greyscale {
   background-color: rgba(0,0,0,0.3);
@@ -3741,6 +3787,10 @@ body > footer h6 {
 .gradient75 {
   background-blend-mode: normal;
   background: linear-gradient(135deg, #092745 25%, #006694 55%, #01b9e5 95%);
+}
+.gradientFade1 {
+  background-blend-mode: normal;
+  background: linear-gradient(135deg, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0.75) 30%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.05) 90%);
 }
 .gradientShdw {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.05)), color-stop(10vh, transparent));
