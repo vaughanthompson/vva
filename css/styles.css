@@ -1745,9 +1745,12 @@ header.sticky .imgText.stacked picture {
   width: 50vw;
   height: auto;
 }
+body > footer img.logo {
+  width: 120px;
+}
 @media screen and (min-width: 750px) {
   body > footer img.logo {
-    width: 5vw;
+    width: 120px;
   }
   .inpage-logo {
     width: 30vw;
