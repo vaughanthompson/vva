@@ -219,14 +219,22 @@ strong
 
 
 // footer
-body > footer p a
+body > footer p a:link,
+body > footer p a:visited,
+body > footer a:link,
+body > footer a:visited,
+body > footer
     font-size:1em
-    line-height: 160%    
+    line-height: 160%
+    color: white
+    text-decoration: none 
+body > footer h4,
+body > footer h5,
 body > footer h6
     font-weight: 700
-    font-size:1em
     line-height: 120%
-    color: brand2
+    margin-bottom: 0.75em
+    color: white
 
 
 @media mtrigger

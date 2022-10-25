@@ -123,15 +123,18 @@
 
     body > footer
         display: flex
-        justify-content: space-between 
+        flex-wrap: nowrap
+        column-gap: marL
     body > footer section
-        flex-basis: 47%
-        padding-left: padM
-        padding-right: padM
+        flex-basis: 25%
     body > footer section:first-child
-        padding-left: 0
-    body > footer section:last-child
-        padding-right: 0
+        flex-basis: 75%
+    body > footer nav
+        display: flex
+        column-gap: marL
+    body > footer nav ul
+        flex:1 1 25%
+
 
     div.catList > article
         display: flex
@@ -146,12 +149,10 @@
         padding-left: 0
     div.catList > article section:last-child
         padding-right: 0
+    
 
 
 @media lgdesktopRule
-    body > footer
-        padding-left: padXL
-        padding-right: padXL
     main > article.blog section:first-child,
     main > article.blog section:last-child
         padding-right:padXL*3
@@ -271,7 +272,7 @@ div.content.cE
     div.picturefill-background div.content section
         width:100%
     div.picturefill-background div.content section > div
-        padding-top:7.5vh !important
+        padding-top:5vh !important
     .picturefill-background
         min-height: halfH  
     article.imageContent.row div.content > section:last-child
@@ -496,7 +497,7 @@ div#priNav-v2 > nav a:first-child
     position: fixed
     z-index: 7000
     background-color: white
-    border-bottom:1px solid brand1
+    border-bottom:1px solid white
     width:100vw
     padding-left: 5vw
     padding-right: 5vw
@@ -627,27 +628,34 @@ article.slideItem div.panelled section:not(.image)
 @media phoneRule
     article.slideItem div.content
         flex-direction: column
-        justify-content: center
+        justify-content: space-between
     article.slideItem section
         margin: 0
-        padding: padM
-        flex-basis: 75%
+        padding: padM 0        
+        flex-basis: 65%
     article.slideItem section.image
-        flex-basis: 30%
+        flex-basis: 25%
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        padding-bottom: 0
     article.slideItem section.image img
         max-height: 40vw
         width:auto
         margin: 0 auto
         align-self: flex-end
+    article.slideItem div.picturefill-background div.content section > div
+        padding-bottom: 0 !important
     article.slideItem div.picturefill-background div.content section.image > div
         padding-top: 0 !important
         padding-bottom: 0 !important
-    article.slideItem section:not(.image)
-        padding: padM
     article.slideItem div.panelled section
         background-color: white
     div.containSlider
         border-bottom: 1px solid brand0
+    article.slideItem section .ctaButton
+        margin-top: 5px
+        margin-bottom: 5px
 
 @media ttrigger
     article.slideItem div.content

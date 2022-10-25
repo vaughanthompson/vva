@@ -353,22 +353,38 @@ img {
     display: -ms-flexbox;
     display: box;
     display: flex;
-    -webkit-box-pack: justify;
-    -o-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-lines: single;
+    -moz-box-lines: single;
+    -o-box-lines: single;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-column-gap: 5vw;
+    -moz-column-gap: 5vw;
+    column-gap: 5vw;
   }
   body > footer section {
-    -ms-flex-preferred-size: 47%;
-        flex-basis: 47%;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
   }
   body > footer section:first-child {
-    padding-left: 0;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
   }
-  body > footer section:last-child {
-    padding-right: 0;
+  body > footer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-column-gap: 5vw;
+    -moz-column-gap: 5vw;
+    column-gap: 5vw;
+  }
+  body > footer nav ul {
+    -webkit-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
   }
   div.catList > article {
     display: -webkit-box;
@@ -399,10 +415,6 @@ img {
   }
 }
 @media screen and (min-width: 1500px) {
-  body > footer {
-    padding-left: 7vw;
-    padding-right: 7vw;
-  }
   main > article.blog section:first-child,
   main > article.blog section:last-child {
     padding-right: 21vw;
@@ -610,7 +622,7 @@ div.content.cE {
     width: 100%;
   }
   div.picturefill-background div.content section > div {
-    padding-top: 7.5vh !important;
+    padding-top: 5vh !important;
   }
   .picturefill-background {
     min-height: 50vh;
@@ -986,7 +998,7 @@ div#priNav-v2 > nav a:first-child {
   position: fixed;
   z-index: 7000;
   background-color: #fff;
-  border-bottom: 1px solid #092745;
+  border-bottom: 1px solid #fff;
   width: 100vw;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -1165,20 +1177,33 @@ article.slideItem div.panelled section:not(.image) {
     -o-box-orient: vertical;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  article.slideItem section {
+    margin: 0;
+    padding: 3vw 0;
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+  article.slideItem section.image {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
     -webkit-box-pack: center;
     -o-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-  }
-  article.slideItem section {
-    margin: 0;
-    padding: 3vw;
-    -ms-flex-preferred-size: 75%;
-        flex-basis: 75%;
-  }
-  article.slideItem section.image {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -webkit-box-align: end;
+    -o-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding-bottom: 0;
   }
   article.slideItem section.image img {
     max-height: 40vw;
@@ -1188,18 +1213,22 @@ article.slideItem div.panelled section:not(.image) {
     align-self: flex-end;
     -ms-flex-item-align: end;
   }
+  article.slideItem div.picturefill-background div.content section > div {
+    padding-bottom: 0 !important;
+  }
   article.slideItem div.picturefill-background div.content section.image > div {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-  }
-  article.slideItem section:not(.image) {
-    padding: 3vw;
   }
   article.slideItem div.panelled section {
     background-color: #fff;
   }
   div.containSlider {
     border-bottom: 1px solid #006694;
+  }
+  article.slideItem section .ctaButton {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 @media screen and (min-width: 750px) {
@@ -1378,6 +1407,12 @@ body > footer .icon {
   justify-content: flex-start;
   background: none;
   padding: 0;
+  color: #fff;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+body > footer .icon:hover {
+  color: #01b9e5;
 }
 a.majorCTA,
 a.ctaButton {
@@ -2173,7 +2208,7 @@ body > footer ul > li {
   list-style-type: none;
   line-height: 1.4em;
   padding: 0.7em 0;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #01b9e5;
 }
 .enquirySubject {
   background-color: #01b9e5;
@@ -3796,15 +3831,23 @@ strong {
 .price {
   color: brand6;
 }
-body > footer p a {
+body > footer p a:link,
+body > footer p a:visited,
+body > footer a:link,
+body > footer a:visited,
+body > footer {
   font-size: 1em;
   line-height: 160%;
+  color: #fff;
+  text-decoration: none;
 }
+body > footer h4,
+body > footer h5,
 body > footer h6 {
   font-weight: 700;
-  font-size: 1em;
   line-height: 120%;
-  color: #01b9e5;
+  margin-bottom: 0.75em;
+  color: #fff;
 }
 @media screen and (max-width: 1100px) {
   h1 {
