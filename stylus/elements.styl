@@ -125,6 +125,15 @@ a.ctaButton.ctaShop
         padding padM padL
         font-weight: 300*/
 
+.ctaButton.ctaMinor
+    background-color: brand2
+
+.ctaButton.ctaNoStock,
+.ctaButton.ctaNoStock:hover
+    background-color: blackAlp5 !important
+    color: blackAlp50 !important
+    font-weight:300
+    
 nav a.ctaButton
     background:none
     border-color: brand1
@@ -175,7 +184,7 @@ div.cta > div > h6
         padding: padM padXL padM padXL  
     a.ctaButton
         padding-top: padM
-        padding-bottom: padM
+        padding-bottom: padM*0.9
 
 
 .imgText
@@ -1001,12 +1010,25 @@ i.toggleIcon.upDown:before
     font-weight: 500
     text-decoration: underline
     max-width:90%
+.catItem a,
 .catItem:hover a h6
     text-decoration: none
 .catItem a h3
-    text-decoration: underline
+   //text-decoration: underline
 .catItem:hover a h3
-    text-decoration: none
+    //text-decoration: none
+.catItem span.cta
+    display: flex
+    text-align: center
+    column-gap: 10px
+    align-items: center
+    justify-content: center
+    width:100%
+    border-top:1px solid brand1
+    padding-top: padXS
+.catItem span.cta > *
+    margin-bottom: 0
+    
 
 div.keyStats
     margin-top: 1em
@@ -1021,13 +1043,15 @@ div.keyStats span
     letter-spacing: 0
     font-weight:500
     display: block
+    color: brand2
 
 div.imageThumb
-    height: 11vw
-    background-color: blackAlp5
-    background-size: cover
+    height: 12vw
+    //background-color: blackAlp5
+    background-size: contain
     background-position: center
-    margin-bottom: marXS
+    background-repeat: no-repeat
+    margin-bottom: marStd
 div.landing div.imageThumb
     max-width: 9vw
     height:6vw
@@ -1047,8 +1071,8 @@ div.landing div.imageThumb
         margin-bottom: marXXS
     div.catList div.catGroup
         display: grid
-        grid-column-gap: 5vw;
-        grid-row-gap: 2.5vw;
+        grid-column-gap: 3vw;
+        grid-row-gap: 3vw;
         //grid-template-columns: repeat(3, \[col\] 20vw )
         grid-template-columns: repeat(auto-fill, minmax(25%, 1fr) )
         grid-auto-flow: row dense
@@ -1137,6 +1161,25 @@ body.model .catItem h6
         flex-basis: 25%
         margin-right: marM*1.8
         margin-bottom: marL
+
+
+div.catContain div.catGroup
+    padding: padXS 0
+
+div.catGroup .catItem
+    border: 1px solid blackAlp10
+    box-shadow: 0px 0px 10px 0px blackAlp10
+    padding: padXS
+    transition: 0.3s
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+@media (pointer: fine) 
+    div.catGroup .catItem:hover
+        transform: translateY(-0.5em) 
+        box-shadow: 0px 10px 15px 0px blackAlp10
 
 
 
@@ -1332,7 +1375,11 @@ a.smallTeaser span
     display: block
     flex-grow: 0
     flex-shrink: 0
-    background-color: brand1
+    background-blend-mode: normal
+    background: linear-gradient(135deg, 
+    brand1,
+    brand0 50%,
+    brand2)
     width: 70px
     height: 70px
     border-radius: 4px
@@ -1448,11 +1495,6 @@ body.home div.brandCarousel
     margin: marM auto marM auto
     padding: padXXS 0 padXXS 0
 @media dtrigger
-    body.home div.catList,
-    body.home div.brandCarousel
-        margin-left: marL
-        margin-right: marL
-        {test}
     body.home div.catList div.catGroup
         display: flex
         justify-content: space-between

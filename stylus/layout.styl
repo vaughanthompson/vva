@@ -48,7 +48,8 @@
         padding-top: 0
     body > header.masthead > div:last-child
         margin-left: auto
-        {test}
+        align-self: flex-end
+        margin-bottom: 1.1em
 
 
     div.content
@@ -220,7 +221,9 @@ article.grid.side-by-side section > div:last-child
     padding: padXS 0 padStd padStd
 article > header
     padding: padM
-
+@media phoneRule
+    *.largeH
+        height: fullH*0.8
 
 
 // layout mods
@@ -440,6 +443,25 @@ div#priNav-v2 > nav a:not(:first-child)
     color: whiteAlp75
     align-self: center
 
+nav.secNav a
+    color: brand0
+    text-transform: uppercase
+    font-size:0.78em
+    font-weight: 500
+    letter-spacing: 0.1em
+nav.accountNav
+    background-color: brand1
+    padding: padXXS padXS
+    border-radius: 50px
+    margin-right: marXXS    
+nav.accountNav a
+    color: white
+    font-size: 1.1em
+    font-weight:700
+    padding-right: 0.75vw
+    padding-left: 0.75vw
+
+
 div#priNav-v2 > nav a:first-child
     flex-basis:25%
 @media smallDesktop
@@ -598,6 +620,9 @@ article.slideItem > div.picturefill-background
     width:100%
 article.slideItem .ctaButton
     margin-top: 1em
+article.slideItem div.panelled section:not(.image)
+    padding: padM
+    background-color: white
 
 @media phoneRule
     article.slideItem div.content
@@ -605,17 +630,24 @@ article.slideItem .ctaButton
         justify-content: center
     article.slideItem section
         margin: 0
-        padding: 0
-        flex-basis: 60%
+        padding: padM
+        flex-basis: 75%
     article.slideItem section.image
         flex-basis: 30%
     article.slideItem section.image img
-        max-height: 50vw
+        max-height: 40vw
         width:auto
         margin: 0 auto
+        align-self: flex-end
     article.slideItem div.picturefill-background div.content section.image > div
         padding-top: 0 !important
         padding-bottom: 0 !important
+    article.slideItem section:not(.image)
+        padding: padM
+    article.slideItem div.panelled section
+        background-color: white
+    div.containSlider
+        border-bottom: 1px solid brand0
 
 @media ttrigger
     article.slideItem div.content
@@ -623,8 +655,8 @@ article.slideItem .ctaButton
         padding-right: padL
     article.slideItem section
         margin: 0
-        padding: 0
-        flex-basis: 45%
+        padding: padM
+        flex-basis: 50%
     article.slideItem section.image
         margin: 0
         padding: 0

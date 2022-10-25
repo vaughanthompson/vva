@@ -28,6 +28,29 @@ ul li
     margin-bottom: 0.4em
     list-style-type: disc
 
+// nav lists
+.catGroup nav
+    margin-top: 1em
+nav ul,
+nav ol
+    margin: 0
+    padding: 0
+nav ul li,
+nav ol li
+    list-style-type: none
+nav ol
+    margin-left: 1.5em
+nav ul li h6,   
+nav ul li
+    line-height: 1.7em
+nav ul li a,
+nav ol li a
+    text-decoration: none !important
+@media (pointer: fine)
+    nav ul li a:hover,
+    nav ol li a:hover
+        text-decoration: underline !important
+
 // picturefill-bg and image teaser
 *.picturefill-background,
 *.picturefill-background a
@@ -52,7 +75,7 @@ nav a:hover,
 p a:hover,
 li a:hover
     color: brand2 !important
-    transition: 500ms
+    transition: 250ms
     text-decoration: none !important
 @media (pointer: fine)
     nav a:hover
@@ -63,8 +86,8 @@ li a:hover
 
 // nav typo
 nav a
-    font-weight:500 !important
-    font-size:1em !important
+    //font-weight:500 !important
+    font-size:1em
     padding: 0 padXS*0.9 0 0
     color: brand1
 
@@ -211,7 +234,7 @@ body > footer h6
         font-size: 2.2em   
         line-height: 110%
     *.picturefill-background h1
-        font-size: 2.2em   
+        font-size: 2em   
         line-height: 110%    
     h2
         font-size: 1.8em
@@ -231,6 +254,7 @@ body > footer h6
 
     p
         font-size: 1em
+        line-height: 1.2em
 
 
 
@@ -257,5 +281,5 @@ body > footer h6
     .slideItem p:not(.small)
         font-size:140%
     .xl
-        font-size:400%
+        font-size:350%
         line-height: 95%

@@ -402,6 +402,7 @@ html {
   padding: 1rem 2rem;
   font-weight: 500;
   font-size: 1.1em;
+  transition: 0.2s;
 }
 
 
@@ -431,17 +432,18 @@ div.other__inputs input[type=text] {
   padding: .4em 2em .4em .8em;
   font-size: 1em;
   border:1px solid #bebebe;
+  width:auto;
 
 }
 
 .select-container {position:relative; display: inline-block;}
 .select-container:after {content:""; width:0; height:0; position:absolute; pointer-events: none;}
 .select-container:after {
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
     top: 1.2em;
-    right: 1.0em;
-    border-top: 8px solid black;
+    right: 10px;
+    border-top: 6px solid black;
     opacity: 0.5;
 }
 select::-ms-expand {
