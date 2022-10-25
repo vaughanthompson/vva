@@ -1182,6 +1182,7 @@ div.catGroup .catItem
     flex-direction: column
     align-items: center
     justify-content: space-between
+    position: relative
 @media (pointer: fine) 
     div.catGroup .catItem:hover
         transform: translateY(-0.5em) 
@@ -1673,3 +1674,69 @@ div.autoSearch a.ctaButton
         display: none !important
 
 
+
+
+
+
+/* offers and shop status styling */
+.offer 
+    color: offer !important
+//.priceOffer h3,    
+.priceOffer div.keyStats *
+    color: offer !important
+.priceOffer
+    border: 2px solid offer !important
+
+.otherOffer div.keyStats p span
+    color: brand2 !important
+.otherOffer
+    //border: 2px solid brand2 !important
+
+
+.priceOfferSiteWide div.keyStats p span
+    color: offer !important  
+
+.highlight div.keyStats p span
+    color: brand3 !important
+.poa h3,   
+.poa div.keyStats *
+    color: brand2 !important
+.inactive *,     
+.inactive div.keyStats *
+    color: blackAlp25 !important
+
+div.keyStats span
+    text-transform: uppercase
+    font-size: 0.75em
+    line-height: 1.4em
+    letter-spacing: 0
+    font-weight:500
+    display: block
+    color: brand0
+
+div.lozenge
+    background-color: brand0
+    color: white
+    display: block
+    position absolute
+    top:0
+    right: 0
+    padding: padXXS*0.75 padXXS
+    //width: 100%
+    text-align: center
+
+.priceOffer div.lozenge
+    background-color: offer
+    color: white
+
+.otherOffer div.lozenge
+    background-color: brand2
+    color: white
+
+.highlight div.lozenge
+    background-color: brand3
+    color: white
+
+.priceOfferSiteWide div.lozenge
+    background-color: offer
+    color: white

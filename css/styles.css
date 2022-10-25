@@ -92,7 +92,7 @@ body.lightTheme > header.sticky {
 }
 body.darkTheme {
   background-color: #092745;
-  color: #646464;
+  color: #867c6e;
 }
 body.darkTheme > header.sticky {
   background-color: #092745;
@@ -129,18 +129,6 @@ img {
 .noPad {
   padding: 0 !important;
 }
-.offer {
-  color: #de1e21 !important;
-}
-.offerborder {
-  border: 1px solid #de1e21 !important;
-}
-.inactive {
-  color: rgba(0,0,0,0.25) !important;
-}
-.poa {
-  color: #01b9e5 !important;
-}
 @media screen and (min-width: 750px) {
   main,
   div#priNav-v2,
@@ -155,7 +143,7 @@ img {
   body > footer {
     padding: 3.6vw;
     padding-top: 2vw;
-    padding-bottom: 7vw;
+    padding-bottom: 3vw;
   }
   body > footer {
     padding-top: 4.5vw;
@@ -1254,6 +1242,15 @@ article.slideItem div.panelled section:not(.image) {
   article.slideItem section > div {
     margin: 0;
     padding: 0 !important;
+  }
+  div.catContain article.slideItem div.content {
+    padding-left: 3vw;
+    padding-right: 1.5vw;
+  }
+  div.catContain article.slideItem section:not(.image) {
+    padding-left: 0;
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
   }
 }
 div.catWrapper {
@@ -2936,6 +2933,7 @@ div.catGroup .catItem {
   -o-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
 }
 @media (pointer: fine) {
   div.catGroup .catItem:hover {
@@ -3590,6 +3588,67 @@ div.autoSearch a.ctaButton {
     display: none !important;
   }
 }
+.offer {
+  color: #de1e21 !important;
+}
+.priceOffer div.keyStats * {
+  color: #de1e21 !important;
+}
+.priceOffer {
+  border: 2px solid #de1e21 !important;
+}
+.otherOffer div.keyStats p span {
+  color: #01b9e5 !important;
+}
+.priceOfferSiteWide div.keyStats p span {
+  color: #de1e21 !important;
+}
+.highlight div.keyStats p span {
+  color: #867c6e !important;
+}
+.poa h3,
+.poa div.keyStats * {
+  color: #01b9e5 !important;
+}
+.inactive *,
+.inactive div.keyStats * {
+  color: rgba(0,0,0,0.25) !important;
+}
+div.keyStats span {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  font-weight: 500;
+  display: block;
+  color: #006694;
+}
+div.lozenge {
+  background-color: #006694;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.75vw 1vw;
+  text-align: center;
+}
+.priceOffer div.lozenge {
+  background-color: #de1e21;
+  color: #fff;
+}
+.otherOffer div.lozenge {
+  background-color: #01b9e5;
+  color: #fff;
+}
+.highlight div.lozenge {
+  background-color: #867c6e;
+  color: #fff;
+}
+.priceOfferSiteWide div.lozenge {
+  background-color: #de1e21;
+  color: #fff;
+}
 a:link,
 a:visited {
   color: #092745;
@@ -3645,6 +3704,14 @@ nav ul li {
 nav ul li a,
 nav ol li a {
   text-decoration: none !important;
+}
+div.catSidebar nav {
+  margin-bottom: 3vw;
+}
+div.catSidebar nav ul {
+  border-top: 1px solid #006694;
+  padding-top: 1vw;
+  margin-top: 1vw;
 }
 @media (pointer: fine) {
   nav ul li a:hover,
@@ -3928,7 +3995,7 @@ body > footer h6 {
   background-color: #01b9e5;
 }
 .multiplyGreen {
-  background-color: #646464;
+  background-color: #867c6e;
 }
 .lighten1 {
   background-color: rgba(255,255,255,0.8);
