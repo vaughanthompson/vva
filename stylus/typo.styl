@@ -2,6 +2,9 @@
 a:link, a:visited
     color: brand1
     text-decoration: none
+a:hover, a:active
+    color: brand2
+    text-decoration: underline
 p a:link,
 p a:visited,
 li a:link,
@@ -151,7 +154,8 @@ h1, h2, h3, h4 ,h5, h6
     margin: 0
     margin-bottom: 5px
     color: brand0
-
+p 
+    color: brand1
 // defaults   
 h1
     font-weight: 1000
@@ -170,25 +174,39 @@ h2 span
     font-weight: 300
     letter-spacing: -0.015em    
 h3, body.model h2
-    font-weight: 700
-    font-size: 1.7em
+    font-weight: 500
+    font-size: 1.8em
     line-height: 115%
-    letter-spacing: -0.035em
+    letter-spacing: -0.025em
 h3 span
     font-weight: 300
-    letter-spacing: -0.01em    
+    letter-spacing: -0.01em  
+div.catItem h3 
+    font-weight: 400
+    font-size: 1.2em
+    color: brand1
+div.catGroup.feature div.catItem h3
+    font-weight: 900
+    font-size: 1.6em
+    color: brand0
 h4
-    font-weight: 600
-    font-size: 1.7em
+    font-weight: 700
+    font-size: 1.3em
     line-height: 120%
     letter-spacing: -0.01em
 h4 span
-    font-weight: 400    
+    font-weight: 400  
+div.catItem h4 
+    font-size: 1.5em
+div.catItem h4 strong 
+    font-weight: 900  
+
+
 h5
     font-weight: 700
     font-size: 1.2em
     line-height: 125%
-    letter-spacing: -0.02em
+    letter-spacing: -0.04em
 h5 span
     font-weight: 400
     letter-spacing: -0.01em      
@@ -226,6 +244,7 @@ strong
 
 
 // footer
+body > footer p,
 body > footer p a:link,
 body > footer p a:visited,
 body > footer a:link,
@@ -233,7 +252,7 @@ body > footer a:visited,
 body > footer
     font-size:1em
     line-height: 160%
-    color: white
+    color: white 
     text-decoration: none 
 body > footer h4,
 body > footer h5,
@@ -286,6 +305,8 @@ body > footer h6
         letter-spacing: -0.045em
         text-indent: -0.08em
         color:brand4
+    p.inset
+        max-width: 80%
 
 
 

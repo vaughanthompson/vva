@@ -1415,12 +1415,12 @@ a.majorCTA,
 a.ctaButton {
   color: #fff;
   background-color: #092745;
-  padding: 1vw 1.5vw 0.75vw 1.5vw;
+  padding: 0.9vw 1.5vw 0.75vw 1.5vw;
   margin-bottom: 0.6vw;
   display: inline-block;
   white-space: nowrap;
   border-radius: 2em;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 700;
 }
 div#masthead a.majorCTA {
@@ -1431,10 +1431,10 @@ span.ctaButton {
   border-radius: 50px;
   background: #092745;
   color: #fff !important;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 700;
   border: 1px solid #fff;
-  padding: 1vw 2vw 0.75vw 2vw;
+  padding: 0.9vw 2vw 0.75vw 2vw;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-box;
@@ -1497,6 +1497,8 @@ span.ctaButton:hover > i:before {
   border-bottom-color: #fff !important;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  text-decoration: none;
+  cursor: pointer;
 }
 a.ctaButton:hover i {
   margin-left: 25px;
@@ -2705,7 +2707,7 @@ i.toggleIcon.upDown:before {
 }
 .catItem a,
 .catItem:hover a h6 {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .catItem span.cta {
   display: -webkit-box;
@@ -2725,19 +2727,19 @@ i.toggleIcon.upDown:before {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  border-top: 1px solid #092745;
+  border-top: 1px solid #006694;
   padding-top: 1.5vw;
+  margin-top: 1vw;
 }
 .catItem span.cta > * {
   margin-bottom: 0;
 }
 div.keyStats {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 div.keyStats p {
   font-weight: 400;
   margin: 0;
-  margin-bottom: 0.6em;
   max-width: 80%;
 }
 div.keyStats span {
@@ -2749,11 +2751,11 @@ div.keyStats span {
   color: #01b9e5;
 }
 div.imageThumb {
-  height: 12vw;
+  height: 10vw;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 2vw;
+  margin-bottom: 1.5vw;
 }
 div.landing div.imageThumb {
   max-width: 9vw;
@@ -2788,9 +2790,9 @@ div.landing div.imageThumb {
   div.catList div.catGroup {
     display: -ms-grid;
     display: grid;
-    grid-column-gap: 3vw;
-    grid-row-gap: 3vw;
-    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 2.5vw;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     grid-auto-flow: row dense;
     grid-auto-rows: -webkit-min-content;
     grid-auto-rows: min-content;
@@ -2909,7 +2911,7 @@ div.catGroup .catItem {
   border: 1px solid rgba(0,0,0,0.1);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-  padding: 1.5vw;
+  padding: 1.5vw 1vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   display: -webkit-box;
@@ -2942,6 +2944,9 @@ div.catGroup .catItem {
     -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
     box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
   }
+}
+div.catGroup .catItem > a {
+  width: 100%;
 }
 div.gallery {
   margin-bottom: 1.5vw;
@@ -3232,10 +3237,12 @@ a.smallTeaser p u {
 }
 @media (pointer: fine) {
   a.smallTeaser:hover {
-    -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 0 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.1);
     -webkit-transition: 0.25s;
     transition: 0.25s;
+    color: #092745;
+    text-decoration: none;
   }
 }
 @media (pointer: coarse) {
@@ -3483,7 +3490,10 @@ div.autoSearch div.tabContainer hr {
 }
 div.autoSearch div.tabAutoSContent {
   margin-bottom: 0;
-  color: #fff;
+  color: #fff !important;
+}
+div.autoSearch div.tabAutoSContent p {
+  color: #fff !important;
 }
 @media screen and (max-width: 750px) {
   div.formCols > div > * {
@@ -3654,6 +3664,11 @@ a:visited {
   color: #092745;
   text-decoration: none;
 }
+a:hover,
+a:active {
+  color: #01b9e5;
+  text-decoration: underline;
+}
 p a:link,
 p a:visited,
 li a:link,
@@ -3815,6 +3830,9 @@ h6 {
   margin-bottom: 5px;
   color: #006694;
 }
+p {
+  color: #092745;
+}
 h1 {
   font-weight: 1000;
   font-size: 3em;
@@ -3837,29 +3855,45 @@ h2 span {
 }
 h3,
 body.model h2 {
-  font-weight: 700;
-  font-size: 1.7em;
+  font-weight: 500;
+  font-size: 1.8em;
   line-height: 115%;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.025em;
 }
 h3 span {
   font-weight: 300;
   letter-spacing: -0.01em;
 }
+div.catItem h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #092745;
+}
+div.catGroup.feature div.catItem h3 {
+  font-weight: 900;
+  font-size: 1.6em;
+  color: #006694;
+}
 h4 {
-  font-weight: 600;
-  font-size: 1.7em;
+  font-weight: 700;
+  font-size: 1.3em;
   line-height: 120%;
   letter-spacing: -0.01em;
 }
 h4 span {
   font-weight: 400;
 }
+div.catItem h4 {
+  font-size: 1.5em;
+}
+div.catItem h4 strong {
+  font-weight: 900;
+}
 h5 {
   font-weight: 700;
   font-size: 1.2em;
   line-height: 125%;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
 }
 h5 span {
   font-weight: 400;
@@ -3901,6 +3935,7 @@ strong {
 .price {
   color: brand6;
 }
+body > footer p,
 body > footer p a:link,
 body > footer p a:visited,
 body > footer a:link,
@@ -3960,6 +3995,9 @@ body > footer h6 {
     letter-spacing: -0.045em;
     text-indent: -0.08em;
     color: #b4b4b4;
+  }
+  p.inset {
+    max-width: 80%;
   }
 }
 @media screen and (min-width: 750px) {
