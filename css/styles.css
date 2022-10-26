@@ -1268,7 +1268,7 @@ div.catWrapper > div.catContain {
   div.catWrapper {
     -ms-grid-columns: 300px 4vw auto;
     grid-template-columns: 300px auto;
-    padding: 3vw;
+    padding: 2vw 3vw 3vw 3vw;
   }
 }
 @supports not (display: grid) {
