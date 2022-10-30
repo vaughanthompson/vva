@@ -383,23 +383,14 @@ img {
     -o-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: end;
-    -o-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    -webkit-column-gap: 2vw;
+    -moz-column-gap: 2vw;
+    column-gap: 2vw;
   }
   div.catList > article section {
-    -ms-flex-preferred-size: 47%;
-        flex-basis: 47%;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-bottom: 2vw;
-  }
-  div.catList > article section:first-child {
-    padding-left: 0;
-  }
-  div.catList > article section:last-child {
-    padding-right: 0;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    border: 1px solid #0ff;
   }
 }
 @media screen and (min-width: 1500px) {
@@ -1445,7 +1436,7 @@ span.ctaButton {
   justify-content: space-between;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  white-space: normal;
+  white-space: nowrap;
 }
 @media screen and (max-width: 750px) {
   a.ctaButton,
@@ -2951,6 +2942,7 @@ div.catGroup .catItem > a {
 div.gallery {
   margin-bottom: 1.5vw;
   width: 100%;
+  border: 1px solid #0ff;
 }
 @media screen and (max-width: 750px) {
   div.gallery {
@@ -2962,7 +2954,7 @@ div.gallery div.galleryItem {
   background-color: #ccc;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 @media screen and (max-width: 750px) {
   div.gallery div.galleryItem {
@@ -3931,6 +3923,9 @@ strong {
 }
 .small {
   font-size: 0.7em;
+}
+.tiny {
+  font-size: 50%;
 }
 .price {
   color: brand6;

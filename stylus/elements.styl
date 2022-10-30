@@ -103,7 +103,7 @@ span.ctaButton
     display: inline-flex
     justify-content: space-between
     transition: 0.2s
-    white-space: normal
+    white-space: nowrap
     @media phoneRule
         padding: padM padL
         font-weight: 300
@@ -1197,6 +1197,7 @@ div.catGroup .catItem > a
 div.gallery 
     margin-bottom: marXS
     width: 100%
+    {test}
     @media phoneRule
         margin-top: marXL
 
@@ -1205,7 +1206,7 @@ div.gallery div.galleryItem
     background-color: #cccccc
     background-position: center
     background-repeat: no-repeat
-    background-size: cover
+    background-size: contain
     @media phoneRule
         min-height: 40vh
         margin-bottom: 1em
