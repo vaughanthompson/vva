@@ -275,7 +275,7 @@ header.sticky .imgText span.txtC
 picture.logoAsset
     max-width:65px
 .long picture.logoAsset
-    max-width:300px
+    max-width:350px
 .tall picture.logoAsset
     max-width:60px   
 
@@ -1195,15 +1195,14 @@ div.catGroup .catItem > a
 
 // model gallery
 div.gallery 
-    margin-bottom: marXS
-    width: 100%
-    {test}
+    margin-top: marStd
+    //width: 100%
     @media phoneRule
         margin-top: marXL
 
 div.gallery div.galleryItem
-    min-height: 37vw
-    background-color: #cccccc
+    min-height: 30vw
+    background-color: blackAlp5
     background-position: center
     background-repeat: no-repeat
     background-size: contain
@@ -1557,7 +1556,7 @@ div.siteName > *
         flex-basis: 60%
 @media dtrigger
     div.search div.floating
-        flex-basis: 45%
+        flex-basis: 35%
 
 
 
@@ -1748,3 +1747,42 @@ div.lozenge
 .priceOfferSiteWide div.lozenge
     background-color: offer
     color: white
+
+
+/* pagination */
+div.pagination
+    display: flex
+    column-gap: 2px
+div.pagination > .paginationItem
+    width:40px
+    height:40px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size:1em
+    margin-bottom: 0
+    padding-top:4px
+    //border:1px solid blackAlp25
+    //color: blackAlp25
+    //border-radius: 2px
+    transition:0.3s
+div.pagination > .paginationItem.active
+    background-color: brand2
+    border-color: brand2
+    color: white
+div.pagination > .paginationItem:hover
+    text-decoration: none
+div.pagination > .paginationItem:hover:not(.active)
+    text-decoration: none
+    background-color: brand0
+    border-color: brand0
+    color: white
+div.pagination > .paginationItem.inactive
+div.pagination > .paginationItem.inactive:hover
+    text-decoration: none
+    background: none
+    color: blackAlp50
+div.pagination > .paginationItem:first-child,
+div.pagination > .paginationItem:last-child
+    padding-top:0px
+    border:none

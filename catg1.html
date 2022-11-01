@@ -129,7 +129,8 @@
                 </label>
             </div>
             <div class="submitW">
-                <input type="submit" value="Search" class="ctaButton button">
+                <label for="headerSubmit"><i class="icon-search ctaButton"></i></label>
+                <input type="submit" value="Search" id="headerSubmit" class="ctaButton button">
             </div>
         </div>
         <div>
@@ -289,6 +290,7 @@
                         <div class="forms select-container"> 
                             <select>
                                 <option>Pack Size:</option>
+                                <option>ALL</option>
                                 <option>2 x 6L</option>
                                 <option>3 x 5L</option>
                                 <option>18L</option>
@@ -297,12 +299,12 @@
                             </select>
                         </div>
                     </div>
-                    <div>
-                        <a href="#" class="activeLink">1</a>
-                        &nbsp;|&nbsp;
-                        <a href="#">2</a>
-                        &nbsp;|&nbsp;
-                        <a href="#">3</a>
+                    <div class="pagination">
+                        <a href="#" class="paginationItem inactive"><i class="icon-chevron-left"></i></a>
+                        <a href="#" class="paginationItem active">1</a>
+                        <a href="#" class="paginationItem">2</a>
+                        <a href="#" class="paginationItem">3</a>
+                        <a href="#" class="paginationItem"><i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
 
@@ -1300,7 +1302,7 @@
                         <div class="forms select-container"> 
                             <select>
                                 <option>Sort:</option>
-                                <option selected>Default</option>
+                                <option>Default</option>
                                 <option>Newest</option>
                                 <option>Price (Low)</option>
                                 <option>Price (High)</option>
@@ -1311,18 +1313,29 @@
                         <div class="forms select-container"> 
                             <select>
                                 <option>View:</option>
-                                <option selected>30</option>
+                                <option>30</option>
                                 <option>60</option>
                                 <option>ALL</option>
                             </select>
                         </div>
+                        <div class="forms select-container"> 
+                            <select>
+                                <option>Pack Size:</option>
+                                <option>ALL</option>
+                                <option>2 x 6L</option>
+                                <option>3 x 5L</option>
+                                <option>18L</option>
+                                <option>209L</option>
+                                <option>Bulk</option>
+                            </select>
+                        </div>
                     </div>
-                    <div>
-                        <a href="#" class="activeLink">1</a>
-                        &nbsp;|&nbsp;
-                        <a href="#">2</a>
-                        &nbsp;|&nbsp;
-                        <a href="#">3</a>
+                    <div class="pagination">
+                        <a href="#" class="paginationItem inactive"><i class="icon-chevron-left"></i></a>
+                        <a href="#" class="paginationItem active">1</a>
+                        <a href="#" class="paginationItem">2</a>
+                        <a href="#" class="paginationItem">3</a>
+                        <a href="#" class="paginationItem"><i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
 
@@ -1504,14 +1517,16 @@
                     <li><a href="/">Contact Us</a></li>
                     <li><a href="/">Home</a></li>
                 </ul>
-                <a href="[social link]"><i class="icon icon-facebook"></i></a>
-                <a href="[social link]"><i class="icon icon-instagram"></i></a>
                 <a href="[social link]"><i class="icon icon-linkedin"></i></a>
-                <p class="small">Copyright 2022. All rights reserved.</p>
-
+                <a href="[social link]"><i class="icon icon-youtube"></i></a>
+                <a href="[social link]"><i class="icon icon-twitter"></i></a>
+                <p class="small">&copy; 2022. Viva Energy Group. All rights reserved.<br>
+                <a href="/"><u>PRIVACY POLICY</u></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/"><u>TERMS & CONDITIONS</u></a></p>
                 <br>
                 <br>
+                
                 <img src="/images/logoREV.svg" class="logo">
+
                 
         </section>
     </footer>

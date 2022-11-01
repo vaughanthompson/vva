@@ -21,6 +21,9 @@ h3 a:visited
 .activeLink
     font-weight: 800 !important
 
+.secLink
+    text-decoration: underline !important
+
 // custom typo
 ul
     margin-bottom: 2em
@@ -175,7 +178,7 @@ h2 span
     letter-spacing: -0.015em    
 h3, body.model h2
     font-weight: 500
-    font-size: 1.8em
+    font-size: 1.6em
     line-height: 115%
     letter-spacing: -0.025em
 h3 span
@@ -238,12 +241,17 @@ strong
 
 // modify typo
 .small
-    font-size: 0.7em    
+    font-size: 0.8em
+    letter-spacing: 0  
 .tiny
     font-size: 50%    
 .price
     color: brand6
-
+.noWrap 
+    white-space: nowrap
+.importedHTML
+    color: brand1
+    line-height: 1.8em
 
 // footer
 body > footer p,
@@ -295,11 +303,6 @@ body > footer h6
 
 
 
-
-
-
-
-
 @media ttrigger 
     .secTitle
         font-size: 7em
@@ -321,3 +324,41 @@ body > footer h6
     .xl
         font-size:350%
         line-height: 95%
+
+
+
+/* simple link with icon */
+a.hasIcon
+    line-height: 1.2em
+    font-size: 110%
+    font-weight: 900
+    color: brand1
+    text-decoration: none !important
+    padding-left: 0
+    margin-left: 18px
+    display inline-block
+    position: relative
+    transition: 0.3s
+a.hasIcon:hover
+    color: brand2 
+    transform: translateX(-18px)   
+a.hasIcon::before
+    font-family: 'icomoon' !important
+    position: absolute
+    margin-left: -21px
+    margin-top: -2px
+a.hasIcon.back::before
+    content: '\e905'
+
+
+
+
+
+
+/* product page mods */
+.prodTitle
+    margin-bottom: 0.5em
+
+@media ttrigger
+    .prodTitle h1
+        max-width: 40vw

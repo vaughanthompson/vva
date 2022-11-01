@@ -139,11 +139,12 @@
     div.catList > article
         display: flex
         justify-content: space-between
-        column-gap: 2vw
+        column-gap: 4vw
+        margin-bottom: 2em
         //align-items: flex-end
     div.catList > article section
         flex-basis: 50%
-        {test}
+        //{test}
  
     
 
@@ -443,7 +444,7 @@ div#priNav-v2 > nav a:not(:first-child)
 nav.secNav a
     color: brand0
     text-transform: uppercase
-    font-size:0.78em
+    font-size:0.79em
     font-weight: 500
     letter-spacing: 0.1em
 nav.accountNav
@@ -696,7 +697,7 @@ article.slideItem div.panelled section:not(.image)
 
 div.catWrapper
     display: grid
-    grid-gap: 4vw
+    grid-gap: 5vw
     grid-template-areas: 
         "catSidebar"
         "catContain"
@@ -707,7 +708,7 @@ div.catWrapper > div.catContain
 
 @media dtrigger
     div.catWrapper
-        grid-template-columns: 300px auto
+        grid-template-columns: 280px auto
         padding: padStd padM padM padM
 
 @supports not (display:grid)

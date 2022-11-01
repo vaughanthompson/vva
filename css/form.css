@@ -242,7 +242,7 @@ input:focus {outline:none;}
   --color__hover:rgba(0,102,148,1.0);/* #2962ff */ 
   --field__background: #f7f7f7;
   --field__background--hover: #ffffff;
-  --input__border: rgba(0, 0, 0, 0.22);
+  --input__border: rgba(0, 0, 0, 0.15);
   --input__border--hover: rgba(0, 0, 0, 0.62);
   --label__color: #aeaeae;
 }
@@ -502,4 +502,33 @@ p.confirmation {
 }
 
 
+
+
+
+
+
+/* search icon button */
+div.search div.submitW input {
+  display: none;
+}
+div.search div.submitW label {
+  display: inline-block !important;
+  background: var(--color__accent);
+  /*background: var(--input__border);*/
+  border-width: 0;
+  /*border-radius: 25px;*/
+  color: #fff;
+  width:52px;
+  height: 52px;
+  padding: 14px;
+  font-size: 25px;
+  transition: 0.2s;
+  margin-left: 2px;
+}
+
+div.search div.submitW label:hover {
+  background: var(--color__hover);
+  color: #fff;
+  cursor: pointer;
+}
 
