@@ -3598,13 +3598,16 @@ div.autoSearch a.ctaButton {
   border: 2px solid #de1e21 !important;
 }
 .otherOffer div.keyStats p span {
+  color: #bea96c !important;
+}
+.highlightSiteWide div.keyStats p span {
   color: #01b9e5 !important;
 }
 .priceOfferSiteWide div.keyStats p span {
   color: #de1e21 !important;
 }
 .highlight div.keyStats p span {
-  color: #867c6e !important;
+  color: #01b9e5 !important;
 }
 .poa h3,
 .poa div.keyStats * {
@@ -3633,18 +3636,16 @@ div.lozenge {
   padding: 0.75vw 1vw;
   text-align: center;
 }
-.priceOffer div.lozenge {
-  background-color: #de1e21;
+.otherOffer div.lozenge {
+  background-color: #bea96c;
   color: #fff;
 }
-.otherOffer div.lozenge {
+.highlight div.lozenge,
+.highlightSiteWide div.lozenge {
   background-color: #01b9e5;
   color: #fff;
 }
-.highlight div.lozenge {
-  background-color: #867c6e;
-  color: #fff;
-}
+.priceOffer div.lozenge,
 .priceOfferSiteWide div.lozenge {
   background-color: #de1e21;
   color: #fff;
