@@ -1196,48 +1196,51 @@ div.catGroup .catItem > a
 // model gallery
 div.gallery 
     margin-top: marStd
-    //width: 100%
+    width: 100%
     @media phoneRule
         margin-top: marXL
 
 div.gallery div.galleryItem
-    min-height: 30vw
-    background-color: blackAlp5
+    //min-height: 30vw
+    background-color: white
+    border: 1px solid blackAlp10
+    padding: padStd padXXS
+    @media phoneRule
+        height: 100vw
+        margin-bottom: 1em
+div.gallery div.galleryItemInset 
     background-position: center
     background-repeat: no-repeat
     background-size: contain
-    @media phoneRule
-        min-height: 40vh
-        margin-bottom: 1em
-
+    height: 25vw
 /* gallery height */
 
 div.gallery div.galleryItem div.pbVideo iframe
     height: 37vw;
 
 .thumbImg {
-    margin: marXXS*.5 0
+    margin: marXXS 0
     display: inline-flex
     flex-wrap: wrap
 }
 div.gallery div.thumbImg a {
-    padding:1px
+    padding:padXXS*0.75
     margin-right: marXXS*.25
     border:2px solid rgba(255,255,255,0.0)
 
 }
 div.gallery div.thumbImg span {
-    width:72px
-    height: 48px
+    width:80px
+    height: 80px
     background-position: center
     background-repeat: no-repeat
-    background-size: cover
+    background-size: contain
     position: relative
     text-align: center
     display: block
 }
 div.gallery div.thumbImg a.activeLink {
-    border:2px solid brand1
+    border:2px solid brand0
 }
 div.gallery div.thumbImg a.activeLink span {
     opacity:0.5;
