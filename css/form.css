@@ -508,9 +508,11 @@ p.confirmation {
 
 
 /* search icon button */
+.search div.submitW input,
 div.search div.submitW input {
   display: none;
 }
+.search div.submitW label,
 div.search div.submitW label {
   display: inline-block !important;
   background: var(--color__accent);
@@ -521,14 +523,23 @@ div.search div.submitW label {
   width:52px;
   height: 52px;
   padding: 14px;
-  font-size: 25px;
+  font-size: 24px;
   transition: 0.2s;
   margin-left: 2px;
 }
 
+.search div.submitW label:hover,
 div.search div.submitW label:hover {
   background: var(--color__hover);
   color: #fff;
   cursor: pointer;
 }
 
+
+
+
+/* small inputs */
+.inputSmall {
+  width:150px;
+}
+  

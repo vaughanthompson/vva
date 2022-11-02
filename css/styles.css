@@ -3593,7 +3593,8 @@ div.autoSearch a.ctaButton {
     display: none !important;
   }
 }
-.offer {
+.offer,
+.offer > * {
   color: #de1e21 !important;
 }
 .priceOffer div.keyStats * {
@@ -3641,19 +3642,82 @@ div.lozenge {
   padding: 0.75vw 1vw;
   text-align: center;
 }
+.messageArea {
+  background-color: #006694;
+  color: #fff;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  padding: 1vw 1.5vw;
+  line-height: 1.4em;
+  border-radius: 4px;
+}
+.messageArea.system {
+  background-color: #fff;
+  color: #092745;
+  border-radius: 0px;
+  border-left: 2px solid #006694;
+}
+.messageArea.otherOffer,
 .otherOffer div.lozenge {
   background-color: #bea96c;
   color: #fff;
 }
+.messageArea.highlight,
 .highlight div.lozenge,
 .highlightSiteWide div.lozenge {
   background-color: #01b9e5;
   color: #fff;
 }
+.messageArea.priceOffer,
 .priceOffer div.lozenge,
 .priceOfferSiteWide div.lozenge {
   background-color: #de1e21;
   color: #fff;
+}
+.messageArea.system span.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 4px;
+  -moz-column-gap: 4px;
+  column-gap: 4px;
+  margin-top: 0.5vw;
+}
+.messageArea.system .ctaButton {
+  margin-bottom: 0;
+}
+.avails {
+  margin-bottom: 1vw;
+}
+.instock i {
+  color: #00c800;
+}
+.instockLow i {
+  color: #c8c800;
+}
+.ltdStock i {
+  color: #c86400;
+}
+.oos i {
+  color: #de1e21;
+}
+div.pricePoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: baseline;
+  -o-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-column-gap: 1vw;
+  -moz-column-gap: 1vw;
+  column-gap: 1vw;
 }
 div.pagination {
   display: -webkit-box;
@@ -3999,6 +4063,10 @@ strong {
 .importedHTML {
   color: #092745;
   line-height: 1.8em;
+  margin-bottom: 1.5vw;
+}
+.strike {
+  text-decoration: line-through;
 }
 body > footer p,
 body > footer p a:link,
@@ -4078,7 +4146,7 @@ a.hasIcon {
   line-height: 1.2em;
   font-size: 110%;
   font-weight: 900;
-  color: #092745;
+  color: #006694;
   text-decoration: none !important;
   padding-left: 0;
   margin-left: 18px;

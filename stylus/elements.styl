@@ -1689,7 +1689,8 @@ div.autoSearch a.ctaButton
 
 
 /* offers and shop status styling */
-.offer 
+.offer,
+.offer > *
     color: offer !important
 //.priceOffer h3,    
 .priceOffer div.keyStats *
@@ -1727,7 +1728,6 @@ div.keyStats span
     font-weight:500
     display: block
     color: brand0
-
 div.lozenge
     background-color: brand0
     color: white
@@ -1738,21 +1738,58 @@ div.lozenge
     padding: padXXS*0.75 padXXS
     //width: 100%
     text-align: center
-
-
+.messageArea
+    background-color: brand0
+    color: white
+    margin-top:marXXS
+    margin-bottom:marXXS
+    padding: padXXS padXS
+    line-height:1.4em
+    border-radius:4px
+.messageArea.system
+    background-color: white
+    color: brand1
+    border-radius:0px
+    border-left:2px solid brand0
+    //padding-left: 0
+.messageArea.otherOffer,
 .otherOffer div.lozenge
     background-color: gold
     color: white
-
+.messageArea.highlight,
 .highlight div.lozenge,
 .highlightSiteWide div.lozenge
     background-color: brand2
     color: white
-
+.messageArea.priceOffer,
 .priceOffer div.lozenge,
 .priceOfferSiteWide div.lozenge
     background-color: offer
     color: white
+.messageArea.system span.cta
+    display: flex
+    align-items: center
+    column-gap: 4px
+    margin-top:marXXS*0.5
+.messageArea.system .ctaButton
+    margin-bottom: 0
+.avails 
+    margin-bottom: marXXS
+.instock i
+    color: good
+.instockLow i
+    color: ok
+.ltdStock i
+    color: amber
+.oos i
+    color: alert
+
+div.pricePoint 
+    display: flex
+    align-items: baseline
+    column-gap: 1vw
+
+
 
 
 /* pagination */
