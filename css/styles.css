@@ -122,6 +122,9 @@ hr.tiny {
   border-bottom-width: 1px;
   margin: 1vw 0 1vw 0;
 }
+div.catList hr {
+  margin: 3vw 0;
+}
 img {
   width: 100%;
   height: auto;
@@ -391,6 +394,13 @@ img {
   div.catList > article section {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  div.catWrapper-noSidebar div.catList > article {
+    -webkit-column-gap: 8vw;
+    -moz-column-gap: 8vw;
+    column-gap: 8vw;
   }
 }
 @media screen and (min-width: 1800px) {
