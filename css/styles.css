@@ -1298,10 +1298,8 @@ div.catWrapper > div.catContain {
   body > footer > div {
     max-width: 1800px;
     margin: 0px auto;
-    border: 1px solid #0ff;
   }
   main > * {
-    border: 1px solid #0ff;
     max-width: 1800px;
     margin: 0px auto !important;
   }
