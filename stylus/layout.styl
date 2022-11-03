@@ -31,7 +31,7 @@
         justify-content: flex-start
         flex-wrap: wrap
         column-gap: marXXS
-        padding: padXS padM padXXS padM
+        padding: 2em 2em 1em 2em
     body > header.fixed
         min-height: 11vh
         position: absolute
@@ -44,7 +44,7 @@
         display: none
 
     body > header.user
-        padding-bottom: padXS
+        padding-bottom: 2em
         padding-top: 0
     body > header.masthead > div:last-child
         margin-left: auto
@@ -121,7 +121,7 @@
         padding-left: padStd
         padding-right: padStd
 
-    body > footer
+    body > footer > div
         display: flex
         flex-wrap: nowrap
         column-gap: marL
@@ -440,7 +440,8 @@ div#priNav-v2 > nav a:not(:first-child)
     padding-bottom: 7px
     color: whiteAlp75
     align-self: center
-
+nav.secNav
+    margin-right:10px
 nav.secNav a
     color: brand0
     text-transform: uppercase
@@ -710,7 +711,8 @@ div.catWrapper > div.catContain
     div.catWrapper
         grid-template-columns: 280px auto
         padding: padStd padM padM padM
-
+    div.catWrapper-noSidebar
+        padding: padStd padM padM padM
 @supports not (display:grid)
     @media dtrigger
         div.catWrapper
@@ -721,3 +723,19 @@ div.catWrapper > div.catContain
             flex-basis: 30%
         div.catWrapper > div.catContain
             flex-basis: 70%
+
+
+
+
+/* large desktop fix width */
+
+@media lgdesktopRule
+    body > header,
+    body > footer > div
+        max-width: lgBreakPoint
+        margin: 0px auto
+        {test}
+    main > *
+        {test}
+        max-width: lgBreakPoint
+        margin: 0px auto !important

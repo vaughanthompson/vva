@@ -180,7 +180,7 @@ img {
     -webkit-column-gap: 1vw;
     -moz-column-gap: 1vw;
     column-gap: 1vw;
-    padding: 1.5vw 3vw 1vw 3vw;
+    padding: 2em 2em 1em 2em;
   }
   body > header.fixed {
     min-height: 11vh;
@@ -195,7 +195,7 @@ img {
     display: none;
   }
   body > header.user {
-    padding-bottom: 1.5vw;
+    padding-bottom: 2em;
     padding-top: 0;
   }
   body > header.masthead > div:last-child {
@@ -336,7 +336,7 @@ img {
     padding-left: 2vw;
     padding-right: 2vw;
   }
-  body > footer {
+  body > footer > div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: box;
@@ -393,7 +393,7 @@ img {
         flex-basis: 50%;
   }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1800px) {
   main > article.blog section:first-child,
   main > article.blog section:last-child {
     padding-right: 21vw;
@@ -917,6 +917,9 @@ div#priNav-v2 > nav a:not(:first-child) {
       align-self: center;
   -ms-flex-item-align: center;
 }
+nav.secNav {
+  margin-right: 10px;
+}
 nav.secNav a {
   color: #006694;
   text-transform: uppercase;
@@ -1261,6 +1264,9 @@ div.catWrapper > div.catContain {
     grid-template-columns: 280px auto;
     padding: 2vw 3vw 3vw 3vw;
   }
+  div.catWrapper-noSidebar {
+    padding: 2vw 3vw 3vw 3vw;
+  }
 }
 @supports not (display: grid) {
 @media screen and (min-width: 1100px) {
@@ -1286,6 +1292,19 @@ div.catWrapper > div.catContain {
           flex-basis: 70%;
     }
 }
+}
+@media screen and (min-width: 1800px) {
+  body > header,
+  body > footer > div {
+    max-width: 1800px;
+    margin: 0px auto;
+    border: 1px solid #0ff;
+  }
+  main > * {
+    border: 1px solid #0ff;
+    max-width: 1800px;
+    margin: 0px auto !important;
+  }
 }
 .icon {
   color: #092745;
@@ -2585,14 +2604,17 @@ div.ddownInner nav i {
 #breadcrumb nav a.activeLink {
   font-weight: 500 !important;
 }
+#breadcrumb nav a.activeLink {
+  color: rgba(0,0,0,0.25) !important;
+}
 @media screen and (max-width: 750px) {
-  #breadcrumb nav a,
   #breadcrumb nav a.activeLink {
     margin-right: 5px;
   }
 }
 #breadcrumb nav i {
   padding: 0 5px;
+  color: #01b9e5;
 }
 @media screen and (max-width: 750px) {
   #breadcrumb nav i {
@@ -3648,6 +3670,7 @@ div.lozenge {
   margin-top: 1vw;
   margin-bottom: 1vw;
   padding: 1vw 1.5vw;
+  font-size: 1.1em;
   line-height: 1.4em;
   border-radius: 4px;
 }
@@ -3656,6 +3679,7 @@ div.lozenge {
   color: #092745;
   border-radius: 0px;
   border-left: 2px solid #006694;
+  font-size: 1em;
 }
 .messageArea.otherOffer,
 .otherOffer div.lozenge {
@@ -4045,7 +4069,6 @@ td {
 }
 strong {
   font-weight: 900;
-  letter-spacing: -0.015em;
 }
 .small {
   font-size: 0.8em;
@@ -4175,6 +4198,9 @@ a.hasIcon.back::before {
 @media screen and (min-width: 750px) {
   .prodTitle h1 {
     max-width: 40vw;
+  }
+  div.catWrapper-noSidebar .prodTitle h1 {
+    max-width: 60vw;
   }
 }
 /* effects */
