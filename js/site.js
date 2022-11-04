@@ -221,6 +221,22 @@
             $(this).html(($(this).html()=="Try it"?"Close":"Try it"));
             return false;
         });
+
+
+
+        /* product enquiry show/hide */
+        $('.inpageEnquiry').hide();
+        $('.openInpageEnquiry').click(function(){
+            $('.prodContent').hide();
+            $('.inpageEnquiry').fadeTo(300,1.0);
+            return false;
+        });
+        $('.closeForm').click(function(){
+            $('.inpageEnquiry').hide();
+            $('.prodContent').fadeTo(300,1.0);
+            return false;
+        });
+
     
 
 

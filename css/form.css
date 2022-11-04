@@ -454,6 +454,9 @@ select::-ms-expand {
 div.forms > div {
   margin:1.5em auto;
 }
+div.forms > div.submitW {
+  margin:0;
+}
 
 div.forms textarea {
   min-width: 95%;
@@ -469,13 +472,20 @@ span.field-validation-error {
 }
 
 div.validation-summary-errors {
-  display: inline-block;
+  display: block;
   padding:0 1rem 0rem 1rem;
   color: red;
   margin-bottom: 0 !important;
+  border-left: 4px solid red;
 }
 div.validation-summary-errors ul {
   margin:0;
+  padding:0.5em;
+}
+
+div.validation-summary-errors li {
+  list-style-type: none;
+  line-height: 1.2em;
 }
 
 span.field-validation-error::before {
@@ -543,3 +553,23 @@ div.search div.submitW label:hover {
   width:150px;
 }
   
+
+
+
+
+div.forms div.spaceBetween {
+    column-gap: 1.5em;    
+}
+div.forms div.spaceBetween > div {
+  flex: 1 1 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  div.forms div.spaceBetween {
+    flex-wrap: wrap;
+    margin: 0 !important;
+  }
+  div.forms div.spaceBetween > div {
+    margin-bottom: 1em;
+  }
+}

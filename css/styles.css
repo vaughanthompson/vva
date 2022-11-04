@@ -398,9 +398,9 @@ img {
 }
 @media screen and (min-width: 1100px) {
   div.catWrapper-noSidebar div.catList > article {
-    -webkit-column-gap: 8vw;
-    -moz-column-gap: 8vw;
-    column-gap: 8vw;
+    -webkit-column-gap: 6vw;
+    -moz-column-gap: 6vw;
+    column-gap: 6vw;
   }
 }
 @media screen and (min-width: 1800px) {
@@ -4193,8 +4193,6 @@ a.hasIcon {
 }
 a.hasIcon:hover {
   color: #01b9e5;
-  -webkit-transform: translateX(-18px);
-  transform: translateX(-18px);
 }
 a.hasIcon::before {
   font-family: 'icomoon' !important;
@@ -4204,6 +4202,9 @@ a.hasIcon::before {
 }
 a.hasIcon.back::before {
   content: '\e905';
+}
+a.hasIcon.cancel::before {
+  content: '\e90a';
 }
 .prodTitle {
   margin-bottom: 0.5em;
