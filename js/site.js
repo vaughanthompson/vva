@@ -237,7 +237,15 @@
             return false;
         });
 
-    
+
+
+        /* sidebar collapsible nav */
+        $('.subnavContent').hide();
+        $('.collapseNavTrig').click(function(){
+            $(this).siblings('.subnavContent').slideToggle(500);
+            //$(this).html(($(this).html()=="Try it"?"Close":"Try it"));
+            return false;
+        });
 
 
 });

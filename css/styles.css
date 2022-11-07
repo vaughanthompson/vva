@@ -360,10 +360,6 @@ img {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
   }
-  body > footer section:first-child {
-    -ms-flex-preferred-size: 75%;
-        flex-basis: 75%;
-  }
   body > footer nav {
     display: -webkit-box;
     display: -ms-flexbox;
