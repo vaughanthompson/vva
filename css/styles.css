@@ -4221,6 +4221,38 @@ a.hasIcon.cancel::before {
     max-width: 60vw;
   }
 }
+a.collapseNavTrig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+a.collapseNavTrig strong {
+  line-height: 1em;
+}
+a.collapseNavTrig i {
+  font-size: 1.1em;
+  display: inline-block;
+  padding: 2px;
+  border: 1px solid #092745;
+}
+a.collapseNavTrig i::before {
+  display: inline-block;
+}
+a.collapseNavTrig:hover i {
+  border: 1px solid #01b9e5;
+}
+ol.subnavContent {
+  margin-top: 1em;
+}
 nav ul.iconLink li a {
   display: -webkit-box;
   display: -ms-flexbox;

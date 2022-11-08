@@ -372,9 +372,25 @@ a.hasIcon.cancel::before
 
 
 /* collapsible styling */
-a.collapsibleNavTrig
-    // j
+a.collapseNavTrig
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+a.collapseNavTrig strong 
+    line-height:1em
+a.collapseNavTrig i
+    font-size: 1.1em
+    display: inline-block
+    padding: 2px
+    border:1px solid brand1
+a.collapseNavTrig i::before
+    display: inline-block
+a.collapseNavTrig:hover i
+    border:1px solid brand2
 
+
+ol.subnavContent 
+    margin-top: 1em
 
 /* icons for application groups */
 nav ul.iconLink li a
