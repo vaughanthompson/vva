@@ -379,6 +379,9 @@ img {
     -ms-flex: 1 1 25%;
     flex: 1 1 25%;
   }
+  div.catList {
+    margin-top: 1vw;
+  }
   div.catList > article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -454,7 +457,7 @@ div.content > section > div {
   height: 50vh;
 }
 *.smallH {
-  height: 25vh;
+  height: 35vh;
 }
 .largeH div.content > section > div {
   padding-top: 5vw;
