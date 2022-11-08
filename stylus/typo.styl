@@ -96,6 +96,9 @@ li a:hover
 .activeLink,
 .activeLink:hover
     color: brand2 !important
+.offer.activeLink,
+.offer.activeLink:hover
+    color: offer !important
 
 // nav typo
 nav a
@@ -103,6 +106,16 @@ nav a
     font-size:1em
     padding: 0 padXS*0.9 0 0
     color: brand1
+nav a.offer:not(.activeLink)
+    background-color: offer
+    color: white !important
+    display: block
+    padding: padXXS*0.75
+    padding-bottom: padXXS*0.6
+    font-weight: 700
+    margin-bottom: 15px
+nav a.offer:not(.activeLink):hover
+    color: white
 
 /* dark slider nav */    
 body.darkSlider > header.fixed .siteLogo span,
@@ -327,6 +340,7 @@ body > footer h6
     .xl
         font-size:350%
         line-height: 95%
+        margin-top: 0.4em
 
 
 
