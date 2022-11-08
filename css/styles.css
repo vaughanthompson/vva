@@ -4221,6 +4221,17 @@ a.hasIcon.cancel::before {
     max-width: 60vw;
   }
 }
+nav ul li {
+  position: relative;
+}
+nav ul li i {
+  font-size: 1.5em;
+  line-height: 0.1em;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 7px;
+  display: inline-block;
+}
 /* effects */
 .multiply {
   background-blend-mode: multiply;
