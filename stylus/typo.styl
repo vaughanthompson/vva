@@ -377,15 +377,17 @@ a.collapsibleNavTrig
 
 
 /* icons for application groups */
-nav ul
-    li
-        position: relative
-
-nav ul
-    li i
+nav ul.iconLink li a
+        display: flex
+        align-items: center
+        column-gap: 15px
+nav ul.iconLink li
+        margin-bottom: marXS
+nav ul.iconLink li a i
         font-size:1.5em
-        line-height: 0.1em
-        margin-right: 5px
-        margin-bottom: 5px
-        margin-top: 7px
-        display: inline-block
+        padding-bottom:5px
+        text-decoration: none !important
+nav ul.iconLink li a i::before
+        display: inline-block     
+footer nav ul.iconLink li
+        margin-bottom: 0

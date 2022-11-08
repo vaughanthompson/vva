@@ -4221,16 +4221,32 @@ a.hasIcon.cancel::before {
     max-width: 60vw;
   }
 }
-nav ul li {
-  position: relative;
+nav ul.iconLink li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
 }
-nav ul li i {
+nav ul.iconLink li {
+  margin-bottom: 1.5vw;
+}
+nav ul.iconLink li a i {
   font-size: 1.5em;
-  line-height: 0.1em;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  margin-top: 7px;
+  padding-bottom: 5px;
+  text-decoration: none !important;
+}
+nav ul.iconLink li a i::before {
   display: inline-block;
+}
+footer nav ul.iconLink li {
+  margin-bottom: 0;
 }
 /* effects */
 .multiply {
