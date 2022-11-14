@@ -132,6 +132,7 @@
         $(this).hide();
         $('#navCart').show();
         $('#navTrigger').show();
+        $('.mblTitle').show();
         $("div.mblnavContainer").scrollTo(0);
         $('div.mblnav').hide();
         $('html, body').removeClass('noscroll');
@@ -141,6 +142,7 @@
     $('#navTrigger').click(function(){
         $(this).hide();
         $('#navCart').hide();
+        $('.mblTitle').hide();
         $('#navClose').show();
         $('div.mblnav').show();
         $('html, body').addClass('noscroll');
