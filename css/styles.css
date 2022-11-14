@@ -1309,6 +1309,7 @@ article.slideItem div.panelled section:not(.image) {
     padding: 3vw;
   }
 }
+div.mblInPgeNav,
 div.catWrapper {
   padding: 7vw;
 }
@@ -1380,7 +1381,7 @@ div.catWrapper {
   div.catWrapper div.catSidebar nav ul {
     border-top: none;
   }
-  div.catWrapper div.catSidebar h3 {
+  div.mblInPgeNav div.catSidebar h3 {
     display: none;
   }
 }
