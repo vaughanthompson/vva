@@ -1015,12 +1015,13 @@ div#priNav-v2 > nav a:first-child {
 }
 h2.mblTitle {
   background-color: #fff;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #092745;
   width: 100vw;
-  padding: 5px 4vw 5px 4vw;
+  padding: 7px 4vw 10px 4vw;
   position: relative;
-  margin-top: -10px;
-  font-size: 1.8em;
+  margin-top: -8px;
+  margin-bottom: 0;
+  font-size: 1.7em;
   z-index: 7001;
 }
 #navHeader div#mblNavControl {
@@ -1208,7 +1209,6 @@ article.slideItem .ctaButton {
   margin-top: 1em;
 }
 article.slideItem div.panelled section:not(.image) {
-  padding: 3vw;
   background-color: #fff;
 }
 @media screen and (max-width: 750px) {
@@ -1260,6 +1260,7 @@ article.slideItem div.panelled section:not(.image) {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
+  article.slideItem div.panelled div.content,
   article.slideItem div.panelled section {
     background-color: #fff;
   }
@@ -1304,17 +1305,26 @@ article.slideItem div.panelled section:not(.image) {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
   }
+  article.slideItem div.panelled section:not(.image) {
+    padding: 3vw;
+  }
 }
 div.catWrapper {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 5vw;
+  padding: 7vw;
 }
-div.catWrapper div.catSidebar {
-  grid-area: "catSidebar";
-}
-div.catWrapper > div.catContain {
-  grid-area: "catContain";
+@media screen and (min-width: 750px) {
+  div.catWrapper {
+    padding: 7vw;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 5vw;
+  }
+  div.catWrapper div.catSidebar {
+    grid-area: "catSidebar";
+  }
+  div.catWrapper > div.catContain {
+    grid-area: "catContain";
+  }
 }
 @media screen and (min-width: 1100px) {
   div.catWrapper {
@@ -1360,6 +1370,18 @@ div.catWrapper > div.catContain {
   main > * {
     max-width: 1800px;
     margin: 0px auto !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  div.catWrapper div.catSidebar nav {
+    margin-bottom: 10vw;
+    border-top: none;
+  }
+  div.catWrapper div.catSidebar nav ul {
+    border-top: none;
+  }
+  div.catWrapper div.catSidebar h3 {
+    display: none;
   }
 }
 .icon {
@@ -3006,7 +3028,7 @@ div.catGroup .catItem {
   justify-content: space-between;
   position: relative;
 }
-@media (pointer: fine) {
+@media screen and (min-width: 1100px) {
   div.catGroup .catItem:hover {
     -webkit-transform: translateY(-0.5em);
     transform: translateY(-0.5em);
@@ -3954,13 +3976,26 @@ div.catSidebar nav ul {
   color: #092745;
 }
 .activeLink,
-nav a:hover,
 p a:hover,
 li a:hover {
   color: #01b9e5 !important;
   -webkit-transition: 250ms;
   transition: 250ms;
   text-decoration: none !important;
+}
+@media (pointer: fine) {
+  nav a:hover {
+    color: #01b9e5 !important;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+    text-decoration: none !important;
+  }
+}
+@media (pointer: coarse) {
+  nav a:hover {
+    -webkit-transition: 0;
+    transition: 0;
+  }
 }
 .activeLink,
 .activeLink:hover {
@@ -4193,7 +4228,7 @@ body > footer h6 {
     line-height: 110%;
   }
   *.picturefill-background h1 {
-    font-size: 2em;
+    font-size: 2.2em;
     line-height: 110%;
   }
   h2 {

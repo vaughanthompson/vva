@@ -84,7 +84,6 @@ div.catSidebar nav ul
 
 
 .activeLink, 
-nav a:hover,
 p a:hover,
 li a:hover
     color: brand2 !important
@@ -92,7 +91,12 @@ li a:hover
     text-decoration: none !important
 @media (pointer: fine)
     nav a:hover
-        //color: red !important
+        color: brand2 !important
+        transition: 250ms
+        text-decoration: none !important
+@media (pointer: coarse)
+    nav a:hover
+        transition: 0
 .activeLink,
 .activeLink:hover
     color: brand2 !important
@@ -294,7 +298,7 @@ body > footer h6
         font-size: 2.2em   
         line-height: 110%
     *.picturefill-background h1
-        font-size: 2em   
+        font-size: 2.2em   
         line-height: 110%    
     h2
         font-size: 1.8em
@@ -421,3 +425,5 @@ nav ul.iconLink li a i::before
         display: inline-block     
 footer nav ul.iconLink li
         margin-bottom: 0
+
+

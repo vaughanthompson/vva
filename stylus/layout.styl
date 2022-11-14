@@ -508,12 +508,13 @@ div#priNav-v2 > nav a:first-child
     box-shadow: 0 5px 20px 5px blackAlp10
 h2.mblTitle
     background-color: white
-    border-bottom:1px solid white
+    border-bottom:1px solid brand1
     width:100vw
-    padding:5px 4vw 5px 4vw
+    padding:7px 4vw 10px 4vw
     position: relative
-    margin-top: -10px
-    font-size: 1.8em
+    margin-top: -8px
+    margin-bottom: 0
+    font-size: 1.7em
     z-index: 7001
 
 #navHeader div#mblNavControl
@@ -655,7 +656,6 @@ article.slideItem > div.picturefill-background
 article.slideItem .ctaButton
     margin-top: 1em
 article.slideItem div.panelled section:not(.image)
-    padding: padM
     background-color: white
 
 @media phoneRule
@@ -682,6 +682,7 @@ article.slideItem div.panelled section:not(.image)
     article.slideItem div.picturefill-background div.content section.image > div
         padding-top: 0 !important
         padding-bottom: 0 !important
+    article.slideItem div.panelled div.content,
     article.slideItem div.panelled section
         background-color: white
     div.containSlider
@@ -714,7 +715,8 @@ article.slideItem div.panelled section:not(.image)
     div.catContain article.slideItem section:not(.image)
         padding-left: 0
         flex-basis: 55%
-
+    article.slideItem div.panelled section:not(.image)
+        padding: padM
 
 
 
@@ -729,18 +731,21 @@ article.slideItem div.panelled section:not(.image)
 
 
 /* side by side body layout */
-
-
 div.catWrapper
-    display: grid
-    grid-gap: 5vw
-    grid-template-areas: 
-        "catSidebar"
-        "catContain"
-div.catWrapper div.catSidebar
-    grid-area: "catSidebar"
-div.catWrapper > div.catContain
-    grid-area: "catContain"
+    padding: padXL
+
+@media ttrigger
+    div.catWrapper
+        padding: padXL
+        display: grid
+        grid-gap: 5vw
+        grid-template-areas: 
+            "catSidebar"
+            "catContain"
+    div.catWrapper div.catSidebar
+        grid-area: "catSidebar"
+    div.catWrapper > div.catContain
+        grid-area: "catContain"
 
 @media dtrigger
     div.catWrapper
@@ -772,3 +777,15 @@ div.catWrapper > div.catContain
     main > *
         max-width: lgBreakPoint
         margin: 0px auto !important
+
+
+/* mobile restyling */
+/* mobile sidebar and cat typo */
+@media phoneRule
+    div.catWrapper div.catSidebar nav
+        margin-bottom: marXL
+        border-top: none
+    div.catWrapper div.catSidebar nav ul
+        border-top: none
+    div.catWrapper div.catSidebar h3
+        display: none
