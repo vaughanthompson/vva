@@ -782,11 +782,19 @@ div.catWrapper
 
 /* mobile restyling */
 /* mobile sidebar and cat typo */
-@media phoneRule
-    div.catWrapper div.catSidebar nav
-        margin-bottom: marXL
-        border-top: none
-    div.catWrapper div.catSidebar nav ul
-        border-top: none
-    div.mblInPgeNav div.catSidebar h3
+div.mblInPgeNav div.catSidebar nav
+    margin-bottom: marXL
+    border-top: none
+div.mblInPgeNav div.catSidebar nav ul
+    border-top: none
+div.mblInPgeNav div.catSidebar h3
+    display: none
+div.mblInPgeNav div.catSidebar nav ul li
+    margin-bottom: marM
+div.mblInPgeNav div.catSidebar nav ul li.collapseNav
+    border-bottom: 2px solid brand1
+    padding-bottom: padM
+    margin-bottom: marM
+@media mtrigger
+    div.catWrapper div.catSidebar
         display: none

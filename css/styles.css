@@ -1373,15 +1373,26 @@ div.catWrapper {
     margin: 0px auto !important;
   }
 }
-@media screen and (max-width: 750px) {
-  div.catWrapper div.catSidebar nav {
-    margin-bottom: 10vw;
-    border-top: none;
-  }
-  div.catWrapper div.catSidebar nav ul {
-    border-top: none;
-  }
-  div.mblInPgeNav div.catSidebar h3 {
+div.mblInPgeNav div.catSidebar nav {
+  margin-bottom: 10vw;
+  border-top: none;
+}
+div.mblInPgeNav div.catSidebar nav ul {
+  border-top: none;
+}
+div.mblInPgeNav div.catSidebar h3 {
+  display: none;
+}
+div.mblInPgeNav div.catSidebar nav ul li {
+  margin-bottom: 3vw;
+}
+div.mblInPgeNav div.catSidebar nav ul li.collapseNav {
+  border-bottom: 2px solid #092745;
+  padding-bottom: 3vw;
+  margin-bottom: 3vw;
+}
+@media screen and (max-width: 1100px) {
+  div.catWrapper div.catSidebar {
     display: none;
   }
 }
@@ -4011,17 +4022,25 @@ nav a {
   padding: 0 1.35vw 0 0;
   color: #092745;
 }
-nav a.offer:not(.activeLink) {
-  background-color: #de1e21;
-  color: #fff !important;
-  display: block;
-  padding: 0.75vw;
-  padding-bottom: 0.6vw;
-  font-weight: 700;
-  margin-bottom: 15px;
+@media screen and (min-width: 750px) {
+  nav a.offer:not(.activeLink) {
+    background-color: #de1e21;
+    color: #fff !important;
+    display: block;
+    padding: 0.75vw;
+    padding-bottom: 0.5vw;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  nav a.offer:not(.activeLink):hover {
+    color: #fff;
+  }
 }
-nav a.offer:not(.activeLink):hover {
-  color: #fff;
+@media screen and (max-width: 750px) {
+  nav a.offer,
+  nav a.offer:not(.activeLink) {
+    font-weight: 800;
+  }
 }
 body.darkSlider > header.fixed .siteLogo span,
 body.darkSlider > header.fixed nav a.activeLink {
@@ -4172,7 +4191,7 @@ li {
   font-weight: 400;
   font-size: 1em;
   line-height: 1.4em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
 }
 td {
   font-weight: 350;
