@@ -1008,14 +1008,18 @@ i.toggleIcon.upDown:before
     div.catGroup a.catItem,
     div.catGroup div.catItem
         display: block
+        padding: padXL
+        margin: marL marL marXL marL
     .catItem h6
         font-weight: 700
     div.imageThumb
-        height: 60vw !important
+        height: 40vw !important
         margin-bottom: 5vh !important
     div.landing div.imageThumb
         max-width: 100vw  !important
         height:60vw !important
+    div.catGroup
+        margin-bottom: marL
 
 .catItem a h6
     font-weight: 500
@@ -1040,7 +1044,9 @@ i.toggleIcon.upDown:before
     margin-top: marXXS
 .catItem span.cta > *
     margin-bottom: 0
-    
+@media phoneRule
+    .catItem span.cta
+        padding-top: marL
 
 div.keyStats
     margin-top: 0.5em
@@ -1190,7 +1196,7 @@ div.catGroup .catItem
     position: relative
 @media dtrigger and (pointer: fine)
     div.catGroup .catItem:hover
-        transform: translateY(-0.5em) 
+        transform: translateY(-0.4em) 
         box-shadow: 0px 10px 15px 0px blackAlp10
 div.catGroup .catItem > a
     width: 100%
@@ -1803,6 +1809,11 @@ div.pricePoint
 div.pagination
     display: flex
     column-gap: 2px
+    {test}
+@media phoneRule
+    div.pagination
+        display:block
+        width:100%
 div.pagination > .paginationItem
     width:40px
     height:40px

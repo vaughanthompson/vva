@@ -2790,17 +2790,22 @@ i.toggleIcon.upDown:before {
   div.catGroup a.catItem,
   div.catGroup div.catItem {
     display: block;
+    padding: 7vw;
+    margin: 5vw 5vw 10vw 5vw;
   }
   .catItem h6 {
     font-weight: 700;
   }
   div.imageThumb {
-    height: 60vw !important;
+    height: 40vw !important;
     margin-bottom: 5vh !important;
   }
   div.landing div.imageThumb {
     max-width: 100vw !important;
     height: 60vw !important;
+  }
+  div.catGroup {
+    margin-bottom: 5vw;
   }
 }
 .catItem a h6 {
@@ -2836,6 +2841,11 @@ i.toggleIcon.upDown:before {
 }
 .catItem span.cta > * {
   margin-bottom: 0;
+}
+@media screen and (max-width: 750px) {
+  .catItem span.cta {
+    padding-top: 5vw;
+  }
 }
 div.keyStats {
   margin-top: 0.5em;
@@ -3042,8 +3052,8 @@ div.catGroup .catItem {
 }
 @media screen and (min-width: 1100px) {
   div.catGroup .catItem:hover {
-    -webkit-transform: translateY(-0.5em);
-    transform: translateY(-0.5em);
+    -webkit-transform: translateY(-0.4em);
+    transform: translateY(-0.4em);
     -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
     box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
   }
@@ -3846,6 +3856,13 @@ div.pagination {
   -webkit-column-gap: 2px;
   -moz-column-gap: 2px;
   column-gap: 2px;
+  border: 1px solid #0ff;
+}
+@media screen and (max-width: 750px) {
+  div.pagination {
+    display: block;
+    width: 100%;
+  }
 }
 div.pagination > .paginationItem {
   width: 40px;
@@ -4404,6 +4421,12 @@ footer nav ul.iconLink li {
   padding: 0.75vw 0.75vw;
   background-color: rgba(9,39,69,0.1);
   border: 1px solid #092745;
+}
+@media screen and (max-width: 750px) {
+  .status {
+    padding: 3vw;
+    margin: 2vw 0 2vw 0;
+  }
 }
 .status a {
   text-decoration: underline !important;
