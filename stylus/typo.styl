@@ -356,9 +356,9 @@ body > footer h6
 
 /* simple link with icon */
 a.hasIcon
-    line-height: 1.2em
-    font-size: 110%
-    font-weight: 900
+    line-height: 1em
+    font-size: 100%
+    font-weight: 500
     color: brand0
     text-decoration: none !important
     padding-left: 0
@@ -433,3 +433,36 @@ footer nav ul.iconLink li
         margin-bottom: 0
 
 
+/* box messaging with status */
+
+.status
+    display: block
+    text-align: center
+    margin:marXXS 0 marXXS 0
+    border-radius: 3px
+    padding: padXXS*0.5 padXXS*0.75
+    background-color: brand1BG
+    border:1px solid brand1
+.status a
+    text-decoration: underline !important
+    white-space: nowrap
+
+.success,
+.success:hover
+    border-color: good !important
+    background-color: goodBG
+.success,
+.success:hover,
+.success > *,
+.success:hover > *
+    color: good !important
+
+.error,
+.error:hover
+    border-color: alert !important
+    background-color: alertBG
+.error,
+.error:hover,
+.error > *,
+.error:hover > *
+    color: alert !important

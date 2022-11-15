@@ -4299,9 +4299,9 @@ body > footer h6 {
   }
 }
 a.hasIcon {
-  line-height: 1.2em;
-  font-size: 110%;
-  font-weight: 900;
+  line-height: 1em;
+  font-size: 100%;
+  font-weight: 500;
   color: #006694;
   text-decoration: none !important;
   padding-left: 0;
@@ -4395,6 +4395,41 @@ nav ul.iconLink li a i::before {
 }
 footer nav ul.iconLink li {
   margin-bottom: 0;
+}
+.status {
+  display: block;
+  text-align: center;
+  margin: 1vw 0 1vw 0;
+  border-radius: 3px;
+  padding: 0.5vw 0.75vw;
+  background-color: rgba(9,39,69,0.1);
+  border: 1px solid #092745;
+}
+.status a {
+  text-decoration: underline !important;
+  white-space: nowrap;
+}
+.success,
+.success:hover {
+  border-color: #00c800 !important;
+  background-color: rgba(0,200,0,0.1);
+}
+.success,
+.success:hover,
+.success > *,
+.success:hover > * {
+  color: #00c800 !important;
+}
+.error,
+.error:hover {
+  border-color: #de1e21 !important;
+  background-color: rgba(222,30,33,0.1);
+}
+.error,
+.error:hover,
+.error > *,
+.error:hover > * {
+  color: #de1e21 !important;
 }
 /* effects */
 .multiply {
