@@ -568,17 +568,19 @@ div.containMNav
 div.containMNav > *
     margin-bottom: marL
 div.containMNav nav
-    display: flex
+    //display: flex
     flex-direction: row
     flex-wrap: wrap
     justify-content: space-around
+    padding-bottom: padL
+    border-bottom: 1px solid brand1
 div.containMNav nav a
     flex-basis: 48%
-    padding: padM*1.5 padM 
-    line-height: 120%
-    font-size:0.9em !important
-    margin: 2px 0
-    background-color: rgba(0,0,0,0.05)
+    //padding: padM*1.5 padM 
+    //line-height: 120%
+    //font-size:0.9em !important
+    //margin: 2px 0
+    //background-color: rgba(0,0,0,0.05)
 div.containMNav h6
     font-size: 1em
     margin-top: marStd
@@ -795,6 +797,8 @@ div.mblInPgeNav div.catSidebar nav ul li.collapseNav
     border-bottom: 2px solid brand1
     padding-bottom: padM
     margin-bottom: marM
+div.mblnav li.collapseNav
+    margin-bottom: marL*0.75
 @media mtrigger
     div.catWrapper div.catSidebar
         display: none
