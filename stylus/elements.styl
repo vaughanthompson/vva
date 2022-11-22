@@ -273,11 +273,11 @@ header.sticky .imgText span.txtC
     margin-bottom: 10px
 
 picture.logoAsset
-    max-width:65px
+    //width:65px
 .long picture.logoAsset
-    max-width:350px
+    width:350px
 .tall picture.logoAsset
-    max-width:60px   
+    //width:60px   
 
 .inpageLogo
     width:150px
@@ -1072,6 +1072,12 @@ div.imageThumb
 div.landing div.imageThumb
     max-width: 9vw
     height:6vw
+@media ttrigger
+    div.catList div.catGroup
+        display: grid
+        grid-column-gap: 1.5vw;
+        grid-row-gap: 2.5vw;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr) )
 @media dtrigger
     div.keyStats.careers
         display: flex

@@ -322,11 +322,12 @@ img {
         flex-basis: 75%;
   }
   main > article.blog section {
+    border: 1px solid #0ff;
     max-width: 80%;
     padding: 1.5vw 5vw 0 5vw;
     margin: 0px auto;
   }
-  main > article.blog section:first-child,
+  main > article.blog h1,
   main > article.blog section:last-child {
     padding-right: 14vw;
   }
@@ -1765,14 +1766,8 @@ header.sticky .imgText span.txtC {
   margin-right: 0;
   margin-bottom: 10px;
 }
-picture.logoAsset {
-  max-width: 65px;
-}
 .long picture.logoAsset {
-  max-width: 350px;
-}
-.tall picture.logoAsset {
-  max-width: 60px;
+  width: 350px;
 }
 .inpageLogo {
   width: 150px;
@@ -2869,6 +2864,15 @@ div.imageThumb {
 div.landing div.imageThumb {
   max-width: 9vw;
   height: 6vw;
+}
+@media screen and (min-width: 750px) {
+  div.catList div.catGroup {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 2.5vw;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
 }
 @media screen and (min-width: 1100px) {
   div.keyStats.careers {
@@ -4326,6 +4330,7 @@ a.hasIcon {
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin-bottom: 1em;
 }
 a.hasIcon:hover {
   color: #01b9e5;
