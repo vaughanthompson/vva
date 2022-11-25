@@ -4001,9 +4001,9 @@ table.zebra thead {
     display: none;
   }
   .cart-product-image {
-    max-width: 640px;
-    width: 100%;
+    width: 30%;
     height: auto;
+    margin: 0px auto;
   }
   .table-responsive,
   .table-responsive thead,
@@ -4039,6 +4039,9 @@ table.zebra thead {
     white-space: nowrap;
     content: attr(data-label);
     font-weight: bold;
+  }
+  table.zebra.table-responsive tr td {
+    border-bottom: none;
   }
 }
 div.promoCode {
