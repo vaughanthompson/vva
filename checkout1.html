@@ -406,15 +406,17 @@
                 </tbody>
             </table>
         </div>
-        <br>
-        <p>
-            If you have a discount code, enter it below.
-        </p>
-        <input type="text" id="DiscountCode" placeholder="Discount code">
-        <input type="button" value="Apply code" onclick="applyDiscountCode()" class="ctaButton ctaInline">
-        <div class="alert alert-success" id="DiscountCodeMessage" style="display:none;">
-            <strong>Discount applied:</strong>
-            <p><span class="discountDescription"></span></p>
+
+
+        <div class="promoCode">
+            <h4><strong>Got a Code?</strong></h4>
+            <p>If you have a promotion or discount code, enter it below.</p>
+            <input type="text" id="DiscountCode" placeholder="Discount code">
+            <input type="button" value="Apply code" onclick="applyDiscountCode()" class="ctaButton ctaInline">
+            <div class="alert alert-success" id="DiscountCodeMessage" style="display:none;">
+                <strong>Code applied:</strong>
+                <p><span class="discountDescription"></span></p>
+            </div>
         </div>
 
 
