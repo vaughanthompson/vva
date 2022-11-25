@@ -441,13 +441,14 @@ footer nav ul.iconLink li
     text-align: center
     margin:marXXS 0 marXXS 0
     border-radius: 3px
-    padding: padXXS*0.75 padXXS*0.75
+    padding: padXXS*0.9 padXXS*0.75 padXXS*0.75 padXXS*0.75
     background-color: brand1BG
     border:1px solid brand1
+
 @media phoneRule
     .status
-        padding: padM
-        margin:marStd 0 marStd 0
+        padding: padL*0.7 padM padM padM
+        margin:marL 0 marL 0
 .status a
     text-decoration: underline !important
     white-space: nowrap
@@ -455,7 +456,7 @@ footer nav ul.iconLink li
 .success,
 .success:hover
     border-color: good !important
-    background-color: goodBG
+    background-color: goodBG !important
 .success,
 .success:hover,
 .success > *,
@@ -465,10 +466,24 @@ footer nav ul.iconLink li
 .error,
 .error:hover
     border-color: alert !important
-    background-color: alertBG
+    background-color: alertBG !important
 .error,
 .error:hover,
 .error > *,
 .error:hover > *
     color: alert !important
 
+.checkoutStatus
+    display: inline-block
+    text-align: left
+    background-color: brand2BG
+    border:1px solid brand2
+    padding-left: padXXS
+    padding-right: padXXS
+    margin-bottom: 0
+    @media phoneRule
+        padding-left: padL
+        padding-right: padL
+.checkoutStatus i
+.checkoutStatus strong
+    color: brand2

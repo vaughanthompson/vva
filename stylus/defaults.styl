@@ -30,6 +30,7 @@ amber = rgba(200,100,0,1.0)
 alert = rgba(222,30,33,1.0)
 
 brand1BG = rgba(9,39,69,0.1)
+brand2BG = rgba(1,185,229,0.1)
 goodBG = rgba(0,200,0,0.1)
 alertBG = rgba(222,30,33,0.1)
 
@@ -186,6 +187,12 @@ hr
     margin:marStd 0
     @media phoneRule
         margin: marL 0
+@media phoneRule
+    main > hr
+        margin: marL marXL*0.75
+@media lgdesktopRule
+     main > hr
+        margin: marStd auto !important  
 hr.minor
     border-bottom-width: 2px
     margin:marXXS 0 marXS 0
@@ -196,7 +203,9 @@ div.catList hr
     margin:marM 0
 div.catList hr.tiny
     margin:marXXS 0 marXXS 0  
-
+fieldset hr 
+    margin:0.75em 0
+    border-bottom-width: 1px
 img 
     width 100%
     height auto

@@ -81,7 +81,11 @@
     article.grid .picturefill-background > div
         min-height: 35vw
 
-    main > article        
+
+
+
+
+    /* main > article        
         margin: marStd auto
         padding: padXXS 0 0 0
         display: flex
@@ -120,7 +124,7 @@
     main > article.insetContent section
         flex-basis: 45%
         padding-left: padStd
-        padding-right: padStd
+        padding-right: padStd*/
 
     body > footer > div
         display: flex
@@ -153,10 +157,7 @@
     div.catWrapper-noSidebar div.catList > article
         column-gap: 6vw
 
-@media lgdesktopRule
-    main > article.blog section:first-child,
-    main > article.blog section:last-child
-        padding-right:padXL*3
+
 
 .picturefill-background
     overflow hidden
@@ -803,3 +804,56 @@ div.mblnav li.collapseNav
 @media mtrigger
     div.catWrapper div.catSidebar
         display: none
+
+
+// new col2 and content styling
+article.content
+article.blog
+article.col2
+    padding-left: padXL
+    padding-right: padXL
+#breadcrumb
+    padding: padXL
+    padding-bottom: padL
+article.intro.landing
+    padding: padXL
+    padding-bottom: 0
+    margin-bottom: 0
+article.col2 > div.scontain section:last-child
+        padding: 3em padL padL padL
+@media ttrigger
+    article.intro.landing
+        padding-top: padL
+    article.intro.landing div.scontain
+            max-width:70%
+
+
+@media dtrigger
+    article.content
+    article.intro.landing
+    article.blog
+    article.col2
+    #breadcrumb
+        padding: 0 padM
+    #breadcrumb
+        padding-top: padXS
+    article.intro.landing > div.scontain,
+    article.col2 > div.scontain
+        display: flex
+        flex-wrap: nowrap
+        column-gap: padL
+    article.col2 > div.scontain section
+        flex:1 1 50%
+    article.intro.landing
+        padding-top: padXS
+    article.col2 > div.scontain section:first-child
+        flex-basis:70%
+    article.col2 > div.scontain section
+        flex-basis:30%
+    article.col2 > div.scontain section:last-child
+        padding: padXS
+@media lgdesktopRule
+    article.intro.landing div.scontain
+        max-width:50%
+    #breadcrumb
+        padding-bottom: padXS

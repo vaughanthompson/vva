@@ -932,15 +932,18 @@ div.ddownInner nav i
 // breadcrumb
 #breadcrumb
     margin-bottom: marStd*1.2
+    font-size:90%
     @media phoneRule
-        margin-bottom: marXL
-        padding-bottom: padXS
-        border-bottom: 1px solid blackAlp10
+        margin-bottom: marL
+        //padding-bottom: padXS
+        border-bottom: 1px solid brand0
 #breadcrumb nav
     display: inline-flex
     align-items: center
     line-height: 1.3em
     flex-wrap: wrap
+    @media phoneRule
+        line-height: 1.6em
 #breadcrumb nav a
     padding-right: 0
     text-decoration: underline
@@ -948,14 +951,14 @@ div.ddownInner nav i
 #breadcrumb nav a.activeLink
     font-weight: 500 !important
 #breadcrumb nav a.activeLink
-    color: blackAlp25 !important
+    color: brand2 !important
     @media phoneRule
         margin-right:5px
 #breadcrumb nav i
     padding: 0 5px 
-    color: brand2 
+    color: brand0 
     @media phoneRule
-        padding: 0 5px 0 0
+        padding: 0 5px
 
 
 

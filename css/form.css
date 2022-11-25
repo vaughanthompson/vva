@@ -47,11 +47,13 @@ div.inpageSearch > button[type=submit]:hover {
 }
 
 fieldset {
-  padding:1.25em 1.25em 1.5em 1.25em;
+  padding:1.75em 1.25em 1.25em 1.25em;
   border:1px solid #cccccc;
-  border-bottom: none;
+  background-color: #fefefe;
+  border-radius: 4px;
+  /*border-bottom: none;*/
 }
-div.forms > fieldset:first-of-type {
+/*div.forms > fieldset:first-of-type {
   border-radius: 10px 10px 0px 0px;
   border-bottom:none;
   margin-top:0.75em;
@@ -60,7 +62,7 @@ div.forms > fieldset:last-of-type {
   border-radius: 0px 0px 10px 10px;
   border-bottom: 1px solid #cccccc;
   padding-bottom: 2em;
-}
+}*/
 
 select {
   min-width: 50px;
@@ -121,7 +123,7 @@ textarea:not(.floating__input) {
   line-height: 1.8em;
   border-radius:5px;
   border:1px solid #bebebe;
-  display: block;
+  display: inline-block;
 }
 input[type=checkbox],
 input[type=radio] {
@@ -391,21 +393,24 @@ html {
   position: absolute;
   width: 1px;
 }
-
+input.ctaButton,
 .button {
   background: var(--color__accent);
   border-width: 0;
   border-radius: 50px;
   color: #fff;
-  display: block;
+  display: inline-block;
   width: auto;
   padding: 1rem 2rem;
   font-weight: 500;
   font-size: 1.1em;
   transition: 0.2s;
 }
+input.ctaButton {
+  padding: 0.75rem 1.5rem;
+}
 
-
+input.ctaButton:hover,
 .button:hover {
   background: var(--color__hover);
   color: #fff;
@@ -564,7 +569,7 @@ div.forms div.spaceBetween > div {
   flex: 1 1 50%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   div.forms div.spaceBetween {
     flex-wrap: wrap;
     margin: 0 !important;
@@ -572,4 +577,51 @@ div.forms div.spaceBetween > div {
   div.forms div.spaceBetween > div {
     margin-bottom: 1em;
   }
+}
+
+
+
+
+/* checkout form mods */
+
+
+fieldset {
+  margin-bottom: 2em;
+}
+fieldset input.ctaButton {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+fieldset input[type=email],
+fieldset input[type=text],
+fieldset input[type=password],
+input#DiscountCode {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  max-width:100%;
+}
+input#DiscountCode {
+  max-width:40vw;
+}
+@media screen and (min-width: 1100px) {
+  fieldset input[type=email],
+  fieldset input[type=password],
+  fieldset input[type=text],
+  input#DiscountCode {
+    max-width:220px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  fieldset input[type=email],
+  fieldset input[type=password],
+  fieldset input[type=text] {
+    max-width:50%;
+  }
+}
+
+
+span.emailaddress-display {
+  font-weight:900;
+  font-size:1.2em;
 }
