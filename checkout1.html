@@ -221,9 +221,11 @@
             <nav>
                 <a class="">Your Cart</a>
                 <i class="icon-triangle-right"></i>
-                <a class="">Delivery/Contact Details</a>
+                <a class="activeLink">Delivery/Contact Details</a>
                 <i class="icon-triangle-right"></i>
-                <a class="activeLink">Freight &amp; Availability</a>
+                <a class="inactive">Freight &amp; Availability</a>
+                <i class="icon-triangle-right"></i>
+                <a class="inactive">Payment</a>
             </nav>
         </div>
 
@@ -273,13 +275,13 @@
                             Product
                         </td>
                         <td>
-                            Price
+                            Ea.
                         </td>
                         <td>
                             Quantity
                         </td>
                         <td>
-                            Line price
+                            $
                         </td>
                         <td>
                         </td>
@@ -298,9 +300,11 @@
                     <img src="https://images.salsify.com/image/upload/s--AMthO_2v--/c_limit,cs_srgb,h_275,w_275/gi2duh1pc2pmynebh2yb.jpg" class="cart-product-image">
                         </td>
         <td>
-            <a href="/shop/products/engine-oil/helix-hx5-15w-40-6l-550050115">Shell Helix HX5 Diesel 15W-40 Engine Oil 6L</a>
+            <p class="prodTitle"><a href="/shop/products/engine-oil/helix-hx5-15w-40-6l-550050115">Shell Helix HX5 Diesel 15W-40 Engine Oil 6L</a></p>
+            
+                        <p class="small">SKU #1234567</p>
     
-                        <div style="color:red;"><small><strong>SALE:</strong> Usually $81.28 now only $40.02 per item.</small></div>
+                        <p class="offer"><strong>SALE:</strong> Usually $81.28 now only $40.02 per item.</p>
     
     
         </td>
@@ -316,7 +320,7 @@
                 </div>
             </td>
             <td>
-                <a href="javascript:void(0)" onclick="removeItem(7950)">remove</a>
+                <a href="javascript:void(0)" onclick="removeItem(7950)"><i class="icon-cross icon"></i></a>
             </td>
         </tr>
                    
@@ -327,7 +331,11 @@
                     <img src="https://images.salsify.com/image/upload/s--AMthO_2v--/c_limit,cs_srgb,h_275,w_275/gi2duh1pc2pmynebh2yb.jpg" class="cart-product-image">
                         </td>
         <td>
-            <a href="/shop/products/motorbike-oil/advance-4t-ax7-10w-40-4l-550043181">Shell Advance 4T AX7 10W-40 motorbike oil 4L</a>
+            <p class="prodTitle"><a href="/shop/products/motorbike-oil/advance-4t-ax7-10w-40-4l-550043181">Shell Advance 4T AX7 10W-40 motorbike oil 4L</a></p>
+
+
+            <p class="small">SKU #1234567</p>
+
     
     
     
@@ -344,7 +352,7 @@
                 </div>
             </td>
             <td>
-                <a href="javascript:void(0)" onclick="removeItem(7952)">remove</a>
+                <a href="javascript:void(0)" onclick="removeItem(7950)"><i class="icon-cross icon"></i></a>
             </td>
         </tr>
                    
@@ -381,13 +389,13 @@
                             Freight
                         </td>
                         <td>
-                            <div class="freightPrice">$7.50</div>
+                            
                         </td>
                         <td class="hide-760px">
                         </td>
                         <td style="text-align:right;" data-label="Freight:">
     
-                            <div class="freightPrice">$7.50</div>
+                            <div class="freightPrice">TBC</div>
     
                         </td>
                         <td>
@@ -395,7 +403,10 @@
                     </tr>
     
                     <tr>
-                        <td colspan="4" class="hide-760px">
+                        <td class="hide-760px">
+                        </td>
+                        <td colspan="3" class="hide-760px">
+                            <strong>Total (incl. GST)</strong>
                         </td>
                         <td style="text-align:right;font-weight:bold;" data-label="Order total:">
                             <div><div id="CartTotal">$116.08</div></div>

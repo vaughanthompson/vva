@@ -2715,14 +2715,17 @@ div.ddownInner nav i {
 #breadcrumb nav a.activeLink {
   color: #01b9e5 !important;
 }
+#breadcrumb nav a.inactive {
+  color: rgba(0,0,0,0.25) !important;
+}
 @media screen and (max-width: 750px) {
-  #breadcrumb nav a.activeLink {
+  #breadcrumb nav a.inactive {
     margin-right: 5px;
   }
 }
 #breadcrumb nav i {
   padding: 0 5px;
-  color: #006694;
+  color: rgba(0,0,0,0.25);
 }
 @media screen and (max-width: 750px) {
   #breadcrumb nav i {
@@ -3939,6 +3942,104 @@ div.pagination > .paginationItem:first-child,
 div.pagination > .paginationItem:last-child {
   padding-top: 0px;
   border: none;
+}
+.cart-product-image {
+  height: 70px;
+  margin-left: 1.5vw;
+  width: auto;
+}
+td p.prodTitle {
+  font-size: 1.05em;
+  font-weight: 700;
+  margin-top: 5px !important;
+}
+table.zebra td .small {
+  color: rgba(0,0,0,0.5);
+}
+table.zebra td p {
+  margin: 0;
+  line-height: 1.6em;
+}
+table.zebra {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+  border-bottom: 3px solid #092745;
+}
+table.zebra a i.icon-cross {
+  color: #01b9e5;
+}
+table.zebra a:hover {
+  text-decoration: none;
+}
+table.zebra thead td,
+#CartTotal {
+  font-weight: 900;
+  font-size: 1.1em;
+  letter-spacing: 0;
+}
+table.zebra thead td:nth-child(5) {
+  text-align: right;
+}
+table.zebra tr td {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+table.zebra tr#FreightItem td {
+  border-bottom: none;
+}
+table.zebra td {
+  padding: 20px 10px;
+  font-size: 1em;
+  font-weight: 400;
+}
+table.zebra thead {
+  font-weight: 900;
+}
+@media screen and (max-width: 1100px) {
+  .hide-760px {
+    display: none;
+  }
+  .cart-product-image {
+    max-width: 640px;
+    width: 100%;
+    height: auto;
+  }
+  .table-responsive,
+  .table-responsive thead,
+  .table-responsive tbody,
+  .table-responsive th,
+  .table-responsive td,
+  .table-responsive tr {
+    display: block;
+  }
+  .table-responsive thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table-responsive tr {
+    border: 1px solid #ccc;
+  }
+  .table-responsive td {
+/* Behave  like a "row" */
+    border: none;
+/*border-bottom: 1px solid #eee;*/
+    position: relative;
+    text-align: right;
+  }
+  .table-responsive td:before {
+/* Now like a table header */
+    position: absolute;
+/* Top/left values mimic padding */
+    top: 15px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-label);
+    font-weight: bold;
+  }
 }
 div.promoCode {
   border: 1px solid #0ff;
