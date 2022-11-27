@@ -821,11 +821,26 @@ article.intro.landing
     margin-bottom: 0
 article.col2 > div.scontain section:last-child
         padding: 3em padL padL padL
+article.col2.content h5,
+article.col2.content p
+    margin: 1em 0
+    max-width:90%
+article.col2.content > div.scontain section:last-child
+        padding: 3em 0
+        margin-top 3em
+        border-top:3px solid brand1
 @media ttrigger
     article.intro.landing
         padding-top: padL
     article.intro.landing div.scontain
             max-width:70%
+    article.col2.content > div.scontain section:last-child
+        padding: 0
+        margin-top 0
+        border-top:none
+     article.col2.content
+        margin-top:marM
+   
 
 
 @media dtrigger
@@ -847,9 +862,9 @@ article.col2 > div.scontain section:last-child
     article.intro.landing
         padding-top: padXS
     article.col2 > div.scontain section:first-child
-        flex-basis:70%
+        flex-basis:65%
     article.col2 > div.scontain section
-        flex-basis:30%
+        flex-basis:35%
     article.col2 > div.scontain section:last-child
         padding: padXS
 @media lgdesktopRule

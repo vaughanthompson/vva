@@ -1351,12 +1351,30 @@ article.intro.landing {
 article.col2 > div.scontain section:last-child {
   padding: 3em 5vw 5vw 5vw;
 }
+article.col2.content h5,
+article.col2.content p {
+  margin: 1em 0;
+  max-width: 90%;
+}
+article.col2.content > div.scontain section:last-child {
+  padding: 3em 0;
+  margin-top: 3em;
+  border-top: 3px solid #092745;
+}
 @media screen and (min-width: 750px) {
   article.intro.landing {
     padding-top: 5vw;
   }
   article.intro.landing div.scontain {
     max-width: 70%;
+  }
+  article.col2.content > div.scontain section:last-child {
+    padding: 0;
+    margin-top: 0;
+    border-top: none;
+  }
+  article.col2.content {
+    margin-top: 3vw;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -1396,12 +1414,12 @@ article.col2 > div.scontain section:last-child {
     padding-top: 1.5vw;
   }
   article.col2 > div.scontain section:first-child {
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
   }
   article.col2 > div.scontain section {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
   }
   article.col2 > div.scontain section:last-child {
     padding: 1.5vw;
@@ -3111,6 +3129,26 @@ div.gallery div.galleryItem {
     margin-bottom: 1em;
   }
 }
+article.col2.content div.gallery {
+  margin-bottom: 2vw;
+  margin-top: 3vw;
+}
+@media screen and (max-width: 750px) {
+  article.col2.content div.gallery {
+    margin-bottom: 10vw;
+  }
+}
+article.col2.content div.gallery div.galleryItem {
+  padding: 0;
+  border: none;
+  height: 500px;
+}
+@media screen and (max-width: 750px) {
+  article.col2.content div.gallery div.galleryItem {
+    height: 35vh;
+    margin-bottom: 1em;
+  }
+}
 div.gallery div.galleryItemInset {
   background-position: center;
   background-repeat: no-repeat;
@@ -3121,6 +3159,11 @@ div.gallery div.galleryItemInset {
   div.gallery div.galleryItemInset {
     height: 20vw;
   }
+}
+article.col2.content div.gallery div.galleryItemInset {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 div.gallery div.galleryItem div.pbVideo iframe {
   height: 37vw;
@@ -4160,6 +4203,13 @@ div.catSidebar nav ul {
   nav ol li a:hover {
     text-decoration: underline !important;
   }
+}
+article.content nav ul {
+  margin: 1.5vw 0;
+}
+article.content nav ul li {
+  border-top: 1px solid #092745;
+  padding: 1vw 0;
 }
 *.picturefill-background,
 *.picturefill-background a {
