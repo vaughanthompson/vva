@@ -3788,6 +3788,19 @@ div.autoSearch div.tabAutoSContent p {
   div.results div.formCols > div:first-child > * {
     padding-right: 2em;
   }
+  div.autoSearch.ctaVersion div.tabContainer {
+    border-radius: 10px;
+    padding: 2vw;
+  }
+  div.autoSearch.ctaVersion div.tabContainer div.spaceBetween {
+    -webkit-box-align: end;
+    -o-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-column-gap: 5vw;
+    -moz-column-gap: 5vw;
+    column-gap: 5vw;
+  }
 }
 div.autoSearch div.tabAutoSBtns a {
   color: #fff;
@@ -4359,6 +4372,14 @@ h6 {
   margin: 0;
   margin-bottom: 5px;
   color: #006694;
+}
+h1.rev,
+h2.rev,
+h3.rev,
+h4.rev,
+h5.rev,
+h6.rev {
+  color: #fff;
 }
 p {
   color: #092745;
