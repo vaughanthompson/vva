@@ -1581,16 +1581,17 @@ body.home div.brandCarousel
 
 
 
-div.search
+div.search > form
     display: flex
     align-items: center
     flex: 1 1 auto
 
-div.search .button
+div.search > form .button
     margin-left: marXXS
 
-div.search div.floating
+div.search > form > div.floating
     flex-basis: 100%
+    min-width:20vw
 div.siteName
     border-left: 1px solid brand2
     padding: padXXS padXS 
@@ -1598,10 +1599,10 @@ div.siteName
 div.siteName > *
     margin: 0
 @media ttrigger
-    div.search div.floating
+    div.search > form > div.floating
         flex-basis: 60%
 @media dtrigger
-    div.search div.floating
+    div.search > form > div.floating
         flex-basis: 35%
 
 
