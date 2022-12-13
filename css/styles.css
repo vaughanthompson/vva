@@ -3964,16 +3964,6 @@ div.pagination {
   -moz-column-gap: 2px;
   column-gap: 2px;
 }
-@media screen and (max-width: 750px) {
-  div.paginationCtrl {
-    -webkit-box-orient: vertical;
-    -o-box-orient: vertical;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    row-gap: 1em;
-    padding-bottom: 2vw;
-  }
-}
 div.pagination > .paginationItem {
   width: 40px;
   height: 40px;
@@ -4019,6 +4009,44 @@ div.pagination > .paginationItem:first-child,
 div.pagination > .paginationItem:last-child {
   padding-top: 0px;
   border: none;
+}
+@media screen and (max-width: 750px) {
+  div.paginationCtrl {
+    -webkit-box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 1em;
+    padding-bottom: 2vw;
+  }
+  div.paginationCtrl > div {
+    text-align: center;
+  }
+  div.paginationCtrl div.forms {
+    margin-bottom: 5px;
+  }
+  div.pagination {
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-column-gap: 4px;
+    -moz-column-gap: 4px;
+    column-gap: 4px;
+  }
+  div.pagination > .paginationItem {
+    background-color: rgba(0,0,0,0.05);
+    margin-bottom: 4px;
+  }
+  div.pagination > .paginationItem {
+    width: 34px;
+    height: 34px;
+  }
 }
 .cart-product-image {
   height: 70px;

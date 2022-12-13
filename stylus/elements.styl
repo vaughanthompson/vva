@@ -1848,11 +1848,7 @@ div.pricePoint
 div.pagination
     display: flex
     column-gap: 2px
-@media phoneRule
-    div.paginationCtrl
-        flex-direction: column
-        row-gap: 1em
-        padding-bottom: padStd
+
 div.pagination > .paginationItem
     width:40px
     height:40px
@@ -1887,7 +1883,25 @@ div.pagination > .paginationItem:last-child
     padding-top:0px
     border:none
 
-
+@media phoneRule
+    div.paginationCtrl
+        flex-direction: column
+        row-gap: 1em
+        padding-bottom: padStd
+    div.paginationCtrl > div
+        text-align: center
+    div.paginationCtrl div.forms  
+        margin-bottom: 5px
+    div.pagination
+        flex-wrap: wrap
+        justify-content: center
+        column-gap: 4px
+    div.pagination > .paginationItem
+        background-color: blackAlp5
+        margin-bottom: 4px
+    div.pagination > .paginationItem
+        width:34px
+        height:34px
 
 
 
