@@ -1445,6 +1445,11 @@ article.col2.content > div.scontain section:last-child {
     padding-bottom: 1.5vw;
   }
 }
+@media screen and (max-width: 750px) {
+  div.catContain.model {
+    padding: 7vw;
+  }
+}
 .icon {
   color: #092745;
   display: -webkit-box;
@@ -3178,6 +3183,11 @@ div.gallery div.galleryItemInset {
 @media screen and (min-width: 1800px) {
   div.gallery div.galleryItemInset {
     height: 20vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  div.gallery div.galleryItemInset {
+    height: 50vh;
   }
 }
 article.col2.content div.gallery div.galleryItemInset {
