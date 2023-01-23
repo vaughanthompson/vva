@@ -3682,8 +3682,22 @@ div.autoSearch {
   margin-top: 1vw;
   margin-bottom: 3em;
 }
-div.autoSearch a {
-  color: #fff;
+div.autoSearch h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.75vw;
+}
+div.autoSearch a,
+div.autoSearch a:hover {
+  color: #fff !important;
+}
+div.autoSearch p a,
+div.autoSearch p a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+div.autoSearch.ctaVersion div.spaceBetween > div,
+div.autoSearch.ctaVersion div.spaceBetween > div h5 {
+  color: #fff !important;
 }
 div.formCols input {
   margin-bottom: 0;
@@ -3736,6 +3750,9 @@ div.autoSearch div.tabAutoSContent p {
     width: 90%;
     padding-left: 0;
     padding-right: 0;
+  }
+  div.autoSearch.ctaVersion div.spaceBetween > div {
+    text-align: center;
   }
 }
 @media screen and (min-width: 750px) {
@@ -4003,8 +4020,8 @@ div.pagination > .paginationItem {
   transition: 0.3s;
 }
 div.pagination > .paginationItem.active {
-  background-color: #01b9e5;
-  border-color: #01b9e5;
+  background-color: #092745;
+  border-color: #092745;
   color: #fff;
 }
 div.pagination > .paginationItem:hover {
@@ -4493,17 +4510,14 @@ h5 {
   font-weight: 700;
   font-size: 1.2em;
   line-height: 125%;
-  letter-spacing: -0.04em;
 }
 h5 span {
   font-weight: 400;
-  letter-spacing: -0.01em;
 }
 h6 {
   font-weight: 400;
   font-size: 1em;
   line-height: 130%;
-  letter-spacing: -0.015em;
 }
 p {
   font-weight: 400;

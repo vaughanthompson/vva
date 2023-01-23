@@ -1623,8 +1623,20 @@ div.siteName > *
 div.autoSearch
     margin-top: marXXS
     margin-bottom: 3em
-div.autoSearch a 
-    color: white
+div.autoSearch h1
+    font-size:2.8em
+    margin-bottom: marXXS*0.75
+div.autoSearch a,
+div.autoSearch a:hover
+    color: white !important
+div.autoSearch p a,
+div.autoSearch p a:hover
+    text-decoration: underline
+    cursor: pointer
+
+div.autoSearch.ctaVersion div.spaceBetween > div,
+div.autoSearch.ctaVersion div.spaceBetween > div h5
+    color: white !important
 div.formCols input
     margin-bottom: 0
 div.formCols input:disabled,
@@ -1664,6 +1676,9 @@ div.autoSearch div.tabAutoSContent p
         width:90%;
         padding-left: 0;
         padding-right:0;
+    }
+    div.autoSearch.ctaVersion div.spaceBetween > div {
+        text-align: center;
     }
 }
 
@@ -1873,8 +1888,8 @@ div.pagination > .paginationItem
     //border-radius: 2px
     transition:0.3s
 div.pagination > .paginationItem.active
-    background-color: brand2
-    border-color: brand2
+    background-color: brand1
+    border-color: brand1
     color: white
 div.pagination > .paginationItem:hover
     text-decoration: none
