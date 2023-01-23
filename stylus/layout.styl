@@ -455,16 +455,16 @@ nav.secNav a
     font-weight: 500
     letter-spacing: 0.1em
 nav.accountNav
-    background-color: brand1
+    //background-color: brand1
     padding: padXXS padXS
     border-radius: 50px
-    margin-right: marXXS    
+    //margin-right: marXXS    
 nav.accountNav a
-    color: white
-    font-size: 1.1em
-    font-weight:700
+    color: brand1
+    font-size: 1.3em
+    font-weight:800
     padding-right: 0.75vw
-    padding-left: 0.75vw
+    padding-left: 1vw
 
 
 div#priNav-v2 > nav a:first-child
@@ -745,6 +745,8 @@ div.catWrapper
     padding: padXL
 
 @media ttrigger
+    div.catWrapper div.catSidebar div.catGroup
+        margin-bottom: marL
     div.catWrapper
         padding: padXL
         display: grid
@@ -857,6 +859,8 @@ article.col2.content > div.scontain section:last-child
         padding: 0 padM
     #breadcrumb
         padding-top: padXS
+        padding-left: 0
+        padding-bottom: padXXS
     article.intro.landing > div.scontain,
     article.col2 > div.scontain
         display: flex

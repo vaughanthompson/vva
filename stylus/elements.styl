@@ -86,8 +86,9 @@ a.ctaButton
     display: inline-block
     white-space: nowrap
     border-radius: 2em
-    font-size: 1.1em
-    font-weight: 700
+    font-size: 0.75em
+    letter-spacing: 0.2em
+    font-weight: 500
 div#masthead a.majorCTA
     color: white !important
 a.ctaButton,
@@ -95,15 +96,17 @@ span.ctaButton
     border-radius: 50px
     background: brand1
     color: white !important
-    font-size: 1.1em
-    font-weight:700
-    border: 1px solid white
-    padding:padXXS*0.9 padStd padXXS*0.75 padStd
+    font-size: 0.75em
+    letter-spacing: 0.2em
+    font-weight:500
+    border: 1px solid brand1
+    padding:padXS*.9 padStd padXS*.8 padStd
     //margin-right:marXXS
     display: inline-flex
     justify-content: space-between
     transition: 0.2s
     white-space: nowrap
+    text-transform: uppercase
     @media phoneRule
         padding: padM padL
         font-weight: 300
@@ -160,8 +163,8 @@ span.ctaButton:hover,
 span.ctaButton:hover > i:before
     background: brand0 !important
     color: white !important
-    border-color: white !important
-    border-bottom-color: white !important
+    border-color: brand0 !important
+    border-bottom-color: brand0 !important
     transition: 0.2s
     text-decoration: none
     cursor: pointer
@@ -662,7 +665,7 @@ body > footer ul > li
     list-style-type: none
     line-height: 1.4em
     padding: 0.7em 0
-    border-top: 1px solid brand2
+    border-top: 1px solid white
     
 
 /* form */
@@ -954,8 +957,9 @@ div.ddownInner nav i
 #breadcrumb nav a,
 #breadcrumb nav a.activeLink
     font-weight: 500 !important
+    color: brand0
 #breadcrumb nav a.activeLink
-    color: brand2 !important
+    color: brand1 !important
 #breadcrumb nav a.inactive
     color: blackAlp25 !important
     @media phoneRule
@@ -1817,7 +1821,7 @@ div.lozenge
 .messageArea.highlight,
 .highlight div.lozenge,
 .highlightSiteWide div.lozenge
-    background-color: brand2
+    background-color: brand1
     color: white
 .messageArea.priceOffer,
 .priceOffer div.lozenge,

@@ -890,17 +890,15 @@ nav.secNav a {
   letter-spacing: 0.1em;
 }
 nav.accountNav {
-  background-color: #092745;
   padding: 1vw 1.5vw;
   border-radius: 50px;
-  margin-right: 1vw;
 }
 nav.accountNav a {
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: 700;
+  color: #092745;
+  font-size: 1.3em;
+  font-weight: 800;
   padding-right: 0.75vw;
-  padding-left: 0.75vw;
+  padding-left: 1vw;
 }
 div#priNav-v2 > nav a:first-child {
   -ms-flex-preferred-size: 25%;
@@ -1260,6 +1258,9 @@ div.catWrapper {
   padding: 7vw;
 }
 @media screen and (min-width: 750px) {
+  div.catWrapper div.catSidebar div.catGroup {
+    margin-bottom: 5vw;
+  }
   div.catWrapper {
     padding: 7vw;
     display: -ms-grid;
@@ -1399,6 +1400,8 @@ article.col2.content > div.scontain section:last-child {
   }
   #breadcrumb {
     padding-top: 1.5vw;
+    padding-left: 0;
+    padding-bottom: 1vw;
   }
   article.intro.landing > div.scontain,
   article.col2 > div.scontain {
@@ -1574,8 +1577,9 @@ a.ctaButton {
   display: inline-block;
   white-space: nowrap;
   border-radius: 2em;
-  font-size: 1.1em;
-  font-weight: 700;
+  font-size: 0.75em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
 }
 div#masthead a.majorCTA {
   color: #fff !important;
@@ -1585,10 +1589,11 @@ span.ctaButton {
   border-radius: 50px;
   background: #092745;
   color: #fff !important;
-  font-size: 1.1em;
-  font-weight: 700;
-  border: 1px solid #fff;
-  padding: 0.9vw 2vw 0.75vw 2vw;
+  font-size: 0.75em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  border: 1px solid #092745;
+  padding: 1.35vw 2vw 1.2vw 2vw;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-box;
@@ -1600,6 +1605,7 @@ span.ctaButton {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 750px) {
   a.ctaButton,
@@ -1647,8 +1653,8 @@ span.ctaButton:hover,
 span.ctaButton:hover > i:before {
   background: #006694 !important;
   color: #fff !important;
-  border-color: #fff !important;
-  border-bottom-color: #fff !important;
+  border-color: #006694 !important;
+  border-bottom-color: #006694 !important;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   text-decoration: none;
@@ -2366,7 +2372,7 @@ body > footer ul > li {
   list-style-type: none;
   line-height: 1.4em;
   padding: 0.7em 0;
-  border-top: 1px solid #01b9e5;
+  border-top: 1px solid #fff;
 }
 .enquirySubject {
   background-color: #01b9e5;
@@ -2754,9 +2760,10 @@ div.ddownInner nav i {
 #breadcrumb nav a,
 #breadcrumb nav a.activeLink {
   font-weight: 500 !important;
+  color: #006694;
 }
 #breadcrumb nav a.activeLink {
-  color: #01b9e5 !important;
+  color: #092745 !important;
 }
 #breadcrumb nav a.inactive {
   color: rgba(0,0,0,0.25) !important;
@@ -3911,7 +3918,7 @@ div.lozenge {
 .messageArea.highlight,
 .highlight div.lozenge,
 .highlightSiteWide div.lozenge {
-  background-color: #01b9e5;
+  background-color: #092745;
   color: #fff;
 }
 .messageArea.priceOffer,
@@ -4325,7 +4332,7 @@ li a:hover {
 }
 .activeLink,
 .activeLink:hover {
-  color: #01b9e5 !important;
+  color: #092745 !important;
 }
 .offer.activeLink,
 .offer.activeLink:hover {
@@ -4410,8 +4417,12 @@ body.lightTheme > header.sticky nav a:hover {
 }
 h1,
 h2,
+h4 {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #092745;
+}
 h3,
-h4,
 h5,
 h6 {
   margin: 0;
@@ -4431,34 +4442,28 @@ p {
 }
 h1 {
   font-weight: 1000;
-  font-size: 3em;
+  font-size: 3.5em;
   line-height: 105%;
-  letter-spacing: -0.03em;
 }
 h1 span {
   font-weight: 300;
-  letter-spacing: -0.02em;
 }
 h2 {
   font-weight: 1000;
   font-size: 2.2em;
   line-height: 105%;
-  letter-spacing: -0.045em;
 }
 h2 span {
   font-weight: 300;
-  letter-spacing: -0.015em;
 }
 h3,
 body.model h2 {
-  font-weight: 500;
+  font-weight: 1000;
   font-size: 1.6em;
   line-height: 115%;
-  letter-spacing: -0.025em;
 }
 h3 span {
   font-weight: 300;
-  letter-spacing: -0.01em;
 }
 div.catItem h3 {
   font-weight: 400;
@@ -4474,7 +4479,6 @@ h4 {
   font-weight: 700;
   font-size: 1.3em;
   line-height: 120%;
-  letter-spacing: -0.01em;
 }
 h4 span {
   font-weight: 400;

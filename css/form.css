@@ -124,6 +124,7 @@ textarea:not(.floating__input) {
   border-radius:5px;
   border:1px solid #bebebe;
   display: inline-block;
+  color: rgba(9,39,69,1.0);
 }
 input[type=checkbox],
 input[type=radio] {
@@ -131,6 +132,9 @@ input[type=radio] {
   margin-right:10px;
 }
 
+textarea:not(.floating__input)::placeholder {
+  color: rgba(9,39,69,1.0);
+}
 
 
 div.forms select {
@@ -240,13 +244,13 @@ input:focus {outline:none;}
 
 
 :root {
-  --color__accent:rgba(1,185,229,1.0);/* #03a9f4 */ 
-  --color__hover:rgba(0,102,148,1.0);/* #2962ff */ 
+  --color__accent:rgba(9,39,69,1.0);/* #03a9f4 */ 
+  --color__hover:rgba(1,185,229,1.0);/* #2962ff */ 
   --field__background: #f7f7f7;
   --field__background--hover: #ffffff;
   --input__border: rgba(0, 0, 0, 0.15);
-  --input__border--hover: rgba(0, 0, 0, 0.62);
-  --label__color: #aeaeae;
+  --input__border--hover: rgba(9,39,69,1.0);
+  --label__color: rgba(9,39,69,1.0);
 }
 
 .floating {
