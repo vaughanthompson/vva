@@ -1572,14 +1572,13 @@ a.majorCTA,
 a.ctaButton {
   color: #fff;
   background-color: #092745;
-  padding: 0.9vw 1.5vw 0.75vw 1.5vw;
+  padding: 0.95vw 1.5vw 0.9vw 1.5vw;
   margin-bottom: 0.6vw;
   display: inline-block;
   white-space: nowrap;
   border-radius: 2em;
-  font-size: 0.75em;
-  letter-spacing: 0.2em;
-  font-weight: 500;
+  font-size: 1.05em;
+  font-weight: 700;
 }
 div#masthead a.majorCTA {
   color: #fff !important;
@@ -1589,11 +1588,9 @@ span.ctaButton {
   border-radius: 50px;
   background: #092745;
   color: #fff !important;
-  font-size: 0.75em;
-  letter-spacing: 0.2em;
-  font-weight: 500;
-  border: 1px solid #092745;
-  padding: 1.35vw 2vw 1.2vw 2vw;
+  font-size: 1.05em;
+  font-weight: 700;
+  padding: 0.95vw 2vw 0.9vw 2vw;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-box;
