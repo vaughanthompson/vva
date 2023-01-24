@@ -1607,6 +1607,11 @@ span.ctaButton {
   white-space: nowrap;
 }
 @media screen and (max-width: 750px) {
+  a.ctaButton,
+  span.ctaButton {
+    padding: 3vw 5vw;
+    font-weight: 300;
+  }
 }
 a.ctaButton.ctaShop {
   background: #092745;
