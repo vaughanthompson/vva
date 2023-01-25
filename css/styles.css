@@ -890,14 +890,15 @@ nav.secNav a {
   letter-spacing: 0.1em;
 }
 nav.accountNav {
-  padding: 1vw 0.5vw;
+  background-color: #092745;
+  padding: 1vw 1.5vw;
   margin-right: 1.5vw;
-  border-bottom: 3px solid #092745;
+  border-radius: 50px;
 }
 nav.accountNav a {
-  color: #092745;
-  font-size: 1.3em;
-  font-weight: 800;
+  color: #fff;
+  font-size: 1.05em;
+  font-weight: 700;
   padding-right: 0.75vw;
   padding-left: 1vw;
 }
