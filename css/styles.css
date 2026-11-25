@@ -1518,6 +1518,9 @@ main div.socialLinks a {
     margin-right: 4vw;
   }
 }
+img.inpageIcon {
+  width: 60px;
+}
 #navMobile .icon,
 #navHeader .icon {
   background: none;
@@ -1584,13 +1587,17 @@ span.ctaButton {
   a.ctaButton,
   span.ctaButton {
     padding: 3vw 5vw;
-    font-weight: 300;
+    font-weight: 700;
   }
 }
 a.ctaButton.ctaShop {
   background: #001e8c;
   border-color: #001e8c;
   color: #fff !important;
+}
+.slideItem a.ctaButton {
+  background-color: #00d4fe;
+  color: #001e8c !important;
 }
 .ctaButton.ctaMinor {
   background-color: #00d4fe;
@@ -3699,11 +3706,11 @@ div.autoSearch div.tabAutoSBtns a:last-child {
   border-radius: 0 6px 0 0;
 }
 div.autoSearch div.tabAutoSBtns a.activeTab {
-  background-color: #00d4fe;
+  background-color: #dbf7ff;
 }
 div.autoSearch div.tabContainer {
   margin-bottom: 0;
-  background-color: #00d4fe;
+  background-color: #dbf7ff;
 }
 div.autoSearch div.tabContainer hr {
   border-bottom: 1px solid #9f9f9f;
@@ -4691,9 +4698,10 @@ nav ul.iconLink li {
   margin-bottom: 1.5vw;
 }
 nav ul.iconLink li a i {
-  font-size: 1.5em;
+  font-size: 3em;
   padding-bottom: 5px;
   text-decoration: none !important;
+  color: #00d4fe;
 }
 nav ul.iconLink li a i::before {
   display: inline-block;
