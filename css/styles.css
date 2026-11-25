@@ -1521,6 +1521,9 @@ main div.socialLinks a {
 img.inpageIcon {
   width: 60px;
 }
+footer img.inpageIcon {
+  width: 70px;
+}
 #navMobile .icon,
 #navHeader .icon {
   background: none;
